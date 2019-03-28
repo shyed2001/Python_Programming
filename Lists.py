@@ -12,3 +12,8 @@
 print("LISTS")
 print("Working with LISTS")
 
+list=["kevin", 5, 7.9, True]
+
+friends=["kevin", "KAren", "Jim"]
+
+
