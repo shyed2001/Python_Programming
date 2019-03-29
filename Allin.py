@@ -894,23 +894,49 @@ print(students2.get("jj"))
 print(""" print(students2.get("jj")) will produce a result = none,
 because there is no key named jj
 """)
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      User
+#
+# Created:     29/03/2019
+# Copyright:   (c) User 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
 
-print("""Tuples, tuples are like lists but their values/data can not be changed,
 
+print("""Tuples, tuples are like lists but their values/data
+can not be changed, immutable, ROM, Read Only
 , now lets assume, tup1=("Maths", 23 , 3.3) """)
 
 
-print("""Tuples, tuples are like lists but their values/data can not be changed,
+print("""Tuples, tuples are like lists but their values/data can not be
+ changed,
  now lets assume, tup1=("Maths", 23 , 3.3, 9/3)""")
 
 tup1=("Maths", 23 , 3.3, 9/3)
 
-print("print(tup1[2]) = ")
+print("""
+print(tup1[2]) =
+ """)
 print(tup1[2])
+
 print("print(tup1[0:4]) = ")
 print(tup1[0:4])
 print("print(tup1[0:5]) = " , (tup1[0:5]))
 print("print(tup1[0:15]) = " , (tup1[0:15]))
+
+print("""
+coordinates=(4,5) --- this is a tupple, can not be changed
+coordinates=[4,5] --- this is a list, items can be changed,
+coordinates=[(4,5), (5,6), (6,7)] - this is a list of tupples
+coordinates=[(4,5), (5,6), (6,7)]
+coordinates.pop()
+print(coordinates)""")
+coordinates=[(4,5), (5,6), (6,7)]
+coordinates.pop()
+print(coordinates)
 
 
 print('Prime number generator in three types of code')
@@ -1452,13 +1478,87 @@ print(FRINDS2)
 print(FRINDS3)
 
 
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      User
+#
+# Created:     29/03/2019
+# Copyright:   (c) User 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+
+print(''' Create FUNCTIONS -
+Create FUNCTIONS -
+ #define the function by def ....:
+def say_hi():
+    #tell the function what to do
+    print("Hello User")
+#call the functio to do
+say_hi()
+''')
+ #define the function by def ....:
+def say_hi():
+    #tell the function what to do
+    print("Hello User")
+#call the functio to do
+say_hi()
+
+print('''
+print(" Start")
+say_hi()
+print(" The End")
+''')
+print(" Start")
+say_hi()
+print(" The End")
+
+print('''
+#We can give parameters or information to functions
+ #define the function by def ....:
+def say_hi(name):
+    #tell the function what to do
+    print("Hello ", name)
+#call the functio to do
+say_hi("mike")
+say_hi("DON")
+''')
+
+#We can give parameters or information to functions
+ #define the function by def ....:
+def say_hi(name):
+    #tell the function what to do
+    print("Hello ", name)
+#call the functio to do
+say_hi("mike")
+say_hi("DON")
+
+print('''
+#We can give parameters or information to functions
+ #define the function by def ....:
+def say_hi(name, age):
+    #tell the function what to do
+    print("Hello ", name, "you are" , str(age))
+    #str() is to convert int or float to str#
+#call the functio to do#
+say_hi("mike", "33")
+say_hi("DON", 55.5)
+''')
+
+#We can give parameters or information to functions
+ #define the function by def ....:
+def say_hi(name, age):
+    #tell the function what to do
+    print("Hello ", name, "you are" , str(age))
+    #str() is to convert int or float to str#
+#call the functio to do#
+say_hi("mike", "33")
+say_hi("DON", 55.5)
 
 
-
-
-
-
-
+print('''
+''')
 
 
 import turtle
