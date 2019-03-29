@@ -1689,6 +1689,98 @@ print(max_num(33,4,15))
 
 
 
+
+print('''
+a1=float(input("Enter the first number:    "))
+op=input("Enter the operator or sign :          ")
+b1=float(input("Enter the second number:    "))
+
+if op=="+":
+    print(str(a1),"+", str(b1), "=", a1+b1 )
+elif op=="-":
+     print(str(a1),"-", str(b1), "=", a1-b1 )
+elif op=="/":
+     print(str(a1),"/", str(b1), "=", a1/b1 )
+elif op=="*":
+     print(str(a1),"*", str(b1), "=", a1*b1 )
+elif op=="**":
+     print(str(a1),"**", str(b1), "=", a1**b1 )
+elif op=="//":
+     print(str(a1),"//", str(b1), "=", a1//b1 )
+elif op=="%":
+     print(str(a1),"%", str(b1), "=", a1%b1 )
+else:
+    print("invalid operator or number")
+''')
+
+
+
+a1=float(input("Enter the first number:    "))
+op=input("Enter the operator or sign :          ")
+b1=float(input("Enter the second number:    "))
+
+if op=="+":
+    print(str(a1),"+", str(b1), "=", a1+b1 )
+elif op=="-":
+     print(str(a1),"-", str(b1), "=", a1-b1 )
+elif op=="/":
+     print(str(a1),"/", str(b1), "=", a1/b1 )
+elif op=="*":
+     print(str(a1),"*", str(b1), "=", a1*b1 )
+elif op=="**":
+     print(str(a1),"**", str(b1), "=", a1**b1 )
+elif op=="//":
+     print(str(a1),"//", str(b1), "=", a1//b1 )
+elif op=="%":
+     print(str(a1),"%", str(b1), "=", a1%b1 )
+else:
+    print("invalid operator or number")
+
+print('''
+print(eval(input()))
+''')
+print(eval(input()))
+
+
+print('''
+op=input( """please input a calculating or math operetion:
+like 12+14 or 14*30 or 34//22 etc
+                  """ )
+print(eval(op))
+''')
+
+op=input( """please input a calculating or math operetion:
+like 12+14 or 14*30 or 34//22 etc
+                  """ )
+print(eval(op))
+
+
+
+print('''
+
+''')
+
+print("""
+codex=input('''     please input your code by typing
+copy paste will not work till now     :
+ ''')
+
+
+                 """    )
+codex=input('''     please input your code by typing
+copy paste will not work till now     :
+
+
+                 '''       )
+print("""
+print(codex)
+print("The above code that you typed -  will give output")
+exec(codex)
+""")
+print(codex)
+print("The above code that you typed -  will give output")
+exec(codex)
+
 print('''
 ''')
 

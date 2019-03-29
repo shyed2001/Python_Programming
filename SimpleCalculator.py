@@ -98,6 +98,26 @@ print("print(A%B) = " , (A%B))
 
 
 print('''
+a1=float(input("Enter the first number:    "))
+op=input("Enter the operator or sign :          ")
+b1=float(input("Enter the second number:    "))
+
+if op=="+":
+    print(str(a1),"+", str(b1), "=", a1+b1 )
+elif op=="-":
+     print(str(a1),"-", str(b1), "=", a1-b1 )
+elif op=="/":
+     print(str(a1),"/", str(b1), "=", a1/b1 )
+elif op=="*":
+     print(str(a1),"*", str(b1), "=", a1*b1 )
+elif op=="**":
+     print(str(a1),"**", str(b1), "=", a1**b1 )
+elif op=="//":
+     print(str(a1),"//", str(b1), "=", a1//b1 )
+elif op=="%":
+     print(str(a1),"%", str(b1), "=", a1%b1 )
+else:
+    print("invalid operator or number")
 ''')
 
 
@@ -147,23 +167,23 @@ print('''
 
 ''')
 
-print('''
+print("""
+codex=input('''     please input your code by typing
+copy paste will not work till now     :
+ ''')
+
+
+                 """    )
 codex=input('''     please input your code by typing
 copy paste will not work till now     :
 
 
                  '''       )
-
+print("""
 print(codex)
 print("The above code that you typed -  will give output")
 exec(codex)
-''')
-codex=input('''     please input your code by typing
-copy paste will not work till now     :
-
-
-                 '''       )
-
+""")
 print(codex)
 print("The above code that you typed -  will give output")
 exec(codex)
