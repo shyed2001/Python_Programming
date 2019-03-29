@@ -1404,7 +1404,6 @@ print(FRINDS.count("car"))
 print(FRINDS.count("7"))
 
 
-
 print(''' clear all items
 FRINDS.clear()
 print(FRINDS)
@@ -1412,7 +1411,45 @@ print(FRINDS)
 FRINDS.clear()
 print(FRINDS)
 
+FRINDS=["You","HE", "he", "WE", "we","We", "wE"]
+math=[3, 33, 4.4, 9.0, 9, .1, 0.1, 0, 0.0, .0, .00, 00, 00.00, 00.000, 0000]
+print(''' sort/arrange all items alphabetically in assending order
+FRINDS=["You","HE", "he", "WE", "we","We", "wE"]
+math=[3, 33, 4.4, 9.0, 9, .1, 0.1, 0, 0.0, .0, .00, 00, 00.00, 00.000, 0000]
+FRINDS.sort()
+math.sort()
+print(FRINDS)
+print(math)
+=''')
 
+FRINDS.sort()
+math.sort()
+print(FRINDS)
+print(math)
+
+print(""" reverse the list items
+FRINDS.reverse()
+math.reverse()
+print(FRINDS)
+print(math)
+""")
+FRINDS.reverse()
+math.reverse()
+print(FRINDS)
+print(math)
+
+print(""" copy the list items to another list
+FRINDS3=math
+FRINDS2=math.copy()
+FRINDS3=math
+print(FRINDS2)
+print(FRINDS3)
+""")
+FRINDS3=math
+FRINDS2=math.copy()
+FRINDS3=math
+print(FRINDS2)
+print(FRINDS3)
 
 
 
