@@ -63,3 +63,57 @@ for x in name:
     print(" For the letter in the variable x is : " + x)
 print('end from outside of loop')
 
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++
+print('''
+fr=["jim", "Ken", "Lom"]
+
+for fr in fr:
+    print(fr)
+print(" \n ")
+print(fr)
+''')
+fr=["jim", "Ken", "Lom"]
+
+for fr in fr:
+    print(fr)
+
+print(" \n ")
+
+print(fr)
+
+print(" \n ")
+print('''
+fr=["jim", "Ken", "Lom"]
+for n in fr:
+    print(n)
+''')
+
+fr=["jim", "Ken", "Lom"]
+for n in fr:
+    print(n)
+
+print(''' to print out all the members-
+fr=["jim", "Ken", "Lom"]
+for index in range(len(fr)):
+    print(fr[index])
+''')
+fr=["jim", "Ken", "Lom"]
+for index in range(len(fr)):
+    print(fr[index])
+
+print('''
+fr=["jim", "Ken", "Lom"]
+for index in range(5):
+    if index==0:
+       print("first one")
+    else:
+         print("not 1st")
+
+''')
+fr=["jim", "Ken", "Lom"]
+for index in range(5):
+    if index==0:
+       print("first one")
+    else:
+         print("not 1st")

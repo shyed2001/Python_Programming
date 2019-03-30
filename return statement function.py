@@ -36,10 +36,10 @@ print(cube3(2))
 print('''
 def cube4(num):
     return num*num*num
-result=cube4(4)
+result=cube4(5)
 print(result)
 ''')
 def cube4(num):
     return num*num*num
-result=cube4(4)
+result=cube4(5)
 print(result)

@@ -828,9 +828,50 @@ shoppinglist2.count("carrots")
 print(""" print (shoppinglist2.count("carrots")) will show ,
  =  1 """ )
 print (shoppinglist2.count("carrots"))
+#
+#
+#
+#
+
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      User
+#
+# Created:     30/03/2019
+# Copyright:   (c) User 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+print("""dictionaries in python are list and/or with keys, key value pairs,
+it is like a map tool""")
+
+print("""dictionaries in python are list and keys, it is like a map too,
+key value pairs, they are created by { }""")
+students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16}
+print(""" students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16} """)
+print("""len(students1) = """, len(students1))
+
+print(len(students1))
+
+print("""students1.keys(), # which will show the keys of the dictionary
+ = """, students1.keys())
+print("""students1.values(), # which will show the values of the dictionary
+ = """, students1.values())
+
+students2={"Bric":24, "sob":32, "Cristen":25, "Lodd":26}
+print(""" students2={"Bric":24, "sob":32, "Cristen":25, "Lodd":26} """)
+print(''' print("""students1.update(students2) = """ , students1)
+print(students1.update(students2))
+print(students1) ''')
+students1.update(students2)
+print("""students1.update(students2) = """ , students1)
+print(students1.update(students2))
+print("""print(students1) = """, students1 )
+print(students1)
 
 print("""dictionaries in python are list and keys,
-it is like a map too""")
+it is like a map tool""")
 
 print("""dictionaries in python are list and keys, it is like a map too,
 they are created by { }""")
@@ -850,7 +891,7 @@ del students1["Bob"]
 print("""print(students1) will show the value of the dictionary
  """ , students1)
 print("""print(students1["eric"]) wil produce error because python is case sencitive,
-it shouls be print(students1["Eric"])""" )
+it should be print(students1["Eric"])""" )
 print(students1["Eric"])
 print(students1)
 print("Basic functiuonds used in dictionaries len, del keys etc")
@@ -894,6 +935,84 @@ print(students2.get("jj"))
 print(""" print(students2.get("jj")) will produce a result = none,
 because there is no key named jj
 """)
+
+monthConv={
+"jan": "January",
+"feb": "February",
+"mar": "March",
+"apr": "April",
+"may": "May",
+"jun": "June",
+"jul": "July",
+"aug": "August",
+"sep":"September",
+"oct":"October",
+"nov":"November",
+"dec":"December"
+}
+print("""
+Assigned key value pairs are -
+monthConv={
+"jan": "January",
+"feb": "February",
+"mar": "March",
+"apr": "April",
+"may": "May",
+"jun": "June",
+"jul": "July",
+"aug": "August",
+"sep":"September",
+"oct":"October",
+"nov":"November",
+"dec":"December"
+}
+""")
+print("""
+print(monthConv["nov"])
+print(monthConv.get("mar"))
+print(monthConv.get("ma"," Not a valid key"))
+""")
+print(monthConv["nov"])
+print(monthConv.get("mar"))
+print(monthConv.get("ma"))
+print(monthConv.get("ma"," Not a valid key"))
+
+monthConv2={
+1: "january",
+2: "february",
+3: "march",
+4: "april",
+5: "may",
+6: "june"
+}
+print("""
+monthConv2={
+1: "january",
+2: "february",
+3: "march",
+4: "april",
+5: "may",
+6: "june"
+}
+""")
+print("""
+print(monthConv2[6])
+print(monthConv2.get(3))
+print(monthConv2.get(7))
+print(monthConv2.get(9," Not a valid key"))
+""")
+print(monthConv2[6])
+print(monthConv2.get(3))
+print(monthConv2.get(7))
+print(monthConv2.get(9," Not a valid key"))
+print("""
+
+""")
+
+
+
+
+
 #-------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
@@ -1780,6 +1899,272 @@ exec(codex)
 print(codex)
 print("The above code that you typed -  will give output")
 exec(codex)
+
+print("While loop")
+print("""
+i=1
+while i<=10:
+      print(i)
+      i+=1
+print("end")
+""")
+i=1
+while i<=10:
+      print(i)
+      i+=1
+print("end")
+
+
+#-------------------------------------------------------------------------------
+# Name:        module1
+# Purpose:
+#
+# Author:      User
+#
+# Created:     30/03/2019
+# Copyright:   (c) User 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+print('''
+secret_word="girrafe"
+guess=""
+
+while guess!= secret_word:
+      guess=input("""Enter guess, Guessing game1.11""")
+print("you win")
+''')
+print("Guessing game 1")
+print("Guessing game 1.11")
+
+secret_word="girrafe"
+guess=""
+
+while guess!= secret_word:
+      guess=input("""Enter guess, Guessing game1.11""")
+print("you win")
+
+
+print("Guessing game 1.22")
+print("Guessing game 1.22")
+
+print('''
+esc = False
+secret_word="girrafe"
+guess=""
+win=False
+while guess!= secret_word and not(esc):
+      if guess!="e":
+         guess=input("""Enter guess, Guessing game1.22 or
+         enter e to exit:       """)
+      else:
+        esc=True
+if esc:
+   print("You exit")
+else:
+     print("you win")
+''')
+esc = False
+secret_word="girrafe"
+guess=""
+while guess!= secret_word and not(esc):
+      if guess!="e":
+         guess=input("""Enter guess, Guessing game1.22 or
+         enter e to exit:       """)
+      else:
+        esc=True
+if esc:
+   print("You exit")
+else:
+     print("you win")
+
+
+print("Guessing game 2")
+print("Guessing game 2.1")
+
+print('''
+
+secret_word="girrafe2"
+guess=""
+guess_count=0
+out_of_guesses=False
+guess_limit=3
+while guess!= secret_word and not(out_of_guesses):
+      if guess_count< guess_limit:
+        guess=input("Enter guess, for guessing game 2.1, maximum 3 times:   ")
+        guess_count+=1
+      else:
+         out_of_guesses=True
+
+if out_of_guesses:
+   print("you lose")
+else:
+ print("you win")
+''')
+
+secret_word="girrafe2"
+guess=""
+guess_count=0
+out_of_guesses=False
+guess_limit=3
+while guess!= secret_word and not(out_of_guesses):
+      if guess_count< guess_limit:
+        guess=input("Enter guess, for guessing game 2.1, maximum 3 times:   ")
+        guess_count+=1
+      else:
+         out_of_guesses=True
+
+if out_of_guesses:
+   print("you lose")
+else:
+ print("you win")
+
+
+
+
+#+++++++++++++++++++++++++++++++++++++++++++++++++++
+print('''
+fr=["jim", "Ken", "Lom"]
+
+for fr in fr:
+    print(fr)
+print(" \n ")
+print(fr)
+''')
+fr=["jim", "Ken", "Lom"]
+
+for fr in fr:
+    print(fr)
+
+print(" \n ")
+
+print(fr)
+
+print(" \n ")
+print('''
+fr=["jim", "Ken", "Lom"]
+for n in fr:
+    print(n)
+''')
+
+fr=["jim", "Ken", "Lom"]
+for n in fr:
+    print(n)
+
+print(''' to print out all the members-
+fr=["jim", "Ken", "Lom"]
+for index in range(len(fr)):
+    print(fr[index])
+''')
+fr=["jim", "Ken", "Lom"]
+for index in range(len(fr)):
+    print(fr[index])
+
+print('''
+fr=["jim", "Ken", "Lom"]
+for index in range(5):
+    if index==0:
+       print("first one")
+    else:
+         print("not 1st")
+
+''')
+fr=["jim", "Ken", "Lom"]
+for index in range(5):
+    if index==0:
+       print("first one")
+    else:
+         print("not 1st")
+
+print('''
+Exponent code
+Exponent code
+''')
+print('''
+def answer2(number, power):
+    result=1
+    for index in range(power):
+        result=result * number
+    return result
+print(answer2(3,2))
+''')
+print('''
+
+''')
+def answer2(number, power):
+    result=1
+    for index in range(power):
+        result=result * number
+    return result
+print(answer2(3,2))
+
+
+print('''
+2D Lists and Nested Loops
+2D Lists and Nested Loops
+matrix_grid=[
+[1,2,3],
+[4,5,6],
+[7,8,9],
+[0]
+]
+''')
+matrix_grid=[
+[1,2,3],
+[4,5,6],
+[7,8,9],
+[0]
+]
+print('''
+print(matrix_grid[0][0])
+print(matrix_grid[2][1])
+''')
+print(matrix_grid[0][0])
+print(matrix_grid[2][1])
+print('''
+for row in matrix_grid:
+    print(row)
+''')
+for row in matrix_grid:
+    print(row)
+
+print('''
+for r in matrix_grid:
+    print(r)
+''')
+for r in matrix_grid:
+    print(r)
+
+print('''
+for r in matrix_grid:
+    for c in r:
+        print(c)
+''')
+
+for r in matrix_grid:
+    for c in r:
+        print(c)
+
+
+print('''
+''')
+
+print('''
+''')
+
+print('''
+''')
+
+
+
+
+
+
+
+
+
+print("end")
+
+
 
 print('''
 ''')
