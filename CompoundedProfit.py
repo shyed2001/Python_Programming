@@ -57,17 +57,17 @@ print("A= P(1+(r/n))**(n*t) = ", A)
 def final_amount(p, r, n, t):
     a = p * (1 + r/n) ** (n*t)
     return a
-
 print("""
 def final_amount(p, r, n, t):
     a = p * (1 + r/n) ** (n*t)
     return a
- Apply the compound interest formula to p
+
+Apply the compound interest formula to p
 to produce the final amount.
 toInvest = float(input("How much do you want to invest?"))
 fnl = final_amount(toInvest, 0.08, 12, 5)
 print("At the end of the period you'll have", fnl)
-
+print("At the end of the period you'll have", final_amount(toInvest, 0.08, 12, 5))
 """ )
 # This is new, and makes the function fruitful.
 # now that we have the function above, let us call it.
@@ -75,4 +75,4 @@ print("At the end of the period you'll have", fnl)
 toInvest = float(input("How much do you want to invest?"))
 fnl = final_amount(toInvest, 0.08, 12, 5)
 print("At the end of the period you'll have", fnl)
-
+print("At the end of the period you'll have", final_amount(toInvest, 0.08, 12, 5))
