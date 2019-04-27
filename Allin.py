@@ -1758,7 +1758,7 @@ if is_male and is_male:
 elif is_male and not(is_Tall):
     print("male short")
 elif not(is_male) and is_Tall:
-    print("not male tall") 
+    print("not male tall")
 elif not(is_male) or is_Tall:
     print("not male or tall")
 elif is_male or not(is_Tall):
@@ -1777,7 +1777,7 @@ if is_male and is_male:
 elif is_male and not(is_Tall):
     print("male short")
 elif not(is_male) and is_Tall:
-    print("not male tall") 
+    print("not male tall")
 elif not(is_male) or is_Tall:
     print("not male or tall")
 elif is_male or not(is_Tall):
@@ -2144,15 +2144,233 @@ for r in matrix_grid:
     for c in r:
         print(c)
 
+#translationcode.py
 
 print('''
+Basic translator in python
+''')
+print('''
+Basic translator in python
+''')
+
+print('''
+evry vowel in the phrase will become g
+like example, gog will ggg, dog will be dgg, bag will be bgg, etc
+''')
+
+
+print('''
+Basic translator in python v 1.11
+''')
+print('''
+Basic translator in python v 1.11
+''')
+
+print('''
+def translation(words):
+ translation=""
+ for letter in words:
+    if letter in "AEIOUaeiou":
+        translation= translation + "g"
+    else:
+         translation= translation + letter
+ return translation
+print(translation(input("please input word/s:   " )))
+
+''')
+
+def translation(words):
+ translation=""
+ for letter in words:
+    if letter in "AEIOUaeiou":
+        translation= translation + "g"
+    else:
+         translation= translation + letter
+ return translation
+print(translation(input("please input word/s:   " )))
+
+
+
+print('''
+Basic translator in python v 1.22
+''')
+print('''
+Basic translator in python v 1.22
+
+def translation(words):
+ translation=""
+ for letter in words:
+    if letter.lower() in "aeiou":
+       if letter.isupper():
+          translation= translation + "G"
+       else:
+         translation= translation + "g"
+    else:
+         translation= translation + letter
+ return translation
+words=input("please input word/s:   " )
+print("you entered - ", words)
+print( " The translation is " , translation(words))
+''')
+
+
+
+def translation(words):
+ translation=""
+ for letter in words:
+    if letter.lower() in "aeiou":
+       if letter.isupper():
+          translation= translation + "G"
+       else:
+         translation= translation + "g"
+    else:
+         translation= translation + letter
+ return translation
+words=input("please input word/s:   " )
+print("you entered - ", words)
+print( " The translation is " , translation(words))
+
+'''print('''
+''')'''
+
+print("vol 1.11")
+try:
+    num = int(input("Please enter a number:  "))
+    print(num)
+except: # this will catch ay error
+       print("Invalid input")
+
+
+print("vol 1.22")
+#value=10/0
+print(" this will show zero division error")
+try:
+    num = int(input("Please enter a number:  "))
+    print(num)
+except:
+       print("Invalid input")
+
+
+print("vol 1.33")
+
+try:
+    value=10/0
+    print(''' this will also catch error of value=10/0,
+    and print invalid iputwhich is unwanted.''')
+    num = int(input("Please enter a number:  "))
+    print(num)
+except:
+
+       print("Invalid input")
+
+print("vol 2.00")
+
+try:
+    value=10/0
+    print(''' this will also catch error of value=10/0,
+    and print invalid iputwhich is unwanted.''')
+    num = int(input("Please enter a number:  "))
+    print(num)
+except ZeroDivisionError :
+    print("division by zero")
+except ValueError:
+       print("Invalid input")
+
+try:
+    value=10/0
+    print(''' this will also catch error of value=10/0,
+    and print invalid iputwhich is unwanted.''')
+    num = int(input("Please enter a number:  "))
+    print(num)
+except ZeroDivisionError as err :
+    print("err") # to print the actual error.
+    print("division by zero")
+except ValueError:
+       print("Invalid input")
+
+
+
+print('''
+''')
+
+
+print('''
+''')
+
+
+print('''[
+Python String | replace()
+replace() is an inbuilt function in Python programming language
+ that returns a copy of the string where all occurrences of a
+ substring is replaced with another substring.
+
+Syntax :
+
+string.replace(old, new, count)
+Parameters :
+
+
+
+
+
+old – old substring you want to replace.
+new – new substring which would replace the old substring.
+
+count – the number of times you want to replace the old substring with
+the new substring. (Optional )
+
+Return Value :
+It returns a copy of the string where all occurrences of a substring
+ is replaced with another substring.
+
+Below is the code demonstrating replace() :
+
+filter_none
+edit
+play_arrow
+
+brightness_4
+# Python3 program to demonstrate the
+# use of replace() method
+
+string = "geeks for geeks geeks geeks geeks"
+
+# Prints the string by replacing geeks by Geeks
+print(string.replace("geeks", "Geeks"))
+
+# Prints the string by replacing only 3 occurence of Geeks
+print(string.replace("geeks", "GeeksforGeeks", 3))
+Output :
+
+Geeks for Geeks Geeks Geeks Geeks
+GeeksforGeeks for GeeksforGeeks GeeksforGeeks geeks geeks]
+
+''')
+
+def say_hi(name , age):
+    print("Hellow", name , "you are " ,  age )
+
+
+say_hi("mike" , 30)
+say_hi("hall" , "50")
+
+
+print('''
+def say_hi(name , age):
+    print("Hellow", name , "you are " ,  age )
+
+
+say_hi("mike" , 30)
+say_hi("hall" , "50")
 ''')
 
 print('''
 ''')
 
+
 print('''
 ''')
+
 
 
 
