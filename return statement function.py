@@ -90,3 +90,77 @@ def distance(x1, y1, x2, y2):
  return math.sqrt( (x2-x1)**2 + (y2-y1)**2 )
 
 print(distance(1, 2, 4, 6))
+
+# Created:     01/05/2019
+# Copyright:   (c) User 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+def is_divisible(x, y):
+ """ Test if x is exactly divisible by y """
+ if x % y == 0:
+   #return True
+   print(True)
+ else:
+   #return False
+   print(False)
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
+
+def is_divisible(x, y):
+ """ Test if x is exactly divisible by y """
+ if x % y == 0:
+   return "return ok2"
+   print("print ok2")
+ else:
+   return "return not ok2"
+   print("print not ok2")
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
+
+def is_divisible(x, y):
+   b= x % y == 0
+   return b      # Test if x is exactly divisible by y
+   if is_divisible(x, y) == True:   # excess lines
+    return "return ok 3"       # excess lines dead code
+    print("print ok 3")        ## excess lines dead code
+   else:
+    return "return not ok 3"   # # excess lines dead code
+    print("print not ok 3")    # # excess lines dead code
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
+
+def is_divisible(x, y):
+   b= x % y == 0
+   return b      # Test if x is exactly divisible by y
+
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
+
+def is_divisible(x, y):
+  return x % y == 0    # Test if x is exactly divisible by y
+
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
+
+#++++++++++++++++++++++++============================================
+def area_of_circle(xc, yc, xp, yp):
+     radius = distance(xc, yc, xp, yp)
+     a= (22/7)*(radius)**2
+     return a
+
+def distance(xc, yc, xp, yp):
+ return math.sqrt( (xp-xc)**2 + (yp-yc)**2 )
+
+print(area_of_circle(1, 2, 4, 6))
+
+##########################################################
+
+def area_of_circle(xc, yc, xp, yp):
+     radius = math.sqrt( (xp-xc)**2 + (yp-yc)**2 )
+     a= (22/7)*(radius)**2
+     return a
+
+#def distance(xc, yc, xp, yp):
+ #return math.sqrt( (xp-xc)**2 + (yp-yc)**2 )
+
+print(area_of_circle(1, 2, 4, 6))
