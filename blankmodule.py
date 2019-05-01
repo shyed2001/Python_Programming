@@ -1,50 +1,50 @@
-print('''
-Multiple choic quize using python
-Usint classes, if statements and loops
+# Created:     01/05/2019
+# Copyright:   (c) User 2019
+# Licence:     <your licence>
+#-------------------------------------------------------------------------------
+def is_divisible(x, y):
+ """ Test if x is exactly divisible by y """
+ if x % y == 0:
+   #return True
+   print(True)
+ else:
+   #return False
+   print(False)
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
 
- ''')
+def is_divisible(x, y):
+ """ Test if x is exactly divisible by y """
+ if x % y == 0:
+   return "return ok2"
+   print("print ok2")
+ else:
+   return "return not ok2"
+   print("print not ok2")
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
 
-from question import question
-question_promt=[
-"what colors are Apples?\n (a)Red/Green \n (b) Purple \n (c) Orange \n\n ",
-"what colors are Bannas?\n (a)Teal \n (b) Magenta \n (c) Yellow\n\n ",
-"what colors are strawberries?\n (a)Yellow \n (b) Red \n (c) Blue\n\n ",
-]
+def is_divisible(x, y):
+   b= x % y == 0
+   return b      # Test if x is exactly divisible by y
+   if is_divisible(x, y) == True:
+    return "return ok 3"
+    print("print ok 3")
+   else:
+    return "return not ok 3"
+    print("print not ok 3")
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
 
-questions =[
- question(question_promt[0], "a"),
- question(question_promt[1], "c"),
- question(question_promt[2], "b")
+def is_divisible(x, y):
+   b= x % y == 0
+   return b      # Test if x is exactly divisible by y
 
- ]
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
 
+def is_divisible(x, y):
+  return x % y == 0
 
-
-def run_test(questions):
-    score=0
-    for question in questions:
-        answer = input(question_promt)
-        if answer == question_answer:
-            score+=1
-    print("You got" + str(score) + "/" + str(len(questions)) + "correct")
-
-run_test(question)
-
-
-
-
-
-
-print('''
-
- ''')
-
-print('''
-
-
- ''')
-
-
-print('''
-
- ''')
+print(is_divisible(4, 2))
+print(is_divisible(5, 2))
