@@ -38,15 +38,16 @@ print("# Prints the current working directory")
 # Prints the current working directory
 print("#To set the working directory:")
 #To set the working directory:
+print(os.chdir('G:/PyWorkDirectory'))
 print("""
 To # Provide the new path here
 os.chdir('Python folder name or The desider directory name ')
 """)
 # Provide the new path here
 
-
-
-
+file3 = open("G:/PyWorkDirectory/640px-Computer_system_bus.svg", "rb")
+print(file3.read())
+file3.close()
 
 
 print(""" import os
