@@ -19,7 +19,7 @@ scriptpath = os.path.realpath(__file__)
 print("Script path is : " + scriptpath)
 
 print(""" Reading file all at once """)
-fl = open("TEST111.txt", "r+")
+fl = open("C:/ProgramFiles/Python37/TEST111.txt", "r+")
 print("print the name of the file by  print(fl.name)")
 print(fl.name)
 print("print the mode the file is opened in by print(fl.mode) ")
@@ -30,7 +30,7 @@ fl.close
 
 print(""" Reading file bit by bit """)
 
-fl1 = open("pagla.txt", "r+")
+fl1 = open("C:/ProgramFiles/Python37/pagla.txt", "r+")
 print("print the name of the file by  print(fl1.name)")
 print(fl1.name)
 print("print the mode the file is opened in by print(fl1.mode) ")
@@ -47,7 +47,7 @@ print(fl1.read(9))
 fl1.close
 
 print(""" Reading file line by line """)
-fl1 = open("pagla.txt", "r+")
+fl1 = open("C:/ProgramFiles/Python37/pagla.txt", "r+")
 print("print the name of the file by  print(fl1.name)")
 print(fl1.name)
 print("print the mode the file is opened in by print(fl1.mode) ")
@@ -71,14 +71,14 @@ that was a content manager. the program will autometically close the file
  when outside the nblock and if there is any error, the code will exit
   and thus close the file, so the file will not be corrupted
  """)
-with open("pagla.txt", "r+") as fl1:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     pass
 print(""" also can read content of file by code block -
-with open("pagla.txt", "r+") as fl1:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     fl1_content= fl1.read()
     print(fl1_content)
  """)
-with open("pagla.txt", "r+") as fl1:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     fl1_content= fl1.read()
     print(fl1_content)
 print(""" also can read content of file in list form by code block -
@@ -86,7 +86,7 @@ with open("pagla.txt", "r+") as fl1:
     fl1_contentlines= fl1.readlines()
     print(fl1_contentlines)
  """)
-with open("pagla.txt", "r+") as fl1:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     fl1_contentlines= fl1.readlines()
     print(fl1_contentlines)
 print(""" also can read one line at a time form the file by code block,
@@ -100,14 +100,18 @@ with open("pagla.txt", "r+") as fl1:
 print(""" put end='' after every print line statement to
   stop the auto newline after each line is printed
  """)
-with open("pagla.txt", "r+") as fl1:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline)
+    print(fl1_content)
+    print("""" print (fl1.mode) tell us the mode of the file""")
+    print(fl1.mode)
+    print("""" print (fl1.tell()) tell us where we are now in the file""")
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline)
 
 
-with open("pagla.txt", "r+") as fl1:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline,end='')
 
@@ -123,18 +127,19 @@ with open("pagla.txt", "r+") as fl1:
     print(fl1_content)
 if there is no bits left in the the file as specified in program script, the
 program will print empty script """)
-with open("pagla.txt", "r+") as fl1:
+
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
+    fl1_content= fl1.read(75)
+    print(fl1_content)
+    print("""" print (fl1.mode) tell us the mode of the file""")
+    print(fl1.mode)
+    print("""" print (fl1.tell()) tell us where we are now in the file""")
+    print (fl1.tell())
     fl1_content= fl1.read(75)
     print(fl1_content)
 
     fl1_content= fl1.read(75)
     print(fl1_content)
-
-    fl1_content= fl1.read(75)
-    print(fl1_content)
-print("""\nকি কওরীন আআই আপওনীরা
-ঊহাট ইস টহিস
-ইহা কি ? """)
 print(""" also can read content by for loop in this case of file by
 code block -
 with open("pagla.txt", "r+") as fl1:
@@ -143,9 +148,39 @@ with open("pagla.txt", "r+") as fl1:
  this will save us from running out of memory at once while trying to
   read a very large file at once """)
 
-with open("pagla.txt", "r+") as fl11:
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl11:
+    print(fl11.mode)
     for line in fl11:
         print (line, end='')
 
 
 
+print(""" also can read content by 'with' and 'while' loop in this case of
+file by code block -
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl11:
+
+    size_to_read = 10
+    f_content = fl11.read(size_to_read)
+
+    while len (f_content) > 0:
+        print (f_content, end='*')
+        f_content=fl11.read(size_to_read)
+
+reading the whole file  10 bits at a time.  """)
+with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl11:
+    print("""" print (fl11.mode) tell us the mode of the file""")
+    print(fl11.mode)
+    print("""" print (fl11.tell()) tell us where we are now in the file""")
+    print (fl11.tell())
+    size_to_read = 10
+    f_content = fl11.read(size_to_read)
+
+    while len (f_content) > 0:
+        print (f_content, end='*')
+        print (fl11.tell())
+        f_content=fl11.read(size_to_read)
+
+
+print("""" /কি /কওরীন /আআই \আপওনীরা
+\ঊহাট \ইস \টহিস
+\ইহা \কি \? """)
