@@ -38,9 +38,13 @@ print(fl1.mode)
 print("to read bit by bit we can use 'print(fl1.read(0))' ")
 print(fl1.read(0))
 print(fl1.read(1))
+print("""" fl1.seek(0) starts reading from zero pisition of the file""")
+fl1.seek(0)
 print(fl1.read(2))
 print(fl1.read(3))
 print(fl1.read(4))
+print("""" fl1.seek(0) starts reading from zero pisition of the file""")
+fl1.seek(0)
 print(fl1.read(5))
 print(fl1.read(7))
 print(fl1.read(9))
@@ -117,8 +121,10 @@ with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
 
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline, end='')
-
-
+    print("""" fl1.seek(0) starts reading from zero pisition of the file""")
+    fl1.seek(0)
+    fl1_contentperline= fl1.readline()
+    print(fl1_contentperline, end='')
 
 print(""" also can read content 75 BIT at once in this case of file by
 code block -
@@ -135,6 +141,8 @@ with open("C:/ProgramFiles/Python37/pagla.txt", "r+") as fl1:
     print(fl1.mode)
     print("""" print (fl1.tell()) tell us where we are now in the file""")
     print (fl1.tell())
+    print("""" fl1.seek(0) starts reading from zero pisition of the file""")
+    fl1.seek(0)
     fl1_content= fl1.read(75)
     print(fl1_content)
 
