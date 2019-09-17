@@ -97,7 +97,7 @@ with open("pagla.txt", "r+") as fl1:
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline)
  """)
- print(""" put end='' after every print line statement to
+print(""" put end='' after every print line statement to
   stop the auto newline after each line is printed
  """)
 with open("pagla.txt", "r+") as fl1:
@@ -110,11 +110,42 @@ with open("pagla.txt", "r+") as fl1:
 with open("pagla.txt", "r+") as fl1:
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline,end='')
+
     fl1_contentperline= fl1.readline()
     print(fl1_contentperline, end='')
 
+
+
+print(""" also can read content 75 BIT at once in this case of file by
+code block -
+with open("pagla.txt", "r+") as fl1:
+    fl1_content= fl1.read()
+    print(fl1_content)
+if there is no bits left in the the file as specified in program script, the
+program will print empty script """)
+with open("pagla.txt", "r+") as fl1:
+    fl1_content= fl1.read(75)
+    print(fl1_content)
+
+    fl1_content= fl1.read(75)
+    print(fl1_content)
+
+    fl1_content= fl1.read(75)
+    print(fl1_content)
 print("""\nকি কওরীন আআই আপওনীরা
 ঊহাট ইস টহিস
 ইহা কি ? """)
+print(""" also can read content by for loop in this case of file by
+code block -
+with open("pagla.txt", "r+") as fl1:
+    for line in fl11:
+        print (line, end='')
+ this will save us from running out of memory at once while trying to
+  read a very large file at once """)
+
+with open("pagla.txt", "r+") as fl11:
+    for line in fl11:
+        print (line, end='')
+
 
 

@@ -1,6 +1,6 @@
-0123456790
-abcdefghijklmnopqrstuvwxyz
-ABCDEFGHIJKLMNOPQRSTUVWXYZ
+0123456789@10
+abcdefghijklmnopqrstuvwxyz@total39
+ABCDEFGHIJKLMNOPQRSTUVWXYZ@total71
 0
 1
 2
@@ -11,6 +11,7 @@ ABCDEFGHIJKLMNOPQRSTUVWXYZ
 7
 8
 9
+total90
 a
 b
 c
@@ -37,6 +38,7 @@ w
 x
 y
 z
+total123
 A
 B
 C
@@ -63,8 +65,4 @@ W
 X
 Y
 Z
-
-
-
-
-
+total157
