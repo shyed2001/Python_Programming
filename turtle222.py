@@ -123,15 +123,18 @@ wn.mainloop()
 """)
 
 import turtle
-
-wn = turtle.Screen()
+wn = turtle.Screen() # Turtle screen
 
 print("#Creates a playground for turtle. Not must?")
-tess=turtle.Turtle()
-alex=turtle.Turtle()
+tess=turtle.Turtle()    # Turtle assigned variables
+alex=turtle.Turtle()    # Turtle assigned variables
 
+alex.speed(1)
 alex.pen()
+alex.penup()
 alex.backward(30)
+alex.pendown()
+alex.left(-30)
 alex.penup()
 alex.right(-60)
 alex.forward(-45)
@@ -142,6 +145,7 @@ alex.penup()
 alex.forward(-45)
 alex.pendown()
 alex.left(30)
+alex.forward(55)
 
 tess.color('red')
 tess.pensize(13)

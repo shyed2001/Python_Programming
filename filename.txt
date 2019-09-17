@@ -1,0 +1,23 @@
+</p>
+<p>This will print all of the contents of the file "filename.txt".</p>
+
+
+<p>code to open a file, read its contents, print them, and then close the file.</p>
+<p>
+</p>
+<p>file = open("test.txt")</p>
+<p>cont = file.read()</p>
+<p>print(cont)</p>
+<p>file.close()</p>
+<p>
+
+</p>
+
+<p>
+
+</p>
+
+
+</body>
+
+</html>

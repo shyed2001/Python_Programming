@@ -18,4 +18,5 @@ def answer2(number, power):
     for index in range(power):
         result=result * number
     return result
+
 print(answer2(3,2))
