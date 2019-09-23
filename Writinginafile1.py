@@ -121,19 +121,11 @@ with open("G:/PyWorkDirectory/640px-Computer_system_bus.svg.png", "rb") as rbf:
             wbf.tell()
             rbf_chunk=rbf.read(chunk_size)
 
-##    print("""" print (fl11.mode) tell us the mode of the file""")
-##    print(fl11.mode)
-##    print("""" print (fl11.tell()) tell us where we are now in the file""")
-##    print (fl11.tell())
-##    size_to_read = 10
-##    f_content = fl11.read(size_to_read)
-##
-##    while len (f_content) > 0:
-##        print (f_content, end='*')
-##        print (fl11.tell())
-##        f_content=fl11.read(size_to_read)
-##
-##
-##print("""" /কি /কওরীন /আআই \আপওনীরা
-##\ঊহাট \ইস \টহিস
-##\ইহা \কি \? """)
+print("""The write method returns the number of bytes written to a file,
+ if successful.""")
+msg = "Hello world!"
+file222 = open("G:/PyWorkDirectory/newfile22.txt", "w")
+amount_written = file222.write(msg)
+print(amount_written)
+file222.close()
+
