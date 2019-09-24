@@ -129,3 +129,11 @@ amount_written = file222.write(msg)
 print(amount_written)
 file222.close()
 
+print(""" To write something other than a string, it needs to be
+converted to a string first.
+
+
+If a file write operation is successful,
+file.write(msg) == len(msg)
+statements will be true.
+""")
