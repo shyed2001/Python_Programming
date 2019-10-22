@@ -1,0 +1,17 @@
+﻿Ansi
+
+Unicode
+
+Unicode Big Ending
+
+
+UTF-8
+
+UTF-16
+
+UTF-16 with BOM
+
+
+
+
+
