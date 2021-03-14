@@ -21,9 +21,9 @@ print(""" The code stops printing when
  value of c becoems, c=10 and not c<10.
 """)
 
-print('''  তুমি কি করছো
+print('''   তুমি কি করছো
 তুমি কি ভাল
 চমৎকার গাড়ী
 তুমি কোথায় থাকো
 দেখা হবে
-যখন আমি তোমাকে দেখি''' )
+যখন আমি তোমাকে দেখি'''  )
