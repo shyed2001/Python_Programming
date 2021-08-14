@@ -1,0 +1,17 @@
+How much python do you need before django
+Summary
+1. Install Python
+2. Learn pip and functions classes
+3. Learn what are variables
+4. Learn Data types
+5. Basic functions using variables
+6. If/Else and other conditionals
+7. Operators in Python
+8. I/O 
+9. Move on to loops
+10. Functions
+11. Lists
+12. Tuples
+13. Dictionaries
+14. Try making simple games like Tic-Tac-Toe using the above topics
+15. Move on to further tech
