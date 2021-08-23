@@ -9,6 +9,7 @@ print(" strings arer\njust plain texts")
 print(""" strings arer just plain texts""")
 
 print(""" strings are \n just plain texts,
+
 workinh with strings""")
 print(" strings are \n just plain texts")
 print(""" to change to lower case letters -
