@@ -1,6 +1,7 @@
 print("Python Review Revisit Relearn Project")
 print("Minimum time project")
 
+
 name = "Shyed Shahriar Housaini"
 country = 'Bangladesh'
 age = 36
@@ -12,6 +13,11 @@ listComprihension2 = [x for x in range(0,100)]
 listComprihension3 = [x for x in range(100)]
 print("In python Comments starts with #")
 print("In python multi line Comments starts with ''' and ends with '''")
+'''this 
+is a 
+multi line
+comment
+'''
 print(numbersList)
 print(country.upper())
 
@@ -67,10 +73,16 @@ def hello() -> str:
 
 print(country.upper())
 print(len(country))
+print(country.replace('B', 'b'))
 
 print('Ban' in country)
 
 print('Ban' not in country)
+
+
+
+
+
 
 print("File destination is - cd c://python372 ")
 print("File name is - py Allin.py")
@@ -78,13 +90,20 @@ print("File name is - py Allin.py")
 print("""print("Hallow  world") will show =
 """ , "Hallow  world")
 
-print(" strings arer\njust plain texts")
+print(" strings are \n just plain texts")
+kotha = "kotha = strings are just plain texts"
+kotha2 = """kotha2  = strings are
+just plain texts"""
+   
+print(kotha )
+print(kotha2)
+ 
+print(" strings are " \
+      "just plain texts")
 
-print(""" strings arer just plain texts""")
+print("strings are just plain texts")
+print("work with us")
 
-print(""" strings are \n just plain texts,
-
-workinh with strings""")
 print(" strings are \n just plain texts")
 print(""" to change to lower case letters -
 phrase= "NAME"
@@ -119,7 +138,7 @@ print(value.upper().isupper())= """)
 value= "NAME yahoo"
 print(value.upper().isupper())
 
-print(""" tro find out length of the string-
+print(""" to find out length of the string-
 print(len(value))
 """)
 print(len(value))
