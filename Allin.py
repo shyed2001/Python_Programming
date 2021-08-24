@@ -1,3 +1,77 @@
+print("Python Review Revisit Relearn Project")
+print("Minimum time project")
+
+name = "Shyed Shahriar Housaini"
+country = 'Bangladesh'
+age = 36
+discipline, grade = "Engineering" , 3.00
+PI= 3.14
+numbersList = [1, 2, 3, 4]
+listComprihension1 = [x for x in range(0,100,3)]
+listComprihension2 = [x for x in range(0,100)]
+listComprihension3 = [x for x in range(100)]
+print("In python Comments starts with #")
+print("In python multi line Comments starts with ''' and ends with '''")
+print(numbersList)
+print(country.upper())
+
+isGood = True
+# get the type of variables
+# get the type of variables Data Type
+
+print(type(numbersList))
+print(type(listComprihension1))
+print(type(grade))
+print(type(discipline))
+print(type(age))
+print(type(PI))
+print(type(isGood))
+
+
+#array #list
+#.len
+#.append
+#.insert
+#Tuples
+#Dictionaries
+#.format
+#.items
+#class
+#object
+#methods
+#replace
+#upper
+#lower
+
+
+
+print(listComprihension1)
+print(listComprihension2)
+print(listComprihension3)
+
+
+
+# Dynamically typed language
+
+brand: str = "digitalbd"
+isLow: bool = False
+
+
+# Defining function data tyme
+
+
+def hello() -> str:
+    return "hello"
+
+
+
+print(country.upper())
+print(len(country))
+
+print('Ban' in country)
+
+print('Ban' not in country)
+
 print("File destination is - cd c://python372 ")
 print("File name is - py Allin.py")
 
