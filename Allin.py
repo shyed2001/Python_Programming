@@ -1,16 +1,30 @@
 
+# -------------------------------------------------------------------------------
+# Name:        Python Intro
+# Purpose:     Started in Py
+#
+# Author:      User/Shyed
+#
+# Created:     30/03/2019
+# Copyright:   (c) User 2019
+# Licence:     <User/Shyed/your licence>
+# -------------------------------------------------------------------------------
+
+print("""     The Start The Start The Start
+
+                       The Start ?   """)
+
 print("Python Review Revisit Relearn Project")
 print("Minimum time project")
-
 
 name = "Shyed Shahriar Housaini"
 country = 'Bangladesh'
 age = 36
-discipline, grade = "Engineering" , 3.00
-PI= 3.14
+discipline, grade = "Engineering", 3.00
+PI = 3.14
 numbersList = [1, 2, 3, 4]
-listComprihension1 = [x for x in range(0,100,3)]
-listComprihension2 = [x for x in range(0,100)]
+listComprihension1 = [x for x in range(0, 100, 3)]
+listComprihension2 = [x for x in range(0, 100)]
 listComprihension3 = [x for x in range(100)]
 print("In python Comments starts with #")
 print("In python multi line Comments starts with ''' and ends with '''")
@@ -34,42 +48,42 @@ print(type(age))
 print(type(PI))
 print(type(isGood))
 
-
-#array #list
-#.len
-#.append
-#.insert
-#Tuples
-#Dictionaries
-#.format
-#.items
-#class
-#object
-#methods
-#replace
-#upper
-#lower
-
+# array #list
+# .len
+# .append
+# .insert
+# Tuples
+# Dictionaries
+# .format
+# .items
+# class
+# object
+# methods
+# replace
+# upper
+# lower
 
 
 print(listComprihension1)
 print(listComprihension2)
 print(listComprihension3)
 
-
-
 # Dynamically typed language
-
+age = 36
 brand: str = "digitalbd"
 isLow: bool = False
+yearsofstarting: int = 2021
+email = f""" 
+hello {brand}
+age is {3 + 6}
+started at {yearsofstarting + age}"""
+# Defining function data type
 
-
-# Defining function data tyme
+print(email)
 
 
 def hello() -> str:
     return "hello"
-
 
 
 print(country.upper())
@@ -403,22 +417,39 @@ If you liked this article, please share it with your friends.
 
 '''
 
+# indentation
+import keyword
+
+# Reserved  Keywords
+print("Python Reserved  Keywords")
+print(keyword.kwlist)
+
+# Reserved  Keywords
+'''
+['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 
+'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except',
+ 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 
+ 'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with',
+  'yield']
+'''
+
+
 
 
 print("File destination is - cd c://python372 ")
 print("File name is - py Allin.py")
 
 print("""print("Hallow  world") will show =
-""" , "Hallow  world")
+""", "Hallow  world")
 
 print(" strings are \n just plain texts")
 kotha = "kotha = strings are just plain texts"
 kotha2 = """kotha2  = strings are
 just plain texts"""
-   
-print(kotha )
+
+print(kotha)
 print(kotha2)
- 
+
 print(" strings are " \
       "just plain texts")
 
@@ -430,33 +461,33 @@ print(""" to change to lower case letters -
 phrase= "NAME"
 print(phrase.lower())
  """)
-phrase= "NAME"
+phrase = "NAME"
 print(phrase.lower())
 
 print("""  to check if they are all lower case letters  -
 phrase= "NAME"
 print(phrase.islower()) = """)
-phrase= "NAME"
+phrase = "NAME"
 print(phrase.islower())
 
 print("""
  to change to upper case letters -
 Val= "yahoo"
 print(val.upper())= """)
-val= "yahoo"
+val = "yahoo"
 print(val.upper())
 
 print("""
  to check if they are all upper case letters -
 Val= "yahoo"
 print(val.isupper())= """)
-val= "yahoo"
+val = "yahoo"
 print(val.isupper())
 
 print(""" use combination of change & check-
 value= "NAME yahoo"
 print(value.upper().isupper())= """)
-value= "NAME yahoo"
+value = "NAME yahoo"
 print(value.upper().isupper())
 
 print(""" to find out length of the string-
@@ -485,17 +516,17 @@ print(''' replace word or letter by
 print(value.replace("yahoo", "john")) = ''')
 print(value.replace("yahoo", "john"))
 
-name=input('Please enter your anme:   ')
-age=input(' Please enter your age:    ')
-print(" Hello" ,  name , "you are " , age)
+name = input('Please enter your anme:   ')
+age = input(' Please enter your age:    ')
+print(" Hello", name, "you are ", age)
 
 print("""print(" Hallow  "  "  world.") will show =
-""" , " Hallow  "  "  world.")
+""", " Hallow  "  "  world.")
 
 print("""print('what are u doing. don\'t go') -
 The above code line will produce error message.""")
 print("""print('what are u doing. don\'t go') will show
-""" , ('what are u doing. don\'t go' , """
+""", ('what are u doing. don\'t go', """
 have to put \'  in a line with in ('') ."""))
 
 print("""Mathematical operator order is - BEDMAS
@@ -510,75 +541,85 @@ print("""PEDMAS = Parenthecis (), Exponents **, Division /,
 
 print("""left to right or left associative rule
  for * / - + operators""")
-print(("print(6-3+2) =") + str(6-3+2))
-print(("print(6-3+2) =") + str(6-3+2))
+print("""# Arithmetic Operators
+#+ - * / are operators
+#Digits are operands. """)
 
-print(("print(6-3+2) =") + str(6-3+2))
+# Arithmetic Operators
+# Arithmetic Operators
+# Arithmetic Operators
+#+ - * / are operators
+#Digits are operands.
 
-print(("print(6/3*2) =") + str(6/3*2))
+
+print(2 + (3 - 1))
+print(("print(6-3+2) =") + str(6 - 3 + 2))
+print(("print(6-3+2) =") + str(6 - 3 + 2))
+
+print(("print(6-3+2) =") + str(6 - 3 + 2))
+
+print(("print(6/3*2) =") + str(6 / 3 * 2))
 print("left to right or left associative rule for * / - + operators")
-#----------------------
+# ----------------------
 print("but for ** right to left or right associative rule for * / - + operators")
-print(("print(2**3**2) =") + str(2**3**2))
+print(("print(2**3**2) =") + str(2 ** 3 ** 2))
 
+print(("2+3") + "=" + str(2 + 3))
 
-print(("2+3")+ "=" + str(2+3))
+print(2 + (3 - 1))
+print("(2+(3-1))" + "=" + str(2 + (3 - 1)))
 
-print(2+(3-1))
-print("(2+(3-1))"+ "=" + str(2+(3-1)))
+print(9 / 3)
+print(("9/3") + "=" + str(9 / 3))
+print(9 / 3.0)
+print(("9/3.0") + "=" + str(9 / 3.0))
+print(9.0 / 3)
+print(("9.0/3") + "=" + str(9.0 / 3))
 
-print(9/3)
-print(("9/3")+ "=" + str(9/3))
-print(9/3.0)
-print(("9/3.0")+ "=" + str(9/3.0))
-print(9.0/3)
-print(("9.0/3")+ "=" + str(9.0/3))
+print(9 * 3)
+print(("9*3") + "=" + str(9 * 3))
+print(9.0 * 3)
 
-print(9*3)
-print(("9*3")+ "=" + str(9*3))
-print(9.0*3)
+print(9 * 3.0)
+print(("9*3.0") + "=" + str(9 * 3.0))
 
-print(9*3.0)
-print(("9*3.0")+ "=" + str(9*3.0))
+print((9 - 1 + 2) + (9 / 3 * 3))
+print(("((9-1+2)+(9/3*3))") + "=" + str((9 - 1 + 2) + (9 / 3 * 3)))
+print(("(((-9)-1+2)+(9/3*(-3)))") + "=" + str(((-9) - 1 + 2) + (9 / 3 * (-3))))
 
-print((9-1+2)+(9/3*3))
-print(("((9-1+2)+(9/3*3))")+ "=" + str((9-1+2)+(9/3*3)))
-print(("(((-9)-1+2)+(9/3*(-3)))")+ "=" + str(((-9)-1+2)+(9/3*(-3))))
-
-print((-9)*(-3))
-print(("(-9)*(-3)")+ "=" + str((-9)*(-3)))
-print(("(-9)/(-3)")+ "=" + str((-9)/(-3)))
-print(("-9/-3")+ "=" + str(-9/-3))
-print(("-9*-3")+ "=" + str(-9*-3))
+print((-9) * (-3))
+print(("(-9)*(-3)") + "=" + str((-9) * (-3)))
+print(("(-9)/(-3)") + "=" + str((-9) / (-3)))
+print(("-9/-3") + "=" + str(-9 / -3))
+print(("-9*-3") + "=" + str(-9 * -3))
 
 print("idleAllin2.py")
-print("================03-03-2019=====================04-03-2019=========\n==========================\n=====================")
-print(("10/3")+ "=" + str(10/3))
+print(
+    "================03-03-2019=====================04-03-2019=========\n==========================\n=====================")
+print(("10/3") + "=" + str(10 / 3))
 
-print(("-10/3")+ "=" + str(-10/3))
-print(("10/-3")+ "=" + str(10/-3))
+print(("-10/3") + "=" + str(-10 / 3))
+print(("10/-3") + "=" + str(10 / -3))
 
 print(9.73800000000)
-print(("9.73800000000")+ "=" + str(9.73800000000))
-print(("9.738043625475237500")+ "=" + str(9.738043625475237500))
-print(("9.73804362547523750082364862865821")+ "=" + str(9.73804362547523750082364862865821))
+print(("9.73800000000") + "=" + str(9.73800000000))
+print(("9.738043625475237500") + "=" + str(9.738043625475237500))
+print(("9.73804362547523750082364862865821") + "=" + str(9.73804362547523750082364862865821))
 
-print(("10**3")+ "=" + str(10**3))
+print(("10**3") + "=" + str(10 ** 3))
 
-print((" Quotient of " ) + ( " 10//3 ")+ " = " + str(10//3))
+print((" Quotient of ") + (" 10//3 ") + " = " + str(10 // 3))
 
-print((" Remainder of " ) + ( " 10%3 " )+ " = " + str(10%3))
+print((" Remainder of ") + (" 10%3 ") + " = " + str(10 % 3))
 
-
-A=14
-B=40
+A = 14
+B = 40
 print(""" IF input is A=14 and B=40 then,
  modolous // and remainder % is """)
-print("print(A//B) = " , A//B)
-print("print(A%B) = " , (A%B))
+print("print(A//B) = ", A // B)
+print("print(A%B) = ", (A % B))
 
-
-print(("\"")+ "=" + str("\""))
+print(("\"") + "=" + str("\""))
 
 print(("\""))
 print("\"")
@@ -599,7 +640,7 @@ print(("Hallow  \n  world"))
 print(("Hallow world"))
 print(("Hallow""world"))
 print(("Hallow"
-	   "world"))
+       "world"))
 print("""Hallow"+
 	   world""")
 print("""Hallow"""
@@ -614,61 +655,181 @@ print("2.0" + "3.0")
 print("Fun" * 3)
 print("2" * 3)
 
-print(("(\"Fun\" * 0)")+ "=" + str(("Fun" * 0)))
+print(("(\"Fun\" * 0)") + "=" + str(("Fun" * 0)))
 print("Fun" * 0)
-print(("(\"9\" * 0)")+ "=" + str("9" * 0))
+print(("(\"9\" * 0)") + "=" + str("9" * 0))
 print("9" * 0)
 print("New Start")
 print("New Start at office on 04-03-2019 ============================================")
 
-print(3*2)
-print(3**2)
-print(3+2)
+print(3 * 2)
+print(3 ** 2)
+print(3 + 2)
 
-print(("print(-12//12) =") + str(-12//12))
-print(("print(12%11) =") + str(12%11))
-print(("print(-12%11) =") + str(-12%11))
-print(12%11)
-print(-12%11)
-
+print(("print(-12//12) =") + str(-12 // 12))
+print(("print(12%11) =") + str(12 % 11))
+print(("print(-12%11) =") + str(-12 % 11))
+print(12 % 11)
+print(-12 % 11)
 
 print(''' for length of variable values
 use len function''')
 
-x=len('hello')
+x = len('hello')
 print(x)
 
-print("print(len('hello')) = " + str(len('hello')) )
+print("print(len('hello')) = " + str(len('hello')))
 
-print("print(len('hello')) = " , len('hello'))
+print("print(len('hello')) = ", len('hello'))
 
-
-
-print (" spam " + " egg ")
-print ("spam," + " egg")
-print ("spam'" + " egg")
-print ("spam and egg")
+print(" spam " + " egg ")
+print("spam," + " egg")
+print("spam'" + " egg")
+print("spam and egg")
 
 print("start at home 04-03-2019========================")
 
-print(3**2)
-print(3.0**2)
-print("(3**2)"+ "=" + str(3**2))
-print("(3.0**2)"+ "=" + str(3.0**2))
-print("(OK * 2)"+ "=" + str("OK" * 2))
-print("(OK * 2 )"+ "=" + ("OK" * 2))
-print("(OK * 2.0 )"+ "=" + ("Error"))
+print(3 ** 2)
+print(3.0 ** 2)
+print("(3**2)" + "=" + str(3 ** 2))
+print("(3.0**2)" + "=" + str(3.0 ** 2))
+print("(OK * 2)" + "=" + str("OK" * 2))
+print("(OK * 2 )" + "=" + ("OK" * 2))
+print("(OK * 2.0 )" + "=" + ("Error"))
 
 print("""print("(3**2)", "=" , str(3**2))""")
 print("and / or")
 print("""print("(3**2)"+ "=" + str(3**2))""")
 print("will show")
-print("(3**2)", "=" , str(3**2))
+print("(3**2)", "=", str(3 ** 2))
 
-print(("(\"Fun\" * 0)")+ "=" + str(("Fun" * 0)))
+print(("(\"Fun\" * 0)") + "=" + str(("Fun" * 0)))
 print("Fun" * 0)
-print(("(\"9\" * 0)")+ "=" + str("9" * 0))
+print(("(\"9\" * 0)") + "=" + str("9" * 0))
 print("9" * 0)
+
+
+# Arithmetic Operators
+'''
+Python Arithmetic Operators
+Difficulty Level : Medium
+Last Updated : 29 Aug, 2020
+Arithmetic operators are used to perform mathematical operations like addition, subtraction, multiplication and division.
+
+There are 7 arithmetic operators in Python :
+
+Addition
+Subtraction
+Multiplication
+Division
+Modulus
+Exponentiation
+Floor division
+1. Addition Operator : In Python, + is the addition operator. It is used to add 2 values.
+Example :
+
+
+val1 = 2
+val2 = 3
+  
+# using the addition operator
+res = val1 + val2
+print(res)
+Output :
+
+5
+2. Subtraction Operator : In Python, – is the subtraction operator. It is used to subtract the second value from the first value.
+Example :
+
+
+
+
+val1 = 2
+val2 = 3
+  
+# using the subtraction operator
+res = val1 - val2
+print(res)
+Output :
+
+-1
+3. Multiplication Operator : In Python, * is the multiplication operator. It is used to find the product of 2 values.
+Example :
+
+
+val1 = 2
+val2 = 3
+  
+# using the multiplication operator
+res = val1 * val2
+print(res)
+Output :
+
+6
+4. Division Operator : In Python, / is the division operator. It is used to find the quotient when first operand is divided by the second.
+Example :
+
+
+val1 = 3
+val2 = 2
+  
+# using the division operator
+res = val1 / val2
+print(res)
+Output :
+
+1.5
+5. Modulus Operator : In Python, % is the modulus operator. It is used to find the remainder when first operand is divided by the second.
+Example :
+
+
+val1 = 3
+val2 = 2
+  
+# using the modulus operator
+res = val1 % val2
+print(res)
+Output :
+
+1
+6. Exponentiation Operator : In Python, ** is the exponentiation operator. It is used to raise the first operand to power of second.
+Example :
+
+
+val1 = 2
+val2 = 3
+  
+# using the exponentiation operator
+res = val1 ** val2
+print(res)
+Output :
+
+8
+7. Floor division : In Python, // is used to conduct the floor division. It is used to find the floorof the quotient when first operand is divided by the second.
+Example :
+
+
+val1 = 3
+val2 = 2
+  
+# using the floor division
+res = val1 // val2
+print(res)
+Output :
+
+1
+Below is the summary of all the 7 operators :
+
+Operator	Description	Syntax
++	Addition: adds two operands	x + y
+–	Subtraction: subtracts two operands	x – y
+*	Multiplication: multiplies two operands	x * y
+/	Division (float): divides the first operand by the second	x / y
+//	Division (floor): divides the first operand by the second	x // y
+%	Modulus: returns the remainder when first operand is divided by the second	x % y
+**	Power : Returns first raised to power second	x ** y
+'''
+# Arithmetic Operators
 
 
 print(" The slice operators of strings")
@@ -684,12 +845,12 @@ print(name[0])
 print(name[1])
 print(name[3])
 print(name[5])
-print("print(name[0]) = ", (name[0]) )
-print("print(name[1]) = ", (name[1]) )
-print("print(name[3]) = ", (name[3]) )
-print("print(name[5]) = ", (name[5]) )
-print("print(name[4:9]) = ", (name[4:9]) )
-print("print(name[4:]) = ", (name[4:]) )
+print("print(name[0]) = ", (name[0]))
+print("print(name[1]) = ", (name[1]))
+print("print(name[3]) = ", (name[3]))
+print("print(name[5]) = ", (name[5]))
+print("print(name[4:9]) = ", (name[4:9]))
+print("print(name[4:]) = ", (name[4:]))
 print(""" The slice operators, or indexing in python
  starts from  0
  and the last index nuberd one is ignored """)
@@ -706,19 +867,19 @@ print(random[0])
 print(random[1])
 print(random[3])
 print(random[5])
-print("print(random[0]) = ", (random[0]) )
-print("print(random[1]) = ", (random[1]) )
-print("print(random[3]) = ", (random[3]) )
-print("print(random[5]) = ", (random[5]) )
+print("print(random[0]) = ", (random[0]))
+print("print(random[1]) = ", (random[1]))
+print("print(random[3]) = ", (random[3]))
+print("print(random[5]) = ", (random[5]))
 
-print("print(random[0:5]) = ", (random[0:5]) )
-print("print(random[3:7]) = ", (random[3:7]) )
-print("print(random[3:]) = ", (random[3:]) )
+print("print(random[0:5]) = ", (random[0:5]))
+print("print(random[3:7]) = ", (random[3:7]))
+print("print(random[3:]) = ", (random[3:]))
 print(""" The slice operators, or indexing in python starts from
  0 and the last index nuberd one is ignored """)
 print(""" to printing a charecter, from 4th to last to the  last
 character [3:] is used """)
-#----------
+# ----------
 
 print("python loops")
 
@@ -727,7 +888,7 @@ print("""python loops or iterator with range():
                 conditions until the cindition becomes false.
                 """)
 
-for i in range(0,5):
+for i in range(0, 5):
     print(i)
 print("python loops")
 
@@ -736,7 +897,7 @@ print("""python loops or iterator with range():
                 conditions until the cindition becomes false.
 shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples']
 """)
-shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples']
+shoppinglist2 = ['eggs', 'carrots', 'milk', 'cherries', 'apples']
 for i in shoppinglist2:
     print(i)
 
@@ -747,10 +908,10 @@ for i in range(3):
     print("end of loop in loops")
 print(" out of end of all loop ")
 
-for i in range(1,4):
+for i in range(1, 4):
     print(i)
     print("end of loop in loops")
-for i in range(1,2):
+for i in range(1, 2):
     print(i)
 print(" out of end of all loop ")
 
@@ -788,8 +949,8 @@ for x in name:
     print("22222")
 
 for x in name:
-   print(x)
-   print(" For the letter in the variable x is : " + x)
+    print(x)
+    print(" For the letter in the variable x is : " + x)
 print(" For the letter in the variable x is : " + x)
 
 name = "abcd"
@@ -801,7 +962,6 @@ for x in name:
     print(" For the letter in the variable x is : " + x)
 print('end from outside of loop')
 
-
 print("python loops")
 
 print("""python loops or iterator with range():
@@ -809,7 +969,7 @@ print("""python loops or iterator with range():
                 conditions until the condition becomes false.
 shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples']
 """)
-shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples']
+shoppinglist2 = ['eggs', 'carrots', 'milk', 'cherries', 'apples']
 for i in shoppinglist2:
     print(i)
 
@@ -823,15 +983,14 @@ print("for loop with range and incremenr")
 print(""" for i in range (0, 21, 2):
      print(i)
 """)
-for i in range (0, 21, 2):
-     print(i)
+for i in range(0, 21, 2):
+    print(i)
 
 print("""for i in range (34, 0, -2):
     print(i)
     count backwords with - ve incremets""")
-for i in range (34, 0,-2):
-     print(i)
-
+for i in range(34, 0, -2):
+    print(i)
 
 print("""nested for loops
 for i in range(0,5):
@@ -839,11 +998,9 @@ for i in range(0,5):
         print(a)
 will produce 0 to 4 , 5 times
 """)
-for i in range(0,5):
-    for a in range(0,5):
+for i in range(0, 5):
+    for a in range(0, 5):
         print(a)
-
-
 
 print("python while loops")
 print("while loops")
@@ -857,57 +1014,54 @@ while c<10:
  c=c+1
  print(c)
  =  """)
-c=5
-while c<10:
- c=c+1
- print(c)
- print ("   print (c) = " , c)
-print ("print (c) = " , c)
+c = 5
+while c < 10:
+    c = c + 1
+    print(c)
+    print("   print (c) = ", c)
+print("print (c) = ", c)
 print(""" c=5
 while c<10:
  print(c)
  c=c+1 """)
-c=5
-while c<10:
- print(c)
- c=c+1
- print ("   print (c) = " , c)
-print ("print (c) = " , c)
+c = 5
+while c < 10:
+    print(c)
+    c = c + 1
+    print("   print (c) = ", c)
+print("print (c) = ", c)
 
 print(""" The code stops printing when
  value of c becoems, c=10 and not c<10.
 """)
 
-
-
-#------------
+# ------------
 print("Variables")
 
 x = 7
 print(x)
-print(x+5)
-y=4
-z=5
-print(x+y+z)
-x= "This is a string"
+print(x + 5)
+y = 4
+z = 5
+print(x + y + z)
+x = "This is a string"
 print(x + "!")
-x= 'This is a string'
+x = 'This is a string'
 print("x" + "!")
 
 lastname = 3
 Lastname = 4
 print(lastname + Lastname)
 
-
 print("In place operators")
-x=7
-x+=2
+x = 7
+x += 2
 print(x)
-x-=3
+x -= 3
 print(x)
-x*=4
+x *= 4
 print(x)
-x/=2
+x /= 2
 print(x)
 
 print("Booleans")
@@ -918,33 +1072,34 @@ print("Bruce" == "bruce")
 my_bollean = True
 
 print(my_bollean)
-print("(2==3)"+ "=" + str(2==3))
-print(2==3)
-print("(\"Hellow\" == \"Hellow\")"+ "=" + str("Hellow" == "Hellow"))
+print("(2==3)" + "=" + str(2 == 3))
+print(2 == 3)
+print("(\"Hellow\" == \"Hellow\")" + "=" + str("Hellow" == "Hellow"))
 print("Hellow" == "Hellow")
-print("(\"Hellow\" == \"hellow\")"+ "=" + str("Hellow" == "hellow"))
+print("(\"Hellow\" == \"hellow\")" + "=" + str("Hellow" == "hellow"))
 print("Hellow" == "hellow")
-print("(\"Hellow\" == \"Hollaw\")"+ "=" + str("Hellow" == "Hollaw"))
+print("(\"Hellow\" == \"Hollaw\")" + "=" + str("Hellow" == "Hollaw"))
 print("Hellow" == "Hollaw")
 
+print(""" there are 6 comparison relational operators are >, <, <=, >=, ==, !=.
 
-print(""" there are 6 relational operators are >, <, <=, >=, ==, !=.
-
-. Those relational operators helps us to get buollean value true/false.
+. Those relational comparison operators helps us to get buollean value true/false.
  """)
-print(1!=3)
-print(5!=5)
-print("(5!=5)"+ "=" + str(5!=5))
-print("(1!=3)"+ "=" + str(1!=3))
-print("(5<=5)"+ "=" + str(5<=5))
-print("(7>=5)"+ "=" + str(7>=5))
-print("(1>3)"+ "=" + str(1>3))
-print("(1<3)"+ "=" + str(1<3))
 
+print(1 != 3)
+print(5 != 5)
+print("(5!=5)" + "=" + str(5 != 5))
+print("(1!=3)" + "=" + str(1 != 3))
+print("(5<=5)" + "=" + str(5 <= 5))
+print("(7>=5)" + "=" + str(7 >= 5))
+print("(1>3)" + "=" + str(1 > 3))
+print("(1<3)" + "=" + str(1 < 3))
+print(""" there are 6 comparison relational operators are >, <, <=, >=, ==, !=.
 
+. Those relational comparison operators helps us to get buollean value true/false.
+ """)
 print(""" there are 6 relational operators are >, <, <=, >=, ==, !=.
 . Those relational operators helps us to get buollean value true/false. """)
-
 
 print("if & else statement, conditional statements")
 print("if & else statement, conditional statements")
@@ -952,68 +1107,68 @@ print("if statement")
 print("if statement")
 
 print('if 6>4:')
-if 6>4:
- print("true, 6 is greater than 4 ")
+if 6 > 4:
+    print("true, 6 is greater than 4 ")
 print('n=12')
-n=12
-if n>5:
-   print("n is greater than 5 ")
-   if n<=15:
-       print("n is less than 15 ")
+n = 12
+if n > 5:
+    print("n is greater than 5 ")
+    if n <= 15:
+        print("n is less than 15 ")
 print('if a=15')
-a=15
+a = 15
 if a == 11:
- print('a!=11')
-else :
+    print('a!=11')
+else:
     print('a=15')
-if 1+1 == 2:
-    if 2*2==8:
-     print('if')
+if 1 + 1 == 2:
+    if 2 * 2 == 8:
+        print('if')
     else:
-     print('else')
+        print('else')
 print('out of the loop')
 num = 7
-if num >3:
- print('>3')
+if num > 3:
+    print('>3')
 else:
- print('else')
-if num==7:
-  print('==7')
+    print('else')
+if num == 7:
+    print('==7')
 print('out of the loop')
 print('in the loop')
 num = 7
-if num >3:
- print('>3')
+if num > 3:
+    print('>3')
 else:
- print('else')
- if num==7:
-  print('==7')
+    print('else')
+    if num == 7:
+        print('==7')
 print('in the loop')
 
 esnum = 7
 if esnum == 2:
- print('esnum == 2')
+    print('esnum == 2')
 else:
     if esnum == 12:
-     print('esnum == 12')
+        print('esnum == 12')
     else:
-      if esnum == 22:
+        if esnum == 22:
             print('esnum == 12')
-      else:
-       if esnum == 7:
-        print('esnum == 7')
+        else:
+            if esnum == 7:
+                print('esnum == 7')
 
 print("elif statements")
 print("elif")
 elifsnum = 7
 if elifsnum == 2:
- print('esnum == 2')
+    print('esnum == 2')
 elif elifsnum == 12:
- print('esnum == 12')
+    print('esnum == 12')
 elif elifsnum == 22:
- print('elifsnum == 12')
+    print('elifsnum == 12')
 elif elifsnum == 7:
- print('elifsnum == 7')
+    print('elifsnum == 7')
 
 print("Nested if and else statements")
 print(""" esnum = 22
@@ -1024,10 +1179,10 @@ if esnum == 22:
             print('esnum == unknown') """)
 esnum = 22
 if esnum == 22:
-   if esnum>22:
-            print('esnum == 22')
-   else:
-            print('esnum == unknown')
+    if esnum > 22:
+        print('esnum == 22')
+    else:
+        print('esnum == unknown')
 print("""A=3
 B=5
 C=7
@@ -1038,27 +1193,25 @@ if A==3:
       else:
            print("Zero")
 = """)
-A=3
-B=5
-C=7
-if A==3:
-   if B==5 and C<=7:
-      if not A == 5:
-         print("Nested if statements")
-      else:
-           print("Zero")
-
-
+A = 3
+B = 5
+C = 7
+if A == 3:
+    if B == 5 and C <= 7:
+        if not A == 5:
+            print("Nested if statements")
+        else:
+            print("Zero")
 
 print('Bollean logic')
 print('Bollean logic')
 
-print(2 == 2 and 3==3)
-print(2 == 2 and 3==4)
-print(2 == 2 or 3==4)
-print(2 == 2 or 3==3)
-print(not 2 == 2 )
-print(not 2 != 2 )
+print(2 == 2 and 3 == 3)
+print(2 == 2 and 3 == 4)
+print(2 == 2 or 3 == 4)
+print(2 == 2 or 3 == 3)
+print(not 2 == 2)
+print(not 2 != 2)
 
 print("with 'del' of the variable")
 message = "what"
@@ -1092,55 +1245,51 @@ print("python loops - for loop")
 print(''' For the detail of  for loop please go to -
  forloop.py file''')
 
-
-
 print('''declearing multiple variable \n values at a time and
  multiple assignments of
   same value to many variables in one line.''')
 
-x1,x2,x3='r','y','b'
+x1, x2, x3 = 'r', 'y', 'b'
 print(""" When x1,x2,x3='r','y','b' , then""")
 
-print('print(x1, x2 ,x3) =', x1, x2 ,x3 )
-print('print(x1+x2+x3) =', x1+x2+x3)
+print('print(x1, x2 ,x3) =', x1, x2, x3)
+print('print(x1+x2+x3) =', x1 + x2 + x3)
 
-x1,x2,x3='r' +'y'+'b'
+x1, x2, x3 = 'r' + 'y' + 'b'
 
 print(""" When x1,x2,x3='r' +'y'+'b' , then""")
 
-print('print(x1, x2 ,x3) =', x1, x2 ,x3 )
-print('print(x1+x2+x3) =', x1+x2+x3)
+print('print(x1, x2 ,x3) =', x1, x2, x3)
+print('print(x1+x2+x3) =', x1 + x2 + x3)
 
 print(""" When y1,y2,y3=1 + 3 + 5,  then this line will produce error, because
 those values can not be assigned""")
 
-
-y1,y2,y3=1,3,5
+y1, y2, y3 = 1, 3, 5
 
 print(""" When y1,y2,y3=1,3,5 , then""")
-print('print (y1+ y2+y3 )=' ,y1+ y2+y3 )
-print('print( y1, y2,y3) =', y1, y2,y3)
+print('print (y1+ y2+y3 )=', y1 + y2 + y3)
+print('print( y1, y2,y3) =', y1, y2, y3)
 
-z1,z2,z3='a',3.3,5
+z1, z2, z3 = 'a', 3.3, 5
 print(""" When z1,z2,z3='a',3.3,5 , then""")
-print('print( z1,z2, z3) =', z1,z2, z3)
-print('print( z1,z2+ z3) =', z1,z2+ z3)
+print('print( z1,z2, z3) =', z1, z2, z3)
+print('print( z1,z2+ z3) =', z1, z2 + z3)
 print('print( z1+z2+ z3) =', '''' will produce error,
 because strings can not be concatenate to int or floats''')
 
-print(x1,x2,x3,y1,y2,y3,z1,z2,z3)
+print(x1, x2, x3, y1, y2, y3, z1, z2, z3)
 
-print('print(x1,x2,x3,y1,y2,y3,z1,z2,z3) =', x1,x2,x3,y1,y2,y3,z1,z2,z3)
+print('print(x1,x2,x3,y1,y2,y3,z1,z2,z3) =', x1, x2, x3, y1, y2, y3, z1, z2, z3)
 
 print('print(x1+x2+x3+y1+ y2+y3+z1+z2+ z3) =', '''' will produce error,
 because strings can not be concatenate to int or floats''')
-print('print(x1,x2,x3, y1+y2+y3, z1,z2+z3) =', x1,x2,x3, y1+y2+y3, z1,z2+z3)
+print('print(x1,x2,x3, y1+y2+y3, z1,z2+z3) =', x1, x2, x3, y1 + y2 + y3, z1, z2 + z3)
 
-X=Y=Z='Apple'
+X = Y = Z = 'Apple'
 print(''' When X=Y=Z= "Apple" , then''')
-print('print(X,Y,Z) =', X,Y,Z )
-print('print(X+Y+Z) =', X+Y+Z)
-
+print('print(X,Y,Z) =', X, Y, Z)
+print('print(X+Y+Z) =', X + Y + Z)
 
 print("without 'del' of the variable")
 message = "wwwww"
@@ -1157,7 +1306,6 @@ message = 'ff'
 print(message)
 print("with 'del' of the variable")
 
-
 print("without 'del' of the variable")
 message = "wwwww"
 print(message)
@@ -1173,31 +1321,29 @@ for i in range(3):
     print("end of loop in loops")
 print(" out of end of all loop ")
 
-for i in range(1,4):
+for i in range(1, 4):
     print(i)
     print("end of loop in loops")
-for i in range(1,2):
+for i in range(1, 2):
     print(i)
 print(" out of end of all loop ")
 
-
 n = input("please input your age")
 
-print(float(n)/2)
+print(float(n) / 2)
 
-print ("""entered value inside input function will
+print("""entered value inside input function will
 always get out as string""")
-
 
 print("list or arrayes, arrayes are created by using []")
 
-shoppinglist1="eggs, corrots, milk, apples"
+shoppinglist1 = "eggs, corrots, milk, apples"
 
 print("shoppinglist1= eggs, corrots, milk, cherried, apples")
 
 print('the above one is not a list data type of python')
 
-shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples']
+shoppinglist2 = ['eggs', 'carrots', 'milk', 'cherries', 'apples']
 
 print(" the list named - shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples'] is created")
 
@@ -1206,18 +1352,18 @@ print('print(shoppinglist2[0]) =', shoppinglist2[0])
 
 print(" can update all or can also update only one item in the list ")
 
-shoppinglist2[3]= "mango milk"
+shoppinglist2[3] = "mango milk"
 print('print(shoppinglist2[3]) =', shoppinglist2[3])
 print('print(shoppinglist2) =', len(shoppinglist2))
 
-print('''print(len(shoppinglist2)) = ''', shoppinglist2 )
+print('''print(len(shoppinglist2)) = ''', shoppinglist2)
 
-numarray1=[7, 25, 34, 43, -52, -77]
-numarray2= [.77777, .777777777, -777, -7777]
+numarray1 = [7, 25, 34, 43, -52, -77]
+numarray2 = [.77777, .777777777, -777, -7777]
 print(""" when numarray1=[7, 25, 34, 43, -52, -77] and
-numarray2= [.77777, .777777777, -777, -7777] then""" )
+numarray2= [.77777, .777777777, -777, -7777] then""")
 print("""print(numarray1, numarray2)  will produce
-""", (numarray1), (numarray2) )
+""", (numarray1), (numarray2))
 print("""print(max(numarray1) will produce
 """, max(numarray1))
 print("""print(min(numarray1) will produce
@@ -1228,7 +1374,7 @@ print("""print(max(numarray1, numarray2))  will produce
 print("""print(min(numarray1, numarray2))  will produce
 """, min((numarray1), (numarray2)))
 print("""print(min(numarray1), min(numarray2))  will produce
-""", min(numarray1), min(numarray2) )
+""", min(numarray1), min(numarray2))
 print("""print(max(numarray1), max(numarray2))  will produce
 """, max(numarray1), max(numarray2))
 
@@ -1241,14 +1387,14 @@ was repeated inthe list by arrey.count(item)""")
 
 shoppinglist2.count("carrots")
 print(""" print (shoppinglist2.count("carrots")) will show ,
- =  1 """ )
-print (shoppinglist2.count("carrots"))
+ =  1 """)
+print(shoppinglist2.count("carrots"))
 #
 #
 #
 #
 
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
 #
@@ -1257,13 +1403,13 @@ print (shoppinglist2.count("carrots"))
 # Created:     30/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <your licence>
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 print("""dictionaries in python are list and/or with keys, key value pairs,
 it is like a map tool""")
 
 print("""dictionaries in python are list and keys, it is like a map too,
 key value pairs, they are created by { }""")
-students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16}
+students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
 print(""" students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16} """)
 print("""len(students1) = """, len(students1))
 
@@ -1274,15 +1420,15 @@ print("""students1.keys(), # which will show the keys of the dictionary
 print("""students1.values(), # which will show the values of the dictionary
  = """, students1.values())
 
-students2={"Bric":24, "sob":32, "Cristen":25, "Lodd":26}
+students2 = {"Bric": 24, "sob": 32, "Cristen": 25, "Lodd": 26}
 print(""" students2={"Bric":24, "sob":32, "Cristen":25, "Lodd":26} """)
 print(''' print("""students1.update(students2) = """ , students1)
 print(students1.update(students2))
 print(students1) ''')
 students1.update(students2)
-print("""students1.update(students2) = """ , students1)
+print("""students1.update(students2) = """, students1)
 print(students1.update(students2))
-print("""print(students1) = """, students1 )
+print("""print(students1) = """, students1)
 print(students1)
 
 print("""dictionaries in python are list and keys,
@@ -1291,22 +1437,22 @@ it is like a map tool""")
 print("""dictionaries in python are list and keys, it is like a map too,
 they are created by { }""")
 
-students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16}
-print("""print(students1["Bob"]) will show bob's age  """ )
+students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+print("""print(students1["Bob"]) will show bob's age  """)
 print(students1["Bob"])
 print("""update the dictionary or change or deleate  a value of dictionary,
  so if we inpute,  students1["Bob"]= 13, then print(students1["Bob"])
  will show  bob's new age """)
-students1["Bob"]= 13
+students1["Bob"] = 13
 print(students1["Bob"])
 
 print(""" del students1["Bob"] will deleate the key Bob fro list ,
 so print(students1["Bob"]) will show error """)
 del students1["Bob"]
 print("""print(students1) will show the value of the dictionary
- """ , students1)
+ """, students1)
 print("""print(students1["eric"]) wil produce error because python is case sencitive,
-it should be print(students1["Eric"])""" )
+it should be print(students1["Eric"])""")
 print(students1["Eric"])
 print(students1)
 print("Basic functiuonds used in dictionaries len, del keys etc")
@@ -1318,9 +1464,8 @@ will produce error  """)
 students1.clear()
 print(students1)
 
-
 del students1
-students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16}
+students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
 print(""" students1={"Eric":14, "Bob":12, "Cris":15, "Todd":16} """)
 print("""len(students1) = """, len(students1))
 
@@ -1331,16 +1476,15 @@ print("""students1.keys(), # which will show the keys of the dictionary
 print("""students1.values(), # which will show the values of the dictionary
  = """, students1.values())
 
-
-students2={"Bric":24, "sob":32, "Cristen":25, "Lodd":26}
+students2 = {"Bric": 24, "sob": 32, "Cristen": 25, "Lodd": 26}
 print(""" students2={"Bric":24, "sob":32, "Cristen":25, "Lodd":26} """)
 
 print(""" update a dictionary by writing students1.update(students2), here the
 students1 dictionary has been updated by adding students2 dictionary keys &
 values""")
 students1.update(students2)
-print("""students1.update(students2) = """ , )
-print("""print(students1) = """, students1 )
+print("""students1.update(students2) = """, )
+print("""print(students1) = """, students1)
 print(students1)
 print(students2.get("sob"))
 print("""print(students2.get("sob") is uded to not to produce error message
@@ -1351,19 +1495,19 @@ print(""" print(students2.get("jj")) will produce a result = none,
 because there is no key named jj
 """)
 
-monthConv={
-"jan": "January",
-"feb": "February",
-"mar": "March",
-"apr": "April",
-"may": "May",
-"jun": "June",
-"jul": "July",
-"aug": "August",
-"sep":"September",
-"oct":"October",
-"nov":"November",
-"dec":"December"
+monthConv = {
+    "jan": "January",
+    "feb": "February",
+    "mar": "March",
+    "apr": "April",
+    "may": "May",
+    "jun": "June",
+    "jul": "July",
+    "aug": "August",
+    "sep": "September",
+    "oct": "October",
+    "nov": "November",
+    "dec": "December"
 }
 print("""
 Assigned key value pairs are -
@@ -1390,15 +1534,15 @@ print(monthConv.get("ma"," Not a valid key"))
 print(monthConv["nov"])
 print(monthConv.get("mar"))
 print(monthConv.get("ma"))
-print(monthConv.get("ma"," Not a valid key"))
+print(monthConv.get("ma", " Not a valid key"))
 
-monthConv2={
-1: "january",
-2: "february",
-3: "march",
-4: "april",
-5: "may",
-6: "june"
+monthConv2 = {
+    1: "january",
+    2: "february",
+    3: "march",
+    4: "april",
+    5: "may",
+    6: "june"
 }
 print("""
 monthConv2={
@@ -1419,16 +1563,12 @@ print(monthConv2.get(9," Not a valid key"))
 print(monthConv2[6])
 print(monthConv2.get(3))
 print(monthConv2.get(7))
-print(monthConv2.get(9," Not a valid key"))
+print(monthConv2.get(9, " Not a valid key"))
 print("""
 
 """)
 
-
-
-
-
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
 #
@@ -1437,19 +1577,18 @@ print("""
 # Created:     29/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <your licence>
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 
 
 print("""Tuples, tuples are like lists but their values/data
 can not be changed, immutable, ROM, Read Only
 , now lets assume, tup1=("Maths", 23 , 3.3) """)
 
-
 print("""Tuples, tuples are like lists but their values/data can not be
  changed,
  now lets assume, tup1=("Maths", 23 , 3.3, 9/3)""")
 
-tup1=("Maths", 23 , 3.3, 9/3)
+tup1 = ("Maths", 23, 3.3, 9 / 3)
 
 print("""
 print(tup1[2]) =
@@ -1458,8 +1597,8 @@ print(tup1[2])
 
 print("print(tup1[0:4]) = ")
 print(tup1[0:4])
-print("print(tup1[0:5]) = " , (tup1[0:5]))
-print("print(tup1[0:15]) = " , (tup1[0:15]))
+print("print(tup1[0:5]) = ", (tup1[0:5]))
+print("print(tup1[0:15]) = ", (tup1[0:15]))
 
 print("""
 coordinates=(4,5) --- this is a tupple, can not be changed
@@ -1468,10 +1607,9 @@ coordinates=[(4,5), (5,6), (6,7)] - this is a list of tupples
 coordinates=[(4,5), (5,6), (6,7)]
 coordinates.pop()
 print(coordinates)""")
-coordinates=[(4,5), (5,6), (6,7)]
+coordinates = [(4, 5), (5, 6), (6, 7)]
 coordinates.pop()
 print(coordinates)
-
 
 print('Prime number generator in three types of code')
 
@@ -1484,13 +1622,13 @@ print('''for x in range (2, 2222):
  if isPrime:
   print(x)
 this without " break in for loop" code will produce = ''')
-for x in range (2, 2222):
- isPrime=True
- for y in range (2,x):
-    if x%y==0:
-       isPrime=False
- if isPrime:
-  print(x)
+for x in range(2, 2222):
+    isPrime = True
+    for y in range(2, x):
+        if x % y == 0:
+            isPrime = False
+    if isPrime:
+        print(x)
 
 print('''primelist1=[]
 for x in range (2, 10000):
@@ -1502,17 +1640,17 @@ for x in range (2, 10000):
  if isPrime:
     primelist.append(x)
  print(primelist1)
- Those codes with " break in for loop" will show   prime nuber list between 2 to 10000''' )
+ Those codes with " break in for loop" will show   prime nuber list between 2 to 10000''')
 
-primelist1=[]
-for x in range (2, 10000):
- isPrime=True
- for y in range (2,x):
-    if x%y==0:
-       isPrime=False
-       break
- if isPrime:
-    primelist1.append(x)
+primelist1 = []
+for x in range(2, 10000):
+    isPrime = True
+    for y in range(2, x):
+        if x % y == 0:
+            isPrime = False
+            break
+    if isPrime:
+        primelist1.append(x)
 print('''primelist1=[]
 for x in range (2, 10000):
  isPrime=True
@@ -1523,7 +1661,7 @@ for x in range (2, 10000):
  if isPrime:
     primelist.append(x)
  print(primelist1)
- Those codes will show   prime nuber list between 2 to 10000''' )
+ Those codes will show   prime nuber list between 2 to 10000''')
 print(primelist1)
 
 print("""primelist2=[]
@@ -1537,36 +1675,36 @@ for num in range (lower, upper+1):
        else:
         primelist.append(num)
 print(primelist2)""")
-primelist2=[]
-lower=int(input("please enter the 'lower' or first value: " ))
-upper=int(input("please enter the 'upper' or last value: " ))
-for num in range (lower, upper+1):
-    if num>1:
-       for i in range (2, num):
-           if num%i==0:
-            break
-       else:
-        primelist2.append(num)
+primelist2 = []
+lower = int(input("please enter the 'lower' or first value: "))
+upper = int(input("please enter the 'upper' or last value: "))
+for num in range(lower, upper + 1):
+    if num > 1:
+        for i in range(2, num):
+            if num % i == 0:
+                break
+        else:
+            primelist2.append(num)
 print("""After entering the values those codes will show prime number
-list between """ ,
- lower, "and", upper, ''' numbers''' )
+list between """,
+      lower, "and", upper, ''' numbers''')
 print(primelist2)
 
 print(''' But we can reduce the output time by setting range of the diviser to
 square root of a number''')
-primelist3=[]
-lower2=int(input("please enter the 'lower2' or first value: " ))
-upper2=int(input("please enter the 'upper2' or last value: " ))
-for num in range (lower2, upper2+1):
-    if num>1:
-       for i in range (2, int(num**.5)+1):
-           if num%i==0:
-            break
-       else:
-        primelist3.append(num)
+primelist3 = []
+lower2 = int(input("please enter the 'lower2' or first value: "))
+upper2 = int(input("please enter the 'upper2' or last value: "))
+for num in range(lower2, upper2 + 1):
+    if num > 1:
+        for i in range(2, int(num ** .5) + 1):
+            if num % i == 0:
+                break
+        else:
+            primelist3.append(num)
 print("""After entering the values those codes will show prime number
-list between """ ,
- lower2, "and", upper2, ''' numbers''' )
+list between """,
+      lower2, "and", upper2, ''' numbers''')
 print(primelist3)
 
 print('''
@@ -1575,10 +1713,10 @@ while cox<100:
       print(cox)
       cox=cox+2
 ''')
-cox=0
-while cox<100:
-      print(cox)
-      cox=cox+2
+cox = 0
+while cox < 100:
+    print(cox)
+    cox = cox + 2
 
 print('''
 #cox value is 98 now
@@ -1589,13 +1727,13 @@ while cox<100:
  print(cox)
  cox=cox+1
 ''')
-#cox value is 98 now
-cox=0  # chnage cox to 0 again
-while cox<100:
- if cox==8:
-    break
- print(cox)
- cox=cox+1
+# cox value is 98 now
+cox = 0  # chnage cox to 0 again
+while cox < 100:
+    if cox == 8:
+        break
+    print(cox)
+    cox = cox + 1
 
 print('''
 cox=0  # chnage cox to 0 again
@@ -1618,24 +1756,24 @@ while cox<100:
  cox=cox+1
 ''')
 
-cox=0  # chnage cox to 0 again
-while cox<100:
- if cox==8:
-    break # will get out of the loop.
- else:
-  pass # will not do anything for else statemrnt.
- print(cox)
- cox=cox+1
+cox = 0  # chnage cox to 0 again
+while cox < 100:
+    if cox == 8:
+        break  # will get out of the loop.
+    else:
+        pass  # will not do anything for else statemrnt.
+    print(cox)
+    cox = cox + 1
 
- print('''
+    print('''
  for i in range (3,33):
     if i<15:
        continue # will ignore the values in the if statement.
     print(i) ''')
 
-for i in range (3,33):
-    if i<15:
-       continue # will ignore the values in the if statement.
+for i in range(3, 33):
+    if i < 15:
+        continue  # will ignore the values in the if statement.
     print(i)
 
 print("I")
@@ -1664,22 +1802,19 @@ print("""
 
  """)
 
-
-
 print("""print absoloute value of a number
 num1=-5
 print(abs(num1))
 """)
-num1=-5
+num1 = -5
 print(abs(num1))
 
 print("""give power to a value or a number
 print(pow(3,2))
 print(3**2)
 """)
-print(pow(3,2))
-print(3**2)
-
+print(pow(3, 2))
+print(3 ** 2)
 
 print('''
 print(max(4,7))
@@ -1693,12 +1828,12 @@ print(round(4.7))
 print(round(9.3))
 print(round(9.6))
 ''')
-print(max(4,7))
+print(max(4, 7))
 
-print(min(4,7))
+print(min(4, 7))
 
-print(round(4,7))
-print(round(9,3))
+print(round(4, 7))
+print(round(9, 3))
 
 print(round(4.7))
 print(round(9.3))
@@ -1756,26 +1891,23 @@ print(sqrt(4.7))
 
 print(sqrt(9))
 
-
-
-print ("""entered value inside input function will
+print("""entered value inside input function will
 always get out as string""")
-print ("""entered value inside input function will
+print("""entered value inside input function will
 always get out as string""")
-codex=input('''     please input your code by typing
+codex = input('''     please input your code by typing
 copy paste will not work till now     :
 
 
-                 '''       )
+                 ''')
 
-print ("""entered value inside input function will
+print("""entered value inside input function will
 always get out as string""")
-print ("""entered value inside input function will
+print("""entered value inside input function will
 always get out as string""")
-name=input('Please enter your anme:   ')
-age=input(' Please enter your age:    ')
-print(" Hello" ,  name , "you are " , age)
-
+name = input('Please enter your anme:   ')
+age = input(' Please enter your age:    ')
+print(" Hello", name, "you are ", age)
 
 print(codex)
 print("The above code that you typed -  will give output")
@@ -1784,8 +1916,7 @@ exec(codex)
 print("import command packages")
 print("import turtle command drawing package, there are many pakages")
 
-
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # Name:        module2
 # Purpose:
 #
@@ -1794,7 +1925,7 @@ print("import turtle command drawing package, there are many pakages")
 # Created:     28/03/2019
 # Copyright:   (c) user 2019
 # Licence:     <your licence>
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 
 print("LISTS")
 print("Working with LISTS")
@@ -1802,10 +1933,10 @@ print("Working with LISTS")
 print('''
 lists=[], this is an epty list
 ''')
-list=["kevin", 5, 7.9, True]
+list = ["kevin", 5, 7.9, True]
 # list values are indexed
 
-friend=["kevin", "KAren", "Jim", "Toddy", "Frog"]
+friend = ["kevin", "KAren", "Jim", "Toddy", "Frog"]
 #          0        1        2      3        4
 
 print('''
@@ -1850,14 +1981,14 @@ update or modify list values
 friend[0]= "000"
 print(friend[0])
 =''')
-friend[0]= "000"
+friend[0] = "000"
 print(friend[0])
 
 print(''' update or modify list values
 friend[0:1]= ["000", "ttt"]
 print(friend[0:2])
 =''')
-friend[0:1]= ["000", "ttt"]
+friend[0:1] = ["000", "ttt"]
 print(friend[0:2])
 
 print('''
@@ -1867,7 +1998,6 @@ List Functions
 ')
 ''')
 
-
 print('''
 Items=["car", "chair", "table", "mat"]
 num=[8.8, 7.7,9.9,5.5,25,34,35,43,45,50,52,53,55,61,70,71,77,91,92,93,99,105,115,
@@ -1876,11 +2006,11 @@ numbers=[4,8,15,16,23,42]
 FRINDS=["kevin", "KAren", "Jim", "Toddy", "Frog", "Todd", "Jorge", "Lang"]
 #          0        1        2      3        4       5      7        8
 ''')
-Items=["car", "chair", "table", "mat"]
-num=[8.8, 7.7,9.9,5.5,25,34,35,43,45,50,52,53,55,61,70,71,77,91,92,93,99,105,115,
-122,125,133,151,155,160,170,171,177,181,192,205,250,322,331]
-numbers=[4,8,15,16,23,42]
-FRINDS=["kevin", "KAren", "Jim", "Toddy", "Frog", "Todd", "Jorge", "Lang"]
+Items = ["car", "chair", "table", "mat"]
+num = [8.8, 7.7, 9.9, 5.5, 25, 34, 35, 43, 45, 50, 52, 53, 55, 61, 70, 71, 77, 91, 92, 93, 99, 105, 115,
+       122, 125, 133, 151, 155, 160, 170, 171, 177, 181, 192, 205, 250, 322, 331]
+numbers = [4, 8, 15, 16, 23, 42]
+FRINDS = ["kevin", "KAren", "Jim", "Toddy", "Frog", "Todd", "Jorge", "Lang"]
 #          0        1        2      3        4       5      7        8
 
 print('''
@@ -1921,7 +2051,7 @@ FRINDS.insert(1,"00000000000000")
 print(FRINDS)
 =''')
 
-FRINDS.insert(1,"00000000000000")
+FRINDS.insert(1, "00000000000000")
 # index       1, replace with this
 print(FRINDS)
 print('''
@@ -1931,13 +2061,13 @@ print('''
 FRINDS.insert(7,Items*3)
 print(FRINDS)
 =''')
-FRINDS.insert(7,Items*3)
+FRINDS.insert(7, Items * 3)
 print(FRINDS)
 print(''' remove one item
 FRINDS.remove("00000000000000")
 print(FRINDS)
 =''')
-FRINDS.remove("00000000000000" )
+FRINDS.remove("00000000000000")
 print(FRINDS)
 
 print(''' clear or remove last element\item of the list
@@ -1963,7 +2093,6 @@ print(FRINDS.index('Toddy'))
 print(FRINDS.count("car"))
 print(FRINDS.count("7"))
 
-
 print(''' clear all items
 FRINDS.clear()
 print(FRINDS)
@@ -1971,8 +2100,8 @@ print(FRINDS)
 FRINDS.clear()
 print(FRINDS)
 
-FRINDS=["You","HE", "he", "WE", "we","We", "wE"]
-math=[3, 33, 4.4, 9.0, 9, .1, 0.1, 0, 0.0, .0, .00, 00, 00.00, 00.000, 0000]
+FRINDS = ["You", "HE", "he", "WE", "we", "We", "wE"]
+math = [3, 33, 4.4, 9.0, 9, .1, 0.1, 0, 0.0, .0, .00, 00, 00.00, 00.000, 0000]
 print(''' sort/arrange all items alphabetically in assending order
 FRINDS=["You","HE", "he", "WE", "we","We", "wE"]
 math=[3, 33, 4.4, 9.0, 9, .1, 0.1, 0, 0.0, .0, .00, 00, 00.00, 00.000, 0000]
@@ -2005,14 +2134,13 @@ FRINDS3=math
 print(FRINDS2)
 print(FRINDS3)
 """)
-FRINDS3=math
-FRINDS2=math.copy()
-FRINDS3=math
+FRINDS3 = math
+FRINDS2 = math.copy()
+FRINDS3 = math
 print(FRINDS2)
 print(FRINDS3)
 
-
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
 #
@@ -2021,7 +2149,7 @@ print(FRINDS3)
 # Created:     29/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <your licence>
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 
 print(''' Create FUNCTIONS -
 Create FUNCTIONS -
@@ -2032,11 +2160,15 @@ def say_hi():
 #call the functio to do
 say_hi()
 ''')
- #define the function by def ....:
+
+
+# define the function by def ....:
 def say_hi():
-    #tell the function what to do
+    # tell the function what to do
     print("Hello User")
-#call the functio to do
+
+
+# call the functio to do
 say_hi()
 
 print('''
@@ -2059,12 +2191,15 @@ say_hi("mike")
 say_hi("DON")
 ''')
 
-#We can give parameters or information to functions
- #define the function by def ....:
+
+# We can give parameters or information to functions
+# define the function by def ....:
 def say_hi(name):
-    #tell the function what to do
+    # tell the function what to do
     print("Hello ", name)
-#call the functio to do
+
+
+# call the functio to do
 say_hi("mike")
 say_hi("DON")
 
@@ -2080,17 +2215,20 @@ say_hi("mike", "33")
 say_hi("DON", 55.5)
 ''')
 
-#We can give parameters or information to functions
- #define the function by def ....:
+
+# We can give parameters or information to functions
+# define the function by def ....:
 def say_hi(name, age):
-    #tell the function what to do
-    print("Hello ", name, "you are" , str(age))
-    #str() is to convert int or float to str#
-#call the functio to do#
+    # tell the function what to do
+    print("Hello ", name, "you are", str(age))
+    # str() is to convert int or float to str#
+
+
+# call the functio to do#
 say_hi("mike", "33")
 say_hi("DON", 55.5)
 
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
 #
@@ -2099,31 +2237,43 @@ say_hi("DON", 55.5)
 # Created:     29/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <your licence>
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 
 print('''
 def cube1(num):
     print(num*num*num)
 cube1(3)
 ''')
+
+
 def cube1(num):
-    print(num*num*num)
+    print(num * num * num)
+
+
 cube1(3)
 print('''
 def cube2(num):
     return(num*num*num)
 print(cube2(2))
 ''')
+
+
 def cube2(num):
-    return(num*num*num)
+    return (num * num * num)
+
+
 print(cube2(2))
 print('''
 def cube3(num):
     return num*num*num
 print(cube3(2))
 ''')
+
+
 def cube3(num):
-    return num*num*num
+    return num * num * num
+
+
 print(cube3(2))
 print('''
 def cube4(num):
@@ -2131,11 +2281,14 @@ def cube4(num):
 result=cube4(4)
 print(result)
 ''')
-def cube4(num):
-    return num*num*num
-result=cube4(4)
-print(result)
 
+
+def cube4(num):
+    return num * num * num
+
+
+result = cube4(4)
+print(result)
 
 print('''
 is_male = True
@@ -2163,7 +2316,6 @@ else:
     print(" Not Male")
 ''')
 
-
 print('''
 is_male = True
 is_Tall = True
@@ -2189,13 +2341,13 @@ is_Tall = True
 
 if is_male and is_male:
     print("Male")
-elif is_male and not(is_Tall):
+elif is_male and not (is_Tall):
     print("male short")
-elif not(is_male) and is_Tall:
+elif not (is_male) and is_Tall:
     print("not male tall")
-elif not(is_male) or is_Tall:
+elif not (is_male) or is_Tall:
     print("not male or tall")
-elif is_male or not(is_Tall):
+elif is_male or not (is_Tall):
     print("male or short")
 else:
     print(" Not Male not tall")
@@ -2204,7 +2356,10 @@ print('''
 Comparisons
 Comparisons =, <=, >=, <, >, !=
 ''')
-
+print('''
+Comparisons
+Comparisons =, <=, >=, <, >, !=
+''')
 print('''
 def max_num(n1, n2, n3):
     if n1>=n2 and n1>=n3:
@@ -2213,16 +2368,84 @@ def max_num(n1, n2, n3):
         return n2
 print(max_num(33,4,15))
 ''')
+'''
+Python 3 - Comparison Operators Example
+Advertisements
 
+ Previous PageNext Page  
+These operators compare the values on either side of them and decide the relation among them. They are also called Relational operators.
+
+Assume variable a holds the value 10 and variable b holds the value 20, then −
+
+Operator	Description	Example
+==	If the values of two operands are equal, then the condition becomes true.	(a == b) is not true.
+!=	If values of two operands are not equal, then condition becomes true.	(a!= b) is true.
+>	If the value of left operand is greater than the value of right operand, then condition becomes true.	(a > b) is not true.
+<	If the value of left operand is less than the value of right operand, then condition becomes true.	(a < b) is true.
+>=	If the value of left operand is greater than or equal to the value of right operand, then condition becomes true.	(a >= b) is not true.
+<=	If the value of left operand is less than or equal to the value of right operand, then condition becomes true.	(a <= b) is true.
+Example
+Assume variable a holds the value 10 and variable b holds the value 20, then −
+
+Live Demo
+#!/usr/bin/python3
+
+a = 21
+b = 10
+
+if ( a == b ):
+   print ("Line 1 - a is equal to b")
+else:
+   print ("Line 1 - a is not equal to b")
+
+if ( a != b ):
+   print ("Line 2 - a is not equal to b")
+else:
+   print ("Line 2 - a is equal to b")
+
+if ( a < b ):
+   print ("Line 3 - a is less than b" )
+else:
+   print ("Line 3 - a is not less than b")
+
+if ( a > b ):
+   print ("Line 4 - a is greater than b")
+else:
+   print ("Line 4 - a is not greater than b")
+
+a,b = b,a #values of a and b swapped. a becomes 10, b becomes 21
+
+if ( a <= b ):
+   print ("Line 5 - a is either less than or equal to  b")
+else:
+   print ("Line 5 - a is neither less than nor equal to  b")
+
+if ( b >= a ):
+   print ("Line 6 - b is either greater than  or equal to b")
+else:
+   print ("Line 6 - b is neither greater than  nor equal to b")
+Output
+When you execute the above program, it produces the following result −
+
+Line 1 - a is not equal to b
+Line 2 - a is not equal to b
+Line 3 - a is not less than b
+Line 4 - a is greater than b
+Line 5 - a is either less than or equal to  b
+Line 6 - b is either greater than  or equal to b
+'''
+
+'''
+
+'''
 def max_num(n1, n2, n3):
-    if n1>=n2 and n1>=n3:
+    if n1 >= n2 and n1 >= n3:
         return n1
-    elif n2>=n1 and n2>=n2:
+    elif n2 >= n1 and n2 >= n2:
         return n2
-print(max_num(33,4,15))
 
 
-
+print(max_num(33, 4, 15))
 
 print('''
 a1=float(input("Enter the first number:    "))
@@ -2246,27 +2469,376 @@ elif op=="%":
 else:
     print("invalid operator or number")
 ''')
+'''
+What are Logical Operators in Python?
+Logical Operators in Python are used to perform logical operations on the values of variables. The value is either true or false. We can figure out the conditions by the result of the truth values. There are mainly three types of logical operators in python : logical AND, logical OR and logical NOT. Operators are represented by keywords or special characters.
+
+In this tutorial, we going to learn various operators
+
+Arithmetic Operators
+Comparison Operators
+Python Assignment Operators
+Logical Operators or Bitwise Operators
+Membership Operators
+Identity Operators
+Operator precedence
+Arithmetic Operators
+Arithmetic Operators perform various arithmetic calculations like addition, subtraction, multiplication, division, %modulus, exponent, etc. There are various methods for arithmetic calculation in Python like you can use the eval function, declare variable & calculate, or call functions.
+
+Example: For arithmetic operators we will take simple example of addition where we will add two-digit 4+5=9
+
+x= 4	
+y= 5
+print(x + y)
+Similarly, you can use other arithmetic operators like for multiplication(*), division (/), substraction (-), etc.
+
+Comparison Operators
+Comparison Operators In Python compares the values on either side of the operand and determines the relation between them. It is also referred to as relational operators. Various comparison operators in python are ( ==, != , <>, >,<=, etc.)
+
+Example: For comparison operators we will compare the value of x to the value of y and print the result in true or false. Here in example, our value of x = 4 which is smaller than y = 5, so when we print the value as x>y, it actually compares the value of x to y and since it is not correct, it returns false.
+
+x = 4
+y = 5
+print(('x > y  is',x>y))
+Likewise, you can try other comparison operators (x < y, x==y, x!=y, etc.)
+
+Python Assignment Operators
+Assignment Operators in Python are used for assigning the value of the right operand to the left operand. Various assignment operators used in Python are (+=, - = , *=, /= , etc.).
+
+Example: Python assignment operators is simply to assign the value, for example
+
+num1 = 4
+num2 = 5
+print(("Line 1 - Value of num1 : ", num1))
+print(("Line 2 - Value of num2 : ", num2))
+Example of compound assignment operator
+
+We can also use a compound assignment operator, where you can add, subtract, multiply right operand to left and assign addition (or any other arithmetic function) to the left operand.
+
+Step 1: Assign value to num1 and num2
+Step 2: Add value of num1 and num2 (4+5=9)
+Step 3: To this result add num1 to the output of Step 2 ( 9+4)
+Step 4: It will print the final result as 13
+num1 = 4
+num2 = 5
+res = num1 + num2
+res += num1
+print(("Line 1 - Result of + is ", res))
+Logical Operators or Bitwise Operators
+Logical operators in Python are used for conditional statements are true or false. Logical operators in Python are AND, OR and NOT. For logical operators following condition are applied.
+
+For AND operator – It returns TRUE if both the operands (right side and left side) are true
+For OR operator- It returns TRUE if either of the operand (right side or left side) is true
+For NOT operator- returns TRUE if operand is false
+Example: Here in example we get true or false based on the value of a and b
+
+a = True
+b = False
+print(('a and b is',a and b))
+print(('a or b is',a or b))
+print(('not a is',not a))
+Membership Operators
+These operators test for membership in a sequence such as lists, strings or tuples. There are two membership operators that are used in Python. (in, not in). It gives the result based on the variable present in specified sequence or string
+
+Example: For example here we check whether the value of x=4 and value of y=8 is available in list or not, by using in and not in operators.
+
+x = 4
+y = 8
+list = [1, 2, 3, 4, 5 ];
+if ( x in list ):
+   print("Line 1 - x is available in the given list")
+else:
+   print("Line 1 - x is not available in the given list")
+if ( y not in list ):
+   print("Line 2 - y is not available in the given list")
+else:
+   print("Line 2 - y is available in the given list")
+Declare the value for x and y
+Declare the value of list
+Use the "in" operator in code with if statement to check the value of x existing in the list and print the result accordingly
+Use the "not in" operator in code with if statement to check the value of y exist in the list and print the result accordingly
+Run the code- When the code run it gives the desired output
+Identity Operators
+Identity Operators in Python are used to compare the memory location of two objects. The two identity operators used in Python are (is, is not).
+
+Operator is: It returns true if two variables point the same object and false otherwise
+Operator is not: It returns false if two variables point the same object and true otherwise
+Following operands are in decreasing order of precedence.
+
+Operators in the same box evaluate left to right
+
+Operators (Decreasing order of precedence)	Meaning
+**	Exponent
+*, /, //, %	Multiplication, Division, Floor division, Modulus
++, -	Addition, Subtraction
+<= < > >=	Comparison operators
+= %= /= //= -= += *= **=	Assignment Operators
+is is not	Identity operators
+in not in	Membership operators
+not or and	Logical operators
+Example:
+
+x = 20
+y = 20
+if ( x is y ): 
+	print("x & y  SAME identity")
+y=30
+if ( x is not y ):
+	print("x & y have DIFFERENT identity")
+Declare the value for variable x and y
+Use the operator "is" in code to check if value of x is same as y
+Next we use the operator "is not" in code if value of x is not same as y
+Run the code- The output of the result is as expected
+Operator precedence
+The operator precedence determines which operators need to be evaluated first. To avoid ambiguity in values, precedence operators are necessary. Just like in normal multiplication method, multiplication has a higher precedence than addition. For example in 3+ 4*5, the answer is 23, to change the order of precedence we use a parentheses (3+4)*5, now the answer is 35. Precedence operator used in Python are (unary + - ~, **, * / %, + - , &) etc.
+
+v = 4
+w = 5
+x = 8
+y = 2
+z = 0
+z = (v+w) * x / y;   
+print("Value of (v+w) * x/ y is ",  z)
+Declare the value of variable v,w…z
+Now apply the formula and run the code
+The code will execute and calculate the variable with higher precedence and will give the output
+Python 2 Example
+Above examples are Python 3 codes, if you want to use Python 2, please consider following codes
+
+#Arithmetic Operators
+x= 4	
+y= 5
+print x + y
+
+#Comparison Operators
+x = 4
+y = 5
+print('x > y  is',x>y)
+
+#Assignment Operators
+num1 = 4
+num2 = 5
+print ("Line 1 - Value of num1 : ", num1)
+print ("Line 2 - Value of num2 : ", num2)
+
+#compound assignment operator
+num1 = 4
+num2 = 5
+res = num1 + num2
+res += num1
+print ("Line 1 - Result of + is ", res)
+
+#Logical Operators
+a = True
+b = False
+print('a and b is',a and b)
+print('a or b is',a or b)
+print('not a is',not a)
+
+#Membership Operators
+x = 4
+y = 8
+list = [1, 2, 3, 4, 5 ];
+if ( x in list ):
+   print "Line 1 - x is available in the given list"
+else:
+   print "Line 1 - x is not available in the given list"
+if ( y not in list ):
+   print "Line 2 - y is not available in the given list"
+else:
+   print "Line 2 - y is available in the given list"
+
+#Identity Operators
+x = 20
+y = 20
+if ( x is y ):
+	print "x & y  SAME identity"
+y=30
+if ( x is not y ):
+	print "x & y have DIFFERENT identity"
+
+#Operator precedence
+v = 4
+w = 5
+x = 8
+y = 2
+z = 0
+z = (v+w) * x / y;   
+print "Value of (v+w) * x/ y is ",  z
+Summary:
+Operators in a programming language are used to perform various operations on values and variables. In Python, you can use operators like
+
+There are various methods for arithmetic calculation in Python as you can use the eval function, declare variable & calculate, or call functions
+Comparison operators often referred as relational operators are used to compare the values on either side of them and determine the relation between them
+Python assignment operators are simply to assign the value to variable
+Python also allows you to use a compound assignment operator, in a complicated arithmetic calculation, where you can assign the result of one operand to the other
+For AND operator – It returns TRUE if both the operands (right side and left side) are true
+For OR operator- It returns TRUE if either of the operand (right side or left side) is true
+For NOT operator- returns TRUE if operand is false
+There are two membership operators that are used in Python. (in, not in).
+It gives the result based on the variable present in specified sequence or string
+The two identify operators used in Python are (is, is not)
+It returns true if two variables point the same object and false otherwise
+Precedence operator can be useful when you have to set priority for which calculation need to be done first in a complex calculation.
+
+=============================================================================
+
+Python Logical Operators
+Logical operators are used to combine conditional statements:
+
+Operator	Description	Example	Try it
+and 	Returns True if both statements are true	x < 5 and  x < 10	
+or	Returns True if one of the statements is true	x < 5 or x < 4	
+not	Reverse the result, returns False if the result is true	not(x < 5 and x < 10)
+
+
+Python 3 – Logical Operators
+Last Updated : 10 Jul, 2020
+Logical Operators are used to perform certain logical operations on values and variables. These are the special reserved keywords that carry out some logical computations. The value the operator operates on is known as Operand. In Python, they are used on conditional statements (either True or False), and as a result, they return boolean only (True or False). They are used to combine conditional statements
+
+There are following logical operators supported by Python language:
+
+Logical AND
+Logical OR
+Logical NOT
+Logical AND
+Logical operator AND returns True only if both the operands are True else it returns False. It is a binary operator, which means to return some value, it has to be operated between two operators (i.e, two operators are required)
+
+Truth Table:
+
+Operator A	Operator B	Logical AND result
+True	True	True
+True	False	False
+False	True	False
+False	False	False
+Example 1:
 
 
 
-a1=float(input("Enter the first number:    "))
-op=input("Enter the operator or sign :          ")
-b1=float(input("Enter the second number:    "))
 
-if op=="+":
-    print(str(a1),"+", str(b1), "=", a1+b1 )
-elif op=="-":
-     print(str(a1),"-", str(b1), "=", a1-b1 )
-elif op=="/":
-     print(str(a1),"/", str(b1), "=", a1/b1 )
-elif op=="*":
-     print(str(a1),"*", str(b1), "=", a1*b1 )
-elif op=="**":
-     print(str(a1),"**", str(b1), "=", a1**b1 )
-elif op=="//":
-     print(str(a1),"//", str(b1), "=", a1//b1 )
-elif op=="%":
-     print(str(a1),"%", str(b1), "=", a1%b1 )
+   
+a = 12
+b = 26
+c = 4
+  
+if a > b and a > c: 
+    print("Number a is larger") 
+  
+if b > a and b > c: 
+    print("Number b is larger") 
+  
+if c > a and c > b:    
+    print("Number c is larger") 
+Output:
+
+Number b is larger
+Example 2:
+
+
+a = 10
+    
+if (a == 0 and "Hello"):
+    print("a has value zero(0)")
+else:
+    print("a is not equal to zero")
+Output:
+
+a is not equal to zero
+If the first expression evaluated to be false while using and operator, then further expressions are not evaluated. Also, any string is always considered a true statement. In the above example, the first condition is false and hence it will not check the second condition and hence, it will not check for another condition and it will go to else statement.
+
+Logical OR
+The logical operator OR returns False only if both the operands are False else it returns True. It is a binary operator, which means to return some value, it has to be operated between two operators (i.e, two operators are required)
+
+Truth Table:
+
+Operator A	Operator B	Logical OR Result
+True	True	True
+True	False	True
+False	True	True
+False	False	False
+Example 1:
+
+
+a = 10
+b = -5
+  
+if a < 0 or b < 0:
+  print("Their product will be negative")
+else:
+  print("Their product will be positive")
+Output:
+
+
+
+Their product will be negative
+Example 2:
+
+
+a = 10
+  
+if (a == 0 or "GeeksForGeeks"):
+  print("Is Awesome")
+else:
+  ("Try Again!")
+Output:
+
+Is Awesome
+Here, in the OR Logical operator, even if the first expression evaluated is false while using and operator, then also the further expressions are evaluated. Also, any string is always considered a true statement. In the above example, the first statement is false but then too, it will evaluate the second statement because it returns False only if both the operands are False and since the string is considered as True statement, thus, it will be evaluated and the below print statement will be printed.
+
+Logical NOT
+Logical NOT operator works with the single boolean value and returns the value as True if the boolean value is False and vice-versa (that is the opposite of it).  It is a unary operator, which means to return some value, it has to be operated on one operator only. (i.e, only operator is required)
+
+Truth Table:
+
+Operator A	Logical NOT Result
+True	False
+False	True
+Example 1:
+
+
+a = 10
+  
+if not a == 10:
+  print ("a not equals 10")
+else:
+  print("a equals 10")
+Output:
+
+a equals 10
+Here, a is equal to 10 the boolean a == 10 return the value True. Hence, the boolean not a == 10 will return the value as False and since the if condition is not satisfied, it will jump to else statement. 
+
+Example 2:
+
+
+a = 10
+  
+if not a%5 == 0:
+  print("a is not perfectly divisible by 5")
+else:
+  print("a is perfectly divisible by 5")
+Output:
+
+a is perfectly divisible by 5
+
+'''
+a1 = float(input("Enter the first number:    "))
+op = input("Enter the operator or sign :          ")
+b1 = float(input("Enter the second number:    "))
+
+if op == "+":
+    print(str(a1), "+", str(b1), "=", a1 + b1)
+elif op == "-":
+    print(str(a1), "-", str(b1), "=", a1 - b1)
+elif op == "/":
+    print(str(a1), "/", str(b1), "=", a1 / b1)
+elif op == "*":
+    print(str(a1), "*", str(b1), "=", a1 * b1)
+elif op == "**":
+    print(str(a1), "**", str(b1), "=", a1 ** b1)
+elif op == "//":
+    print(str(a1), "//", str(b1), "=", a1 // b1)
+elif op == "%":
+    print(str(a1), "%", str(b1), "=", a1 % b1)
 else:
     print("invalid operator or number")
 
@@ -2275,7 +2847,6 @@ print(eval(input()))
 ''')
 print(eval(input()))
 
-
 print('''
 op=input( """please input a calculating or math operetion:
 like 12+14 or 14*30 or 34//22 etc
@@ -2283,12 +2854,10 @@ like 12+14 or 14*30 or 34//22 etc
 print(eval(op))
 ''')
 
-op=input( """please input a calculating or math operetion:
+op = input("""please input a calculating or math operetion:
 like 12+14 or 14*30 or 34//22 etc
-                  """ )
+                  """)
 print(eval(op))
-
-
 
 print('''
 
@@ -2300,12 +2869,12 @@ copy paste will not work till now     :
  ''')
 
 
-                 """    )
-codex=input('''     please input your code by typing
+                 """)
+codex = input('''     please input your code by typing
 copy paste will not work till now     :
 
 
-                 '''       )
+                 ''')
 print("""
 print(codex)
 print("The above code that you typed -  will give output")
@@ -2323,14 +2892,13 @@ while i<=10:
       i+=1
 print("end")
 """)
-i=1
-while i<=10:
-      print(i)
-      i+=1
+i = 1
+while i <= 10:
+    print(i)
+    i += 1
 print("end")
 
-
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
 #
@@ -2339,7 +2907,8 @@ print("end")
 # Created:     30/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <your licence>
-#-------------------------------------------------------------------------------
+# -------------------------------------------------------------------------------
+
 print('''
 secret_word="girrafe"
 guess=""
@@ -2351,13 +2920,12 @@ print("you win")
 print("Guessing game 1")
 print("Guessing game 1.11")
 
-secret_word="girrafe"
-guess=""
+secret_word = "girrafe"
+guess = ""
 
-while guess!= secret_word:
-      guess=input("""Enter guess, Guessing game1.11""")
+while guess != secret_word:
+    guess = input("""Enter guess, Guessing game1.11""")
 print("you win")
-
 
 print("Guessing game 1.22")
 print("Guessing game 1.22")
@@ -2379,19 +2947,18 @@ else:
      print("you win")
 ''')
 esc = False
-secret_word="girrafe"
-guess=""
-while guess!= secret_word and not(esc):
-      if guess!="e":
-         guess=input("""Enter guess, Guessing game1.22 or
+secret_word = "girrafe"
+guess = ""
+while guess != secret_word and not (esc):
+    if guess != "e":
+        guess = input("""Enter guess, Guessing game1.22 or
          enter e to exit:       """)
-      else:
-        esc=True
+    else:
+        esc = True
 if esc:
-   print("You exit")
+    print("You exit")
 else:
-     print("you win")
-
+    print("you win")
 
 print("Guessing game 2")
 print("Guessing game 2.1")
@@ -2416,27 +2983,24 @@ else:
  print("you win")
 ''')
 
-secret_word="girrafe2"
-guess=""
-guess_count=0
-out_of_guesses=False
-guess_limit=3
-while guess!= secret_word and not(out_of_guesses):
-      if guess_count< guess_limit:
-        guess=input("Enter guess, for guessing game 2.1, maximum 3 times:   ")
-        guess_count+=1
-      else:
-         out_of_guesses=True
+secret_word = "girrafe2"
+guess = ""
+guess_count = 0
+out_of_guesses = False
+guess_limit = 3
+while guess != secret_word and not (out_of_guesses):
+    if guess_count < guess_limit:
+        guess = input("Enter guess, for guessing game 2.1, maximum 3 times:   ")
+        guess_count += 1
+    else:
+        out_of_guesses = True
 
 if out_of_guesses:
-   print("you lose")
+    print("you lose")
 else:
- print("you win")
+    print("you win")
 
-
-
-
-#+++++++++++++++++++++++++++++++++++++++++++++++++++
+# +++++++++++++++++++++++++++++++++++++++++++++++++++
 print('''
 fr=["jim", "Ken", "Lom"]
 
@@ -2445,7 +3009,7 @@ for fr in fr:
 print(" \n ")
 print(fr)
 ''')
-fr=["jim", "Ken", "Lom"]
+fr = ["jim", "Ken", "Lom"]
 
 for fr in fr:
     print(fr)
@@ -2461,7 +3025,7 @@ for n in fr:
     print(n)
 ''')
 
-fr=["jim", "Ken", "Lom"]
+fr = ["jim", "Ken", "Lom"]
 for n in fr:
     print(n)
 
@@ -2470,7 +3034,7 @@ fr=["jim", "Ken", "Lom"]
 for index in range(len(fr)):
     print(fr[index])
 ''')
-fr=["jim", "Ken", "Lom"]
+fr = ["jim", "Ken", "Lom"]
 for index in range(len(fr)):
     print(fr[index])
 
@@ -2483,12 +3047,12 @@ for index in range(5):
          print("not 1st")
 
 ''')
-fr=["jim", "Ken", "Lom"]
+fr = ["jim", "Ken", "Lom"]
 for index in range(5):
-    if index==0:
-       print("first one")
+    if index == 0:
+        print("first one")
     else:
-         print("not 1st")
+        print("not 1st")
 
 print('''
 Exponent code
@@ -2505,13 +3069,16 @@ print(answer2(3,2))
 print('''
 
 ''')
-def answer2(number, power):
-    result=1
-    for index in range(power):
-        result=result * number
-    return result
-print(answer2(3,2))
 
+
+def answer2(number, power):
+    result = 1
+    for index in range(power):
+        result = result * number
+    return result
+
+
+print(answer2(3, 2))
 
 print('''
 2D Lists and Nested Loops
@@ -2523,11 +3090,11 @@ matrix_grid=[
 [0]
 ]
 ''')
-matrix_grid=[
-[1,2,3],
-[4,5,6],
-[7,8,9],
-[0]
+matrix_grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9],
+    [0]
 ]
 print('''
 print(matrix_grid[0][0])
@@ -2559,7 +3126,7 @@ for r in matrix_grid:
     for c in r:
         print(c)
 
-#translationcode.py
+# translationcode.py
 
 print('''
 Basic translator in python
@@ -2573,7 +3140,6 @@ evry vowel in the phrase will become g
 like example, gog will ggg, dog will be dgg, bag will be bgg, etc
 ''')
 
-
 print('''
 Basic translator in python v 1.11
 ''')
@@ -2594,17 +3160,18 @@ print(translation(input("please input word/s:   " )))
 
 ''')
 
+
 def translation(words):
- translation=""
- for letter in words:
-    if letter in "AEIOUaeiou":
-        translation= translation + "g"
-    else:
-         translation= translation + letter
- return translation
-print(translation(input("please input word/s:   " )))
+    translation = ""
+    for letter in words:
+        if letter in "AEIOUaeiou":
+            translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
 
 
+print(translation(input("please input word/s:   ")))
 
 print('''
 Basic translator in python v 1.22
@@ -2629,21 +3196,22 @@ print( " The translation is " , translation(words))
 ''')
 
 
-
 def translation(words):
- translation=""
- for letter in words:
-    if letter.lower() in "aeiou":
-       if letter.isupper():
-          translation= translation + "G"
-       else:
-         translation= translation + "g"
-    else:
-         translation= translation + letter
- return translation
-words=input("please input word/s:   " )
+    translation = ""
+    for letter in words:
+        if letter.lower() in "aeiou":
+            if letter.isupper():
+                translation = translation + "G"
+            else:
+                translation = translation + "g"
+        else:
+            translation = translation + letter
+    return translation
+
+
+words = input("please input word/s:   ")
 print("you entered - ", words)
-print( " The translation is " , translation(words))
+print(" The translation is ", translation(words))
 
 '''print('''
 ''')'''
@@ -2652,66 +3220,60 @@ print("vol 1.11")
 try:
     num = int(input("Please enter a number:  "))
     print(num)
-except: # this will catch ay error
-       print("Invalid input")
-
+except:  # this will catch ay error
+    print("Invalid input")
 
 print("vol 1.22")
-#value=10/0
+# value=10/0
 print(" this will show zero division error")
 try:
     num = int(input("Please enter a number:  "))
     print(num)
 except:
-       print("Invalid input")
-
+    print("Invalid input")
 
 print("vol 1.33")
 
 try:
-    value=10/0
+    value = 10 / 0
     print(''' this will also catch error of value=10/0,
     and print invalid iputwhich is unwanted.''')
     num = int(input("Please enter a number:  "))
     print(num)
 except:
 
-       print("Invalid input")
+    print("Invalid input")
 
 print("vol 2.00")
 
 try:
-    value=10/0
+    value = 10 / 0
     print(''' this will also catch error of value=10/0,
     and print invalid iputwhich is unwanted.''')
     num = int(input("Please enter a number:  "))
     print(num)
-except ZeroDivisionError :
+except ZeroDivisionError:
     print("division by zero")
 except ValueError:
-       print("Invalid input")
+    print("Invalid input")
 
 try:
-    value=10/0
+    value = 10 / 0
     print(''' this will also catch error of value=10/0,
     and print invalid iputwhich is unwanted.''')
     num = int(input("Please enter a number:  "))
     print(num)
-except ZeroDivisionError as err :
-    print("err") # to print the actual error.
+except ZeroDivisionError as err:
+    print("err")  # to print the actual error.
     print("division by zero")
 except ValueError:
-       print("Invalid input")
-
-
+    print("Invalid input")
 
 print('''
 ''')
 
-
 print('''
 ''')
-
 
 print('''[
 Python String | replace()
@@ -2762,60 +3324,42 @@ GeeksforGeeks for GeeksforGeeks GeeksforGeeks geeks geeks]
 
 ''')
 
+
+def say_hi(name, age):
+    print("Hellow", name, "you are ", age)
+
+
+say_hi("mike", 30)
+say_hi("hall", "50")
+
+print('''
 def say_hi(name , age):
     print("Hellow", name , "you are " ,  age )
 
 
 say_hi("mike" , 30)
 say_hi("hall" , "50")
-
-
-print('''
-def say_hi(name , age):
-    print("Hellow", name , "you are " ,  age )
-
-
-say_hi("mike" , 30)
-say_hi("hall" , "50")
 ''')
 
 print('''
 ''')
 
-
 print('''
 ''')
-
-
-
-
-
-
-
-
-
 
 print("end")
 
-
-
 print('''
 ''')
 
 print('''
 ''')
 
-
-
-
-
-
 print('''
 ''')
-
-
 
 import turtle
+
 tut = turtle.pen()
 tut = turtle.forward(200)
 tut = turtle.left(200)
@@ -2830,8 +3374,13 @@ tut = turtle.right(20)
 tut = turtle.forward(120)
 tut = turtle.right(20)
 tut = turtle.back(120)
-tut= exit()
+tut = exit()
 exit()
+
+print("""     The End The End The End
+
+                       The End ?   """)
+
 
 print("""     The End The End The End
 
