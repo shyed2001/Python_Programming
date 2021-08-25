@@ -8,6 +8,15 @@
 # Copyright:   (c) User 2019
 # Licence:     <User/Shyed/your licence>
 # -------------------------------------------------------------------------------
+#!/usr/bin/env python3
+
+# https://stackoverflow.com/questions/7670303/purpose-of-usr-bin-python3-shebang
+
+# https://en.wikipedia.org/wiki/Shebang_(Unix)
+
+
+
+
 print("""     The Start The Start The Start
 
                        The Start ?   """)
@@ -1522,7 +1531,9 @@ will produce 0 to 4 , 5 times
 for i in range(0, 5):
     for a in range(0, 5):
         print(a)
- print(""" students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+
+
+print(""" students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
 print(students1.items())
 for key in students1:
     print(f"key:{key} value:{students1[key]}")
@@ -1907,9 +1918,13 @@ students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
 print(students1.items())
 for key in students1:
     print(f"key:{key} value:{students1[key]}")
+
+print(len(students1))
+
 for key, value in students1.items():
     print(f"key:{key} value:{value}")
- print(""" students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+
+print(""" students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
 print(students1.items())
 for key in students1:
     print(f"key:{key} value:{students1[key]}")
