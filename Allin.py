@@ -8,7 +8,6 @@
 # Copyright:   (c) User 2019
 # Licence:     <User/Shyed/your licence>
 # -------------------------------------------------------------------------------
-
 print("""     The Start The Start The Start
 
                        The Start ?   """)
@@ -32,6 +31,39 @@ is a
 multi line
 comment
 '''
+print("Variables")
+
+x = 7
+print(x)
+print(x + 5)
+y = 4
+z = 5
+print(x + y + z)
+x = "This is a string"
+print(x + "!")
+x = 'This is a string'
+print("x" + "!")
+
+lastname = 3
+Lastname = 4
+print(lastname + Lastname)
+
+print("In place operators")
+x = 7
+x += 2
+print(x)
+x -= 3
+print(x)
+x *= 4
+print(x)
+x /= 2
+print(x)
+
+print("Booleans")
+
+"Bruce" == "bruce"
+print("Bruce" == "bruce") # Output False
+print("Bruce" == "Bruce") # Output True
 print(numbersList)
 print(country.upper())
 
@@ -79,6 +111,7 @@ started at {yearsofstarting + age}"""
 # Defining function data type
 
 print(email)
+print(f"hello {brand}age is {3 + 6}started at {yearsofstarting + age}")
 
 
 def hello() -> str:
@@ -823,8 +856,493 @@ Operator	Description	Syntax
 //	Division (floor): divides the first operand by the second	x // y
 %	Modulus: returns the remainder when first operand is divided by the second	x % y
 **	Power : Returns first raised to power second	x ** y
-'''
 # Arithmetic Operators
+'''
+
+
+# if statement # if statement
+# if statement # if statement
+
+
+print("if & else statement, conditional statements")
+print("if & else statement, conditional statements")
+print("if statement")
+print("if statement")
+
+print('''if 6 > 4:
+    print("true, 6 is greater than 4 ")
+print('n=12')
+n = 12
+if n > 5:
+    print("n is greater than 5 ")
+    if n <= 15:
+        print("n is less than 15 ")''')
+
+if 6 > 4:
+    print("true, 6 is greater than 4 ")
+print('n=12')
+n = 12
+if n > 5:
+    print("n is greater than 5 ")
+    if n <= 15:
+        print("n is less than 15 ")
+print(''' a = 15
+if a == 11:
+    print('a!=11')
+else:
+    print('a=15')
+if 1 + 1 == 2:
+    if 2 * 2 == 8:
+        print('if')
+    else:
+        print('else')
+print('out of the loop')''')
+a = 15
+if a == 11:
+    print('a!=11')
+else:
+    print('a=15')
+if 1 + 1 == 2:
+    if 2 * 2 == 8:
+        print('if')
+    else:
+        print('else')
+print('out of the loop')
+num = 7
+if num > 3:
+    print('>3')
+else:
+    print('else')
+if num == 7:
+    print('==7')
+print('out of the loop')
+print('in the loop')
+
+print('''
+num = 7
+if num > 3:
+    print('>3')
+else:
+    print('else')
+    if num == 7:
+        print('==7')
+print('in the loop')
+''')
+num = 7
+if num > 3:
+    print('>3')
+else:
+    print('else')
+    if num == 7:
+        print('==7')
+print('in the loop')
+
+
+print('''
+
+''')
+print('''
+
+''')
+print('''
+
+''')
+print('''
+
+''')
+print('''
+esnum = 7
+if esnum == 2:
+    print('esnum == 2')
+else:
+    if esnum == 12:
+        print('esnum == 12')
+    else:
+        if esnum == 22:
+            print('esnum == 12')
+        else:
+            if esnum == 7:
+                print('esnum == 7')
+
+
+''')
+esnum = 7
+if esnum == 2:
+    print('esnum == 2')
+else:
+    if esnum == 12:
+        print('esnum == 12')
+    else:
+        if esnum == 22:
+            print('esnum == 12')
+        else:
+            if esnum == 7:
+                print('esnum == 7')
+
+
+
+print("elif statements")
+print("elif")
+elifsnum = 7
+if elifsnum == 2:
+    print('esnum == 2')
+elif elifsnum == 12:
+    print('esnum == 12')
+elif elifsnum == 22:
+    print('elifsnum == 12')
+elif elifsnum == 7:
+    print('elifsnum == 7')
+
+print("Nested if and else statements")
+print(""" esnum = 22
+if esnum == 22:
+   if esnum>22:
+            print('esnum == 22')
+   else:
+            print('esnum == unknown') """)
+esnum = 22
+if esnum == 22:
+    if esnum > 22:
+        print('esnum == 22')
+    else:
+        print('esnum == unknown')
+print("""A=3
+B=5
+C=7
+if A==3:
+   if B==5 and C<=7:
+      if not A == 5:
+         print("Nested if statements")
+      else:
+           print("Zero")
+= """)
+
+print("if & else statement, conditional statements")
+print("if statement")
+A = 3
+B = 5
+C = 7
+if A == 3:
+    if B == 5 and C <= 7:
+        if not A == 5:
+            print("Nested if statements")
+        else:
+            print("Zero")
+print("Ternary If Statements if & else statement, conditional statements")
+print(" Ternary If Statements if statement")
+
+# Ternary If Statements
+# Ternary If Statements
+'''
+Let's take a look at this example:
+
+>>> age = 15
+>>> # Conditions are evaluated from left to right
+>>> print('kid' if age < 18 else 'adult') kid 
+Ternary operators can be chained:
+
+ >>> age = 15
+>>> print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
+teenager
+Which is the same as:
+
+
+if age < 18:
+if age < 12:
+print('kid')
+else:
+print('teenager')
+else:
+print('adult')
+
+
+'''
+print('''
+age = 15
+# Conditions are evaluated from left to right
+print('kid' if age < 18 else 'adult') kid 
+''')
+age = 15
+# Conditions are evaluated from left to right
+print('kid' if age < 18 else 'adult')
+#Ternary operators can be chained:
+print(''' #Ternary operators can be chained:
+age = 15
+print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
+''')
+
+age = 15
+print('kid' if age < 13 else 'teenager' if age < 18 else 'adult')
+
+#Lists
+
+print('''
+#Lists
+#Lists
+
+
+print(type[])
+''')
+print(type[1,2])
+
+print('''
+NUMBERS = [1, 2, 2, 3, 4, -1, 0, ['A','B']]
+
+print(NUMBERS)
+print(NUMBERS[0])
+print(NUMBERS)
+print(NUMBERS[3])
+print(NUMBERS[6][1])
+print(NUMBERS[6][2])
+# print(NUMBERS[7]) this will give errors
+''')
+NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
+
+print(NUMBERS)
+print(NUMBERS[0])
+print(NUMBERS)
+print(NUMBERS[3])
+print(NUMBERS[12][1])
+print(NUMBERS[12][2])
+# print(NUMBERS[17]) this will give errors
+print('''
+NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
+In lists Duplicates are allowed
+print(NUMBERS)
+print(NUMBERS[0])
+print(NUMBERS)
+print(NUMBERS[3])
+print(NUMBERS[12][1])
+print(NUMBERS[12][2])
+# print(NUMBERS[17]) this will give errors
+''')
+
+
+
+print('''
+List Methods 
+List Methods
+
+NUMBERS.sort()
+print(NUMBERS)
+
+
+NUMBERS.reverse()
+print(NUMBERS)
+
+NUMBERS.append(100)
+print(NUMBERS)
+
+NUMBERS.remove(2)
+print(NUMBERS)
+
+print(2000 in numbers)
+print(100 in numbers)
+print(100 not in numbers)
+
+NUMBERS.pop()
+print(NUMBERS)
+
+NUMBERS.pop()
+NUMBERS.pop()
+print(NUMBERS)
+NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
+del NUMBERS[0]
+print(NUMBERS)
+NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
+del NUMBERS[0:7]
+print(NUMBERS)
+NUMBERS.clear()
+print(NUMBERS)
+print(len(NUMBERS))
+''')
+NUMBERS.sort()
+print(NUMBERS)
+
+
+NUMBERS.reverse()
+print(NUMBERS)
+
+NUMBERS.append(100)
+print(NUMBERS)
+
+NUMBERS.remove(2)
+print(NUMBERS)
+
+print(2000 in numbers)
+print(100 in numbers)
+print(100 not in numbers)
+
+NUMBERS.pop()
+print(NUMBERS)
+
+NUMBERS.pop()
+NUMBERS.pop()
+print(NUMBERS)
+NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
+del NUMBERS[0]
+print(NUMBERS)
+NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
+del NUMBERS[0:7]
+print(NUMBERS)
+NUMBERS.clear()
+print(NUMBERS)
+print(len(NUMBERS))
+
+
+print(''' SETS vSETS
+In lists Duplicates are allowed
+sets sets  # Duplicates are not allowed
+''')
+print('''
+NUMBERSLIST= [0, 0, 1, 1, 2, 3, 'a', 4, 6,7, -1, 0, ['A','B']]
+print(NUMBERSLIST)
+NUMBERSET= {0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']}
+print(NUMBERSET)
+''')
+NUMBERSLIST= [0, 0, 1, 1, 2, 3, 'a', 4, 6,7, -1, 0, ['A','B']]
+print(NUMBERSLIST)
+NUMBERSET= {0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']}
+print(NUMBERSET)
+
+print('''
+All the methods in lists works in sets,
+ but in sets duplicates are not allowed and order is not gurranteed.
+''')
+
+
+print('''
+Set Union Intersection & Difference
+Set Union Intersection & Difference
+''')
+'''
+
+Python set operations (union, intersection, difference and symmetric difference)
+Python Set | difference()
+Python program to find common elements in three lists using sets
+Python | Print all the common elements of two lists
+Python | Intersection of two lists
+Python | Union of two or more Lists
+Union() function in Python
+round() function in Python
+floor() and ceil() function Python
+Python math function | sqrt()
+numpy.sqrt() in Python
+numpy.square() in Python
+numpy.sum() in Python
+numpy.add() in Python
+numpy.subtract() in Python
+Python | Difference between two lists
+Python | Check if two lists are identical
+Python | Check if all elements in a list are identical
+Python | Check if all elements in a List are same
+Class method vs Static method in Python
+Class or Static Variables in Python
+Changing Class Members in Python
+Constructors in Python
+Destructors in Python
+Inheritance in Python
+Adding new column to existing DataFrame in Pandas
+Python map() function
+Taking input in Python
+How to get column names in Pandas dataframe
+Iterate over a list in Python
+
+Python set operations (union, intersection, difference and symmetric difference)
+Last Updated : 18 Dec, 2017
+This article demonstrates different operations on Python sets.
+Examples:
+
+Input :
+A = {0, 2, 4, 6, 8}
+B = {1, 2, 3, 4, 5}
+
+Output :
+ Union : [0, 1, 2, 3, 4, 5, 6, 8]
+ Intersection : [2, 4]
+ Difference : [8, 0, 6]
+ Symmetric difference : [0, 1, 3, 5, 6, 8]
+In Python, below quick operands can be used for different operations.
+
+| for union.
+& for intersection.
+– for difference
+^ for symmetric difference
+
+
+# Program to perform different set operations
+# as we do in  mathematics
+  
+# sets are define
+A = {0, 2, 4, 6, 8};
+B = {1, 2, 3, 4, 5};
+  
+# union
+print("Union :", A | B)
+  
+# intersection
+print("Intersection :", A & B)
+  
+# difference
+print("Difference :", A - B)
+  
+# symmetric difference
+print("Symmetric difference :", A ^ B)
+Output:
+
+('Union :', set([0, 1, 2, 3, 4, 5, 6, 8]))
+('Intersection :', set([2, 4]))
+('Difference :', set([8, 0, 6]))
+('Symmetric difference :', set([0, 1, 3, 5, 6, 8]))
+'''
+
+# sets are define
+A = {0, 2, 4, 6, 8};
+B = {1, 2, 3, 4, 5};
+
+# union
+print("Union :", A | B)
+
+# intersection
+print("Intersection :", A & B)
+
+# difference
+print("Difference :", A - B)
+
+# symmetric difference
+print("Symmetric difference :", A ^ B)
+
+
+print('''
+
+''')
+print('''
+
+''')
+print('''
+
+''')
+
+print('''
+
+''')
+print('''
+
+''')
+
+print('''
+
+''')
+print('''
+
+''')
+print('''
+
+''')
+
+
+
+
 
 
 print(" The slice operators of strings")
@@ -874,6 +1392,12 @@ print(""" The slice operators, or indexing in python starts from
  0 and the last index nuberd one is ignored """)
 print(""" to printing a charecter, from 4th to last to the  last
 character [3:] is used """)
+
+
+
+
+
+
 # ----------
 
 print("python loops")
@@ -892,6 +1416,7 @@ print("""python loops or iterator with range():
                 conditions until the cindition becomes false.
 shoppinglist2=['eggs', 'carrots', 'milk', 'cherries', 'apples']
 """)
+
 shoppinglist2 = ['eggs', 'carrots', 'milk', 'cherries', 'apples']
 for i in shoppinglist2:
     print(i)
@@ -946,9 +1471,10 @@ for x in name:
 for x in name:
     print(x)
     print(" For the letter in the variable x is : " + x)
-print(" For the letter in the variable x is : " + x)
+print("Out of Loop For the letter in the variable x is : " + x)
 
-name = "abcd"
+name = "abcdefg"
+
 for x in name:
     print("12345 ")
 
@@ -996,6 +1522,20 @@ will produce 0 to 4 , 5 times
 for i in range(0, 5):
     for a in range(0, 5):
         print(a)
+ print(""" students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+print(students1.items())
+for key in students1:
+    print(f"key:{key} value:{students1[key]}")
+for key, value in students1.items():
+    print(f"key:{key} value:{value}")""")
+students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+print(students1.items())
+for key in students1:
+    print(f"key:{key} value:{students1[key]}") # if we had the keys only
+
+for key, value in students1.items():
+    print(f"key:{key} value:{value}")
+
 
 print("python while loops")
 print("while loops")
@@ -1010,8 +1550,10 @@ while c<10:
  print(c)
  =  """)
 c = 5
+print("python While loops or iterator")
+print("python while loops -  while loop")
 while c < 10:
-    c = c + 1
+    c = c + 1 # c +=1
     print(c)
     print("   print (c) = ", c)
 print("print (c) = ", c)
@@ -1022,47 +1564,15 @@ while c<10:
 c = 5
 while c < 10:
     print(c)
-    c = c + 1
+    c = c + 1 # c +=1
     print("   print (c) = ", c)
 print("print (c) = ", c)
 
 print(""" The code stops printing when
- value of c becoems, c=10 and not c<10.
+ value of c becomes, c=10 and not c<10.
 """)
 
 # ------------
-print("Variables")
-
-x = 7
-print(x)
-print(x + 5)
-y = 4
-z = 5
-print(x + y + z)
-x = "This is a string"
-print(x + "!")
-x = 'This is a string'
-print("x" + "!")
-
-lastname = 3
-Lastname = 4
-print(lastname + Lastname)
-
-print("In place operators")
-x = 7
-x += 2
-print(x)
-x -= 3
-print(x)
-x *= 4
-print(x)
-x /= 2
-print(x)
-
-print("Booleans")
-
-"Bruce" == "bruce"
-print("Bruce" == "bruce")
 
 my_bollean = True
 
@@ -1112,117 +1622,16 @@ print("(num **= 2) == (num = num ** 2)")
 # (num /=2) == (num = num/2)
 
 
-# if statement # if statement
-# if statement # if statement
-
-
-print("if & else statement, conditional statements")
-print("if & else statement, conditional statements")
-print("if statement")
-print("if statement")
-
-print('if 6>4:')
-
-if 6 > 4:
-    print("true, 6 is greater than 4 ")
-print('n=12')
-n = 12
-if n > 5:
-    print("n is greater than 5 ")
-    if n <= 15:
-        print("n is less than 15 ")
-print('if a=15')
-a = 15
-if a == 11:
-    print('a!=11')
-else:
-    print('a=15')
-if 1 + 1 == 2:
-    if 2 * 2 == 8:
-        print('if')
-    else:
-        print('else')
-print('out of the loop')
-num = 7
-if num > 3:
-    print('>3')
-else:
-    print('else')
-if num == 7:
-    print('==7')
-print('out of the loop')
-print('in the loop')
-num = 7
-if num > 3:
-    print('>3')
-else:
-    print('else')
-    if num == 7:
-        print('==7')
-print('in the loop')
-
-esnum = 7
-if esnum == 2:
-    print('esnum == 2')
-else:
-    if esnum == 12:
-        print('esnum == 12')
-    else:
-        if esnum == 22:
-            print('esnum == 12')
-        else:
-            if esnum == 7:
-                print('esnum == 7')
-
-
-
-print("elif statements")
-print("elif")
-elifsnum = 7
-if elifsnum == 2:
-    print('esnum == 2')
-elif elifsnum == 12:
-    print('esnum == 12')
-elif elifsnum == 22:
-    print('elifsnum == 12')
-elif elifsnum == 7:
-    print('elifsnum == 7')
-
-print("Nested if and else statements")
-print(""" esnum = 22
-if esnum == 22:
-   if esnum>22:
-            print('esnum == 22')
-   else:
-            print('esnum == unknown') """)
-esnum = 22
-if esnum == 22:
-    if esnum > 22:
-        print('esnum == 22')
-    else:
-        print('esnum == unknown')
-print("""A=3
-B=5
-C=7
-if A==3:
-   if B==5 and C<=7:
-      if not A == 5:
-         print("Nested if statements")
-      else:
-           print("Zero")
-= """)
-A = 3
-B = 5
-C = 7
-if A == 3:
-    if B == 5 and C <= 7:
-        if not A == 5:
-            print("Nested if statements")
-        else:
-            print("Zero")
 
 print('Bollean logic')
 print('Bollean logic')
+
+print("2 == 2 and 3 == 3")
+print("2 == 2 and 3 == 4")
+print("2 == 2 or 3 == 4")
+print("2 == 2 or 3 == 3")
+print("not 2 == 2")
+print("not 2 != 2")
 
 print(2 == 2 and 3 == 3)
 print(2 == 2 and 3 == 4)
@@ -1332,6 +1741,7 @@ print(message)
 print("without 'del' of the variable")
 
 print("python loops or iterator with range():")
+
 for i in range(5):
     print(i)
 for i in range(3):
@@ -1424,6 +1834,8 @@ print(shoppinglist2.count("carrots"))
 # -------------------------------------------------------------------------------
 print("""dictionaries in python are list and/or with keys, key value pairs,
 it is like a map tool""")
+print("""dictionaries in python are list and/or with keys, key value pairs,
+it is like a map tool""")
 
 print("""dictionaries in python are list and keys, it is like a map too,
 key value pairs, they are created by { }""")
@@ -1454,7 +1866,10 @@ it is like a map tool""")
 
 print("""dictionaries in python are list and keys, it is like a map too,
 they are created by { }""")
-
+print(""" Keys have to be unique,
+Values can be any data type
+Repeated keys are not allowed""")
+print("""Repeated keys are not allowed Keys have to be unique, Values can be any data type""")
 students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
 print("""print(students1["Bob"]) will show bob's age  """)
 print(students1["Bob"])
@@ -1478,9 +1893,28 @@ print("""to clear all the values in the dictionaty we have to type
 dictionaryname.clear(). so, for this exaple , students1.clear() ,
 now if we print(students1)  , it will show blank/empty dictionary {},
 and del students1, will delete the dictionary, now print(students1)
-will produce error  """)
+will produce error 
+ print(students1.keys())
+print(students1.values())""")
+print(students1.keys())
+print(students1.values())
+students1["Eric"]=24  # Update a value
+print(students1)
 students1.clear()
 print(students1)
+
+students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+print(students1.items())
+for key in students1:
+    print(f"key:{key} value:{students1[key]}")
+for key, value in students1.items():
+    print(f"key:{key} value:{value}")
+ print(""" students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
+print(students1.items())
+for key in students1:
+    print(f"key:{key} value:{students1[key]}")
+for key, value in students1.items():
+    print(f"key:{key} value:{value}")""")
 
 del students1
 students1 = {"Eric": 14, "Bob": 12, "Cris": 15, "Todd": 16}
@@ -1636,7 +2070,7 @@ print('''for x in range (2, 2222):
  for y in range (2,x):
     if x%y==0:
        isPrime=False
-       break
+       break # break 
  if isPrime:
   print(x)
 this without " break in for loop" code will produce = ''')
@@ -1793,6 +2227,301 @@ for i in range(3, 33):
     if i < 15:
         continue  # will ignore the values in the if statement.
     print(i)
+
+print("Visit this  - https://www.guru99.com/python-break-continue-pass.html#:~:text=The%20main%20difference%20between%20break%20and%20continue%20statement,implemented%20later.%20Python%20pass%20is%20a%20null%20statement.")
+
+'''
+break, continue and pass in Python
+Difficulty Level : Hard
+Last Updated : 25 Nov, 2019
+Using loops in Python automates and repeats the tasks in an efficient manner. But sometimes, there may arise a condition where you want to exit the loop completely, skip an iteration or ignore that condition. These can be done by loop control statements. Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed. Python supports the following control statements.
+
+Break statement
+Continue statement
+Pass statement
+Break statement
+The break statement is used to terminate the loop or statement in which it is present. After that, the control will pass to the statements that are present after the break statement, if available. If the break statement is present in the nested loop, then it terminates only those loops which contains break statement.
+
+Syntax:
+
+break
+python break statement
+
+Example:
+Consider a situation where you want to iterate over a string and want to print all the characters until a letter ‘e’ or ‘s’ is encountered. It is specified that you have to do this using loop and only one loop is allowed to use.
+Here comes the usage of break statement. What we can do is iterate over a string using either a while loop or for loop and every time we have to compare the value of iterator with ‘e’ or ‘s’. If it is ‘e’ or ‘s’ we will use the break statement to exit the loop.
+
+
+
+Below is the implementation.
+
+
+# Python program to demonstrate
+# break statement
+  
+# Python program to 
+# demonstrate break statement 
+    
+s = 'geeksforgeeks'
+# Using for loop 
+for letter in s: 
+    
+    print(letter) 
+    # break the loop as soon it sees 'e' 
+    # or 's' 
+    if letter == 'e' or letter == 's': 
+        break
+    
+print("Out of for loop") 
+print() 
+    
+i = 0
+    
+# Using while loop 
+while True: 
+    print(s[i]) 
+    
+    # break the loop as soon it sees 'e' 
+    # or 's' 
+    if s[i] == 'e' or s[i] == 's': 
+        break
+    i += 1
+    
+print("Out of while loop")
+Output:
+
+g
+e
+Out of for loop
+
+g
+e
+Out of while loop
+Continue statement
+Continue is also a loop control statement just like the break statement. continue statement is opposite to that of break statement, instead of terminating the loop, it forces to execute the next iteration of the loop.
+As the name suggests the continue statement forces the loop to continue or execute the next iteration. When the continue statement is executed in the loop, the code inside the loop following the continue statement will be skipped and the next iteration of the loop will begin.
+
+Syntax:
+
+continue
+python continue statement
+
+Example:
+Consider the situation when you need to write a program which prints the number from 1 to 10 and but not 6. It is specified that you have to do this using loop and only one loop is allowed to use.
+Here comes the usage of continue statement. What we can do here is we can run a loop from 1 to 10 and every time we have to compare the value of iterator with 6. If it is equal to 6 we will use the continue statement to continue to next iteration without printing anything otherwise we will print the value.
+
+Below is the implementation of the above idea:
+
+
+# Python program to 
+# demonstrate continue 
+# statement 
+    
+# loop from 1 to 10 
+for i in range(1, 11): 
+    
+    # If i is equals to 6,   
+    # continue to next iteration   
+    # without printing  
+    if i == 6: 
+        continue
+    else: 
+        # otherwise print the value 
+        # of i 
+        print(i, end = " ")
+Output:
+
+
+
+1 2 3 4 5 7 8 9 10 
+Pass statement
+As the name suggests pass statement simply does nothing. The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute. It is like null operation, as nothing will happen is it is executed. Pass statement can also be used for writing empty loops. Pass is also used for empty control statement, function and classes.
+
+Syntax:
+
+pass
+Example:
+
+
+# Python program to demonstrate
+# pass statement
+  
+  
+s = "geeks"
+  
+# Empty loop
+for i in s:
+    # No error will be raised
+    pass
+  
+# Empty function
+def fun():
+    pass
+  
+# No error will be raised
+fun()
+  
+# Pass statement
+for i in s:
+    if i == 'k':
+        print('Pass executed')
+        pass
+    print(i)
+Output:
+
+g
+e
+e
+Pass executed
+k
+s
+
+
+Python break, continue and pass Statements
+Advertisements
+
+ Previous PageNext Page  
+You might face a situation in which you need to exit a loop completely when an external condition is triggered or there may also be a situation when you want to skip a part of the loop and start next execution.
+
+Python provides break and continue statements to handle such situations and to have good control on your loop.
+
+This tutorial will discuss the break, continue and pass statements available in Python.
+
+The break Statement:
+The break statement in Python terminates the current loop and resumes execution at the next statement, just like the traditional break found in C.
+
+The most common use for break is when some external condition is triggered requiring a hasty exit from a loop. The break statement can be used in both while and for loops.
+
+Example:
+#!/usr/bin/python
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      break
+   print 'Current Letter :', letter
+  
+var = 10                    # Second Example
+while var > 0:              
+   print 'Current variable value :', var
+   var = var -1
+   if var == 5:
+      break
+
+print "Good bye!"
+This will produce the following result:
+
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current variable value : 10
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Good bye!
+The continue Statement:
+The continue statement in Python returns the control to the beginning of the while loop. The continue statement rejects all the remaining statements in the current iteration of the loop and moves the control back to the top of the loop.
+
+The continue statement can be used in both while and for loops.
+
+Example:
+#!/usr/bin/python
+
+for letter in 'Python':     # First Example
+   if letter == 'h':
+      continue
+   print 'Current Letter :', letter
+
+var = 10                    # Second Example
+while var > 0:              
+   var = var -1
+   if var == 5:
+      continue
+   print 'Current variable value :', var
+print "Good bye!"
+This will produce following result:
+
+Current Letter : P
+Current Letter : y
+Current Letter : t
+Current Letter : o
+Current Letter : n
+Current variable value : 10
+Current variable value : 9
+Current variable value : 8
+Current variable value : 7
+Current variable value : 6
+Current variable value : 4
+Current variable value : 3
+Current variable value : 2
+Current variable value : 1
+Good bye!
+The else Statement Used with Loops
+Python supports to have an else statement associated with a loop statements.
+
+If the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.
+
+If the else statement is used with a while loop, the else statement is executed when the condition becomes false.
+
+Example:
+The following example illustrates the combination of an else statement with a for statement that searches for prime numbers from 10 through 20.
+
+#!/usr/bin/python
+
+for num in range(10,20):  #to iterate between 10 to 20
+   for i in range(2,num): #to iterate on the factors of the number
+      if num%i == 0:      #to determine the first factor
+         j=num/i #to calculate the second factor
+         print '%d equals %d * %d' % (num,i,j)
+         break #to move to the next number, the #first FOR
+   else:        # else part of the loop
+      print num, 'is a prime number'
+This will produce following result:
+
+10 equals 2 * 5
+11 is a prime number
+12 equals 2 * 6
+13 is a prime number
+14 equals 2 * 7
+15 equals 3 * 5
+16 equals 2 * 8
+17 is a prime number
+18 equals 2 * 9
+19 is a prime number
+Similar way you can use else statement with while loop.
+
+The pass Statement:
+The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute.
+
+The pass statement is a null operation; nothing happens when it executes. The pass is also useful in places where your code will eventually go, but has not been written yet (e.g., in stubs for example):
+
+Example:
+#!/usr/bin/python
+
+for letter in 'Python': 
+   if letter == 'h':
+      pass
+      print 'This is pass block'
+   print 'Current Letter :', letter
+
+print "Good bye!"
+This will produce following result:
+
+Current Letter : P
+Current Letter : y
+Current Letter : t
+This is pass block
+Current Letter : h
+Current Letter : o
+Current Letter : n
+Good bye!
+The preceding code does not execute any statement or code if the value of letter is 'h'. The pass statement is helpful when you have created a code block but it is no longer required.
+
+You can then remove the statements inside the block but let the block remain with a pass statement so that it doesn't interfere with other parts of the code.
+'''
+
+
+print("I")
 
 print("I")
 print("/")
