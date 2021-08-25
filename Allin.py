@@ -1,4 +1,3 @@
-
 # -------------------------------------------------------------------------------
 # Name:        Python Intro
 # Purpose:     Started in Py
@@ -433,9 +432,6 @@ print(keyword.kwlist)
   'yield']
 '''
 
-
-
-
 print("File destination is - cd c://python372 ")
 print("File name is - py Allin.py")
 
@@ -548,8 +544,8 @@ print("""# Arithmetic Operators
 # Arithmetic Operators
 # Arithmetic Operators
 # Arithmetic Operators
-#+ - * / are operators
-#Digits are operands.
+# + - * / are operators
+# Digits are operands.
 
 
 print(2 + (3 - 1))
@@ -707,7 +703,6 @@ print(("(\"Fun\" * 0)") + "=" + str(("Fun" * 0)))
 print("Fun" * 0)
 print(("(\"9\" * 0)") + "=" + str("9" * 0))
 print("9" * 0)
-
 
 # Arithmetic Operators
 '''
@@ -1101,12 +1096,33 @@ print(""" there are 6 comparison relational operators are >, <, <=, >=, ==, !=.
 print(""" there are 6 relational operators are >, <, <=, >=, ==, !=.
 . Those relational operators helps us to get buollean value true/false. """)
 
+
+print("(num /=2) == (num = num/2)")
+print("(num +=1) == (num = num+1)")
+print("(num -+1) == (num = num-1)")
+print("(num *= 3) == (num = num * 3)")
+print("(num **= 2) == (num = num ** 2)")
+
+# (num +=1) == (num = num+1)
+
+# (num -+1) == (num = num-1)
+
+# (num *= 3) == (num = num * 3)
+
+# (num /=2) == (num = num/2)
+
+
+# if statement # if statement
+# if statement # if statement
+
+
 print("if & else statement, conditional statements")
 print("if & else statement, conditional statements")
 print("if statement")
 print("if statement")
 
 print('if 6>4:')
+
 if 6 > 4:
     print("true, 6 is greater than 4 ")
 print('n=12')
@@ -1157,6 +1173,8 @@ else:
         else:
             if esnum == 7:
                 print('esnum == 7')
+
+
 
 print("elif statements")
 print("elif")
@@ -2438,6 +2456,8 @@ Line 6 - b is either greater than  or equal to b
 '''
 
 '''
+
+
 def max_num(n1, n2, n3):
     if n1 >= n2 and n1 >= n3:
         return n1
@@ -2821,9 +2841,34 @@ Output:
 a is perfectly divisible by 5
 
 '''
+print("(num /=2) == (num = num/2)")
+print("(num +=1) == (num = num+1)")
+print("(num -+1) == (num = num-1)")
+print("(num *= 3) == (num = num * 3)")
+print("(num **= 2) == (num = num ** 2)")
+
+# (num +=1) == (num = num+1)
+
+# (num -+1) == (num = num-1)
+
+# (num *= 3) == (num = num * 3)
+
+# (num /=2) == (num = num/2)
+
+
+
+# if statement calculator # if statement
+# if statement # Calculator if statement
+
+
+
+
+
 a1 = float(input("Enter the first number:    "))
 op = input("Enter the operator or sign :          ")
 b1 = float(input("Enter the second number:    "))
+
+
 
 if op == "+":
     print(str(a1), "+", str(b1), "=", a1 + b1)
@@ -2862,6 +2907,11 @@ print(eval(op))
 print('''
 
 ''')
+# if statement calculator # if statement
+# if statement # Calculator if statement
+
+
+
 
 print("""
 codex=input('''     please input your code by typing
@@ -2896,7 +2946,6 @@ i = 1
 while i <= 10:
     print(i)
     i += 1
-print("end")
 
 # -------------------------------------------------------------------------------
 # Name:        module1
@@ -3380,7 +3429,6 @@ exit()
 print("""     The End The End The End
 
                        The End ?   """)
-
 
 print("""     The End The End The End
 
