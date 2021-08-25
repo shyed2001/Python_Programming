@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 # # https://stackoverflow.com/questions/7670303/purpose-of-usr-bin-python3-shebang
 
-# https://en.wikipedia.org/wiki/Shebang_(Unix)#-----------------------------------------------------------------------------
+# https://en.wikipedia.org/wiki/Shebang_(Unix)
+# # Python Reference  https://www.w3schools.com/python/python_reference.asp
+# #-----------------------------------------------------------------------------
 # Name:        Python Intro
 # Purpose:     Started in Py
 #
@@ -28,8 +30,8 @@ listComprihension2 = [x for x in range(0, 100)]
 listComprihension3 = [x for x in range(100)]
 print("In python Comments starts with #")
 print("In python multi line Comments starts with ''' and ends with '''")
-'''this 
-is a 
+'''this
+is a
 multi line
 comment
 '''
@@ -99,7 +101,7 @@ print(type(isGood))
 #builtin functions
 #builtin methods
 # import modules
-# Functions 
+# Functions
 # Parameters and Arguments
 
 
@@ -115,7 +117,7 @@ age = 36
 brand: str = "digitalbd"
 isLow: bool = False
 yearsofstarting: int = 2021
-email = f""" 
+email = f"""
 hello {brand}
 age is {3 + 6}
 started at {yearsofstarting + age}"""
@@ -447,7 +449,7 @@ The return type will be in Boolean value (True or False)
 
 word = "Hello World"
 
-word.isalnum() #check if all char are alphanumeric 
+word.isalnum() #check if all char are alphanumeric
 word.isalpha() #check if all char in the string are alphabetic
 word.isdigit() #test if string contains digits
 word.istitle() #test if string contains title words
@@ -469,9 +471,9 @@ print(keyword.kwlist)
 
 # Reserved  Keywords
 '''
-['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async', 
+['False', 'None', 'True', '__peg_parser__', 'and', 'as', 'assert', 'async',
 'await', 'break', 'class', 'continue', 'def', 'del', 'elif', 'else', 'except',
- 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda', 
+ 'finally', 'for', 'from', 'global', 'if', 'import', 'in', 'is', 'lambda',
  'nonlocal', 'not', 'or', 'pass', 'raise', 'return', 'try', 'while', 'with',
   'yield']
 '''
@@ -770,7 +772,7 @@ Example :
 
 val1 = 2
 val2 = 3
-  
+
 # using the addition operator
 res = val1 + val2
 print(res)
@@ -785,7 +787,7 @@ Example :
 
 val1 = 2
 val2 = 3
-  
+
 # using the subtraction operator
 res = val1 - val2
 print(res)
@@ -798,7 +800,7 @@ Example :
 
 val1 = 2
 val2 = 3
-  
+
 # using the multiplication operator
 res = val1 * val2
 print(res)
@@ -811,7 +813,7 @@ Example :
 
 val1 = 3
 val2 = 2
-  
+
 # using the division operator
 res = val1 / val2
 print(res)
@@ -824,7 +826,7 @@ Example :
 
 val1 = 3
 val2 = 2
-  
+
 # using the modulus operator
 res = val1 % val2
 print(res)
@@ -837,7 +839,7 @@ Example :
 
 val1 = 2
 val2 = 3
-  
+
 # using the exponentiation operator
 res = val1 ** val2
 print(res)
@@ -850,7 +852,7 @@ Example :
 
 val1 = 3
 val2 = 2
-  
+
 # using the floor division
 res = val1 // val2
 print(res)
@@ -1049,7 +1051,7 @@ Let's take a look at this example:
 
 >>> age = 15
 >>> # Conditions are evaluated from left to right
->>> print('kid' if age < 18 else 'adult') kid 
+>>> print('kid' if age < 18 else 'adult') kid
 Ternary operators can be chained:
 
  >>> age = 15
@@ -1074,7 +1076,7 @@ print('adult')
 print('''
 age = 15
 # Conditions are evaluated from left to right
-print('kid' if age < 18 else 'adult') kid 
+print('kid' if age < 18 else 'adult') kid
 ''')
 age = 15
 # Conditions are evaluated from left to right
@@ -1116,8 +1118,8 @@ print(NUMBERS)
 print(NUMBERS[0])
 print(NUMBERS)
 print(NUMBERS[3])
-print(NUMBERS[12][1])
-print(NUMBERS[12][2])
+print(NUMBERS[11][1])
+print(NUMBERS[11][2])
 # print(NUMBERS[17]) this will give errors
 print('''
 NUMBERS = [0, 0, 1, 1, 2, 3, 4, 6,7, -1, 0, ['A','B']]
@@ -1126,15 +1128,15 @@ print(NUMBERS)
 print(NUMBERS[0])
 print(NUMBERS)
 print(NUMBERS[3])
-print(NUMBERS[12][1])
-print(NUMBERS[12][2])
+print(NUMBERS[11][1])
+print(NUMBERS[11][2])
 # print(NUMBERS[17]) this will give errors
 ''')
 
 
 
 print('''
-List Methods 
+List Methods
 List Methods
 
 NUMBERS.sort()
@@ -1286,20 +1288,20 @@ In Python, below quick operands can be used for different operations.
 
 # Program to perform different set operations
 # as we do in  mathematics
-  
+
 # sets are define
 A = {0, 2, 4, 6, 8};
 B = {1, 2, 3, 4, 5};
-  
+
 # union
 print("Union :", A | B)
-  
+
 # intersection
 print("Intersection :", A & B)
-  
+
 # difference
 print("Difference :", A - B)
-  
+
 # symmetric difference
 print("Symmetric difference :", A ^ B)
 Output:
@@ -1909,7 +1911,7 @@ print("""to clear all the values in the dictionaty we have to type
 dictionaryname.clear(). so, for this exaple , students1.clear() ,
 now if we print(students1)  , it will show blank/empty dictionary {},
 and del students1, will delete the dictionary, now print(students1)
-will produce error 
+will produce error
  print(students1.keys())
 print(students1.values())""")
 print(students1.keys())
@@ -2090,7 +2092,7 @@ print('''for x in range (2, 2222):
  for y in range (2,x):
     if x%y==0:
        isPrime=False
-       break # break 
+       break # break
  if isPrime:
   print(x)
 this without " break in for loop" code will produce = ''')
@@ -2278,35 +2280,35 @@ Below is the implementation.
 
 # Python program to demonstrate
 # break statement
-  
-# Python program to 
-# demonstrate break statement 
-    
+
+# Python program to
+# demonstrate break statement
+
 s = 'geeksforgeeks'
-# Using for loop 
-for letter in s: 
-    
-    print(letter) 
-    # break the loop as soon it sees 'e' 
-    # or 's' 
-    if letter == 'e' or letter == 's': 
+# Using for loop
+for letter in s:
+
+    print(letter)
+    # break the loop as soon it sees 'e'
+    # or 's'
+    if letter == 'e' or letter == 's':
         break
-    
-print("Out of for loop") 
-print() 
-    
+
+print("Out of for loop")
+print()
+
 i = 0
-    
-# Using while loop 
-while True: 
-    print(s[i]) 
-    
-    # break the loop as soon it sees 'e' 
-    # or 's' 
-    if s[i] == 'e' or s[i] == 's': 
+
+# Using while loop
+while True:
+    print(s[i])
+
+    # break the loop as soon it sees 'e'
+    # or 's'
+    if s[i] == 'e' or s[i] == 's':
         break
     i += 1
-    
+
 print("Out of while loop")
 Output:
 
@@ -2333,27 +2335,27 @@ Here comes the usage of continue statement. What we can do here is we can run a 
 Below is the implementation of the above idea:
 
 
-# Python program to 
-# demonstrate continue 
-# statement 
-    
-# loop from 1 to 10 
-for i in range(1, 11): 
-    
-    # If i is equals to 6,   
-    # continue to next iteration   
-    # without printing  
-    if i == 6: 
+# Python program to
+# demonstrate continue
+# statement
+
+# loop from 1 to 10
+for i in range(1, 11):
+
+    # If i is equals to 6,
+    # continue to next iteration
+    # without printing
+    if i == 6:
         continue
-    else: 
-        # otherwise print the value 
-        # of i 
+    else:
+        # otherwise print the value
+        # of i
         print(i, end = " ")
 Output:
 
 
 
-1 2 3 4 5 7 8 9 10 
+1 2 3 4 5 7 8 9 10
 Pass statement
 As the name suggests pass statement simply does nothing. The pass statement in Python is used when a statement is required syntactically but you do not want any command or code to execute. It is like null operation, as nothing will happen is it is executed. Pass statement can also be used for writing empty loops. Pass is also used for empty control statement, function and classes.
 
@@ -2365,22 +2367,22 @@ Example:
 
 # Python program to demonstrate
 # pass statement
-  
-  
+
+
 s = "geeks"
-  
+
 # Empty loop
 for i in s:
     # No error will be raised
     pass
-  
+
 # Empty function
 def fun():
     pass
-  
+
 # No error will be raised
 fun()
-  
+
 # Pass statement
 for i in s:
     if i == 'k':
@@ -2400,7 +2402,7 @@ s
 Python break, continue and pass Statements
 Advertisements
 
- Previous PageNext Page  
+ Previous PageNext Page
 You might face a situation in which you need to exit a loop completely when an external condition is triggered or there may also be a situation when you want to skip a part of the loop and start next execution.
 
 Python provides break and continue statements to handle such situations and to have good control on your loop.
@@ -2419,9 +2421,9 @@ for letter in 'Python':     # First Example
    if letter == 'h':
       break
    print 'Current Letter :', letter
-  
+
 var = 10                    # Second Example
-while var > 0:              
+while var > 0:
    print 'Current variable value :', var
    var = var -1
    if var == 5:
@@ -2453,7 +2455,7 @@ for letter in 'Python':     # First Example
    print 'Current Letter :', letter
 
 var = 10                    # Second Example
-while var > 0:              
+while var > 0:
    var = var -1
    if var == 5:
       continue
@@ -2518,7 +2520,7 @@ The pass statement is a null operation; nothing happens when it executes. The pa
 Example:
 #!/usr/bin/python
 
-for letter in 'Python': 
+for letter in 'Python':
    if letter == 'h':
       pass
       print 'This is pass block'
@@ -2908,6 +2910,50 @@ FRINDS3 = math
 print(FRINDS2)
 print(FRINDS3)
 
+# Python Reference  https://www.w3schools.com/python/python_reference.asp
+
+# Built in Functions and Import Statement
+# Built in Functions and Import Statement
+print(''' import math
+print(math.pi)
+print(math.sqrt(16))
+print(math.isqrt(25)) ''')
+
+import math
+print(math.pi)
+print(math.sqrt(16))
+
+from math import isqrt
+
+print(math.isqrt(25))
+
+# Python Reference  https://www.w3schools.com/python/python_reference.asp
+# https://www.w3schools.com/python/module_math.asp
+
+print(''' 
+# create a calculator.py file in the current folder. 
+
+import calculator
+print(calculator.add(3, 2))
+
+print(calculator.divide(3, 2))
+
+print(calculator.multiply(3, 2))
+''')
+
+# create a calculator.py file in the current folder.
+
+import calculator
+print(calculator.add(3, 2))
+
+print(calculator.divide(3, 2))
+
+print(calculator.multiply(3, 2))
+
+
+
+
+
 #-----------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
@@ -3058,6 +3104,176 @@ def cube4(num):
 result = cube4(4)
 print(result)
 
+
+#Classes and Objects
+#Classes and Objects
+
+#Creating Classes and Objects
+#Creating Classes and Objects
+
+'''
+Python Classes/Objects
+Python is an object oriented programming language.
+
+Almost everything in Python is an object, with its properties and methods.
+
+A Class is like an object constructor, or a "blueprint" for creating objects.
+
+Create a Class
+To create a class, use the keyword class:
+
+Example
+Create a class named MyClass, with a property named x:
+
+class MyClass:
+  x = 5
+Create Object
+Now we can use the class named MyClass to create objects:
+
+Example
+Create an object named p1, and print the value of x:
+
+p1 = MyClass()
+print(p1.x)
+The __init__() Function
+The examples above are classes and objects in their simplest form, and are not really useful in real life applications.
+
+To understand the meaning of classes we have to understand the built-in __init__() function.
+
+All classes have a function called __init__(), which is always executed when the class is being initiated.
+
+Use the __init__() function to assign values to object properties, or other operations that are necessary to do when the object is being created:
+
+Example
+Create a class named Person, use the __init__() function to assign values for name and age:
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+p1 = Person("John", 36)
+
+print(p1.name)
+print(p1.age)
+Note: The __init__() function is called automatically every time the class is being used to create a new object.
+
+Object Methods
+Objects can also contain methods. Methods in objects are functions that belong to the object.
+
+Let us create a method in the Person class:
+
+Example
+Insert a function that prints a greeting, and execute it on the p1 object:
+
+class Person:
+  def __init__(self, name, age):
+    self.name = name
+    self.age = age
+
+  def myfunc(self):
+    print("Hello my name is " + self.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+Note: The self parameter is a reference to the current instance of the class, and is used to access variables that belong to the class.
+
+The self Parameter
+The self parameter is a reference to the current instance of the class, and is used to access variables that belongs to the class.
+
+It does not have to be named self , you can call it whatever you like, but it has to be the first parameter of any function in the class:
+
+Example
+Use the words mysillyobject and abc instead of self:
+
+class Person:
+  def __init__(mysillyobject, name, age):
+    mysillyobject.name = name
+    mysillyobject.age = age
+
+  def myfunc(abc):
+    print("Hello my name is " + abc.name)
+
+p1 = Person("John", 36)
+p1.myfunc()
+Modify Object Properties
+You can modify properties on objects like this:
+
+Example
+Set the age of p1 to 40:
+
+p1.age = 40
+Delete Object Properties
+You can delete properties on objects by using the del keyword:
+
+Example
+Delete the age property from the p1 object:
+
+del p1.age
+Delete Objects
+You can delete objects by using the del keyword:
+
+Example
+Delete the p1 object:
+
+del p1
+The pass Statement
+class definitions cannot be empty, but if you for some reason have a class definition with no content, put in the pass statement to avoid getting an error.
+
+Example
+class Person:
+  pass
+Test Yourself With Exercises
+Exercise:
+Create a class named MyClass:
+
+class
+ MyClass:
+  x = 5
+# def __str__(self) -> str:
+'''
+
+#datetime
+
+# datetime
+# date
+
+from datetime import datetime
+from datetime import date
+
+# formatting date
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 print('''
 is_male = True
 
@@ -3140,7 +3356,7 @@ print(max_num(33,4,15))
 Python 3 - Comparison Operators Example
 Advertisements
 
- Previous PageNext Page  
+ Previous PageNext Page
 These operators compare the values on either side of them and decide the relation among them. They are also called Relational operators.
 
 Assume variable a holds the value 10 and variable b holds the value 20, then −
@@ -3257,7 +3473,7 @@ Arithmetic Operators perform various arithmetic calculations like addition, subt
 
 Example: For arithmetic operators we will take simple example of addition where we will add two-digit 4+5=9
 
-x= 4	
+x= 4
 y= 5
 print(x + y)
 Similarly, you can use other arithmetic operators like for multiplication(*), division (/), substraction (-), etc.
@@ -3350,7 +3566,7 @@ Example:
 
 x = 20
 y = 20
-if ( x is y ): 
+if ( x is y ):
 	print("x & y  SAME identity")
 y=30
 if ( x is not y ):
@@ -3367,7 +3583,7 @@ w = 5
 x = 8
 y = 2
 z = 0
-z = (v+w) * x / y;   
+z = (v+w) * x / y;
 print("Value of (v+w) * x/ y is ",  z)
 Declare the value of variable v,w…z
 Now apply the formula and run the code
@@ -3376,7 +3592,7 @@ Python 2 Example
 Above examples are Python 3 codes, if you want to use Python 2, please consider following codes
 
 #Arithmetic Operators
-x= 4	
+x= 4
 y= 5
 print x + y
 
@@ -3433,7 +3649,7 @@ w = 5
 x = 8
 y = 2
 z = 0
-z = (v+w) * x / y;   
+z = (v+w) * x / y;
 print "Value of (v+w) * x/ y is ",  z
 Summary:
 Operators in a programming language are used to perform various operations on values and variables. In Python, you can use operators like
@@ -3457,8 +3673,8 @@ Python Logical Operators
 Logical operators are used to combine conditional statements:
 
 Operator	Description	Example	Try it
-and 	Returns True if both statements are true	x < 5 and  x < 10	
-or	Returns True if one of the statements is true	x < 5 or x < 4	
+and 	Returns True if both statements are true	x < 5 and  x < 10
+or	Returns True if one of the statements is true	x < 5 or x < 4
 not	Reverse the result, returns False if the result is true	not(x < 5 and x < 10)
 
 
@@ -3486,19 +3702,19 @@ Example 1:
 
 
 
-   
+
 a = 12
 b = 26
 c = 4
-  
-if a > b and a > c: 
-    print("Number a is larger") 
-  
-if b > a and b > c: 
-    print("Number b is larger") 
-  
-if c > a and c > b:    
-    print("Number c is larger") 
+
+if a > b and a > c:
+    print("Number a is larger")
+
+if b > a and b > c:
+    print("Number b is larger")
+
+if c > a and c > b:
+    print("Number c is larger")
 Output:
 
 Number b is larger
@@ -3506,7 +3722,7 @@ Example 2:
 
 
 a = 10
-    
+
 if (a == 0 and "Hello"):
     print("a has value zero(0)")
 else:
@@ -3531,7 +3747,7 @@ Example 1:
 
 a = 10
 b = -5
-  
+
 if a < 0 or b < 0:
   print("Their product will be negative")
 else:
@@ -3545,7 +3761,7 @@ Example 2:
 
 
 a = 10
-  
+
 if (a == 0 or "GeeksForGeeks"):
   print("Is Awesome")
 else:
@@ -3567,7 +3783,7 @@ Example 1:
 
 
 a = 10
-  
+
 if not a == 10:
   print ("a not equals 10")
 else:
@@ -3575,13 +3791,13 @@ else:
 Output:
 
 a equals 10
-Here, a is equal to 10 the boolean a == 10 return the value True. Hence, the boolean not a == 10 will return the value as False and since the if condition is not satisfied, it will jump to else statement. 
+Here, a is equal to 10 the boolean a == 10 return the value True. Hence, the boolean not a == 10 will return the value as False and since the if condition is not satisfied, it will jump to else statement.
 
 Example 2:
 
 
 a = 10
-  
+
 if not a%5 == 0:
   print("a is not perfectly divisible by 5")
 else:
