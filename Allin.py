@@ -1,4 +1,7 @@
-# -------------------------------------------------------------------------------
+#!/usr/bin/env python3
+# # https://stackoverflow.com/questions/7670303/purpose-of-usr-bin-python3-shebang
+
+# https://en.wikipedia.org/wiki/Shebang_(Unix)#-----------------------------------------------------------------------------
 # Name:        Python Intro
 # Purpose:     Started in Py
 #
@@ -7,21 +10,11 @@
 # Created:     30/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <User/Shyed/your licence>
-# -------------------------------------------------------------------------------
-#!/usr/bin/env python3
-
-# https://stackoverflow.com/questions/7670303/purpose-of-usr-bin-python3-shebang
-
-# https://en.wikipedia.org/wiki/Shebang_(Unix)
-
-
-
-
-print("""     The Start The Start The Start
-
-                       The Start ?   """)
+#------------------------------------------------------------------------------
+print("The Start The Start The Start The Start ?")
 
 print("Python Review Revisit Relearn Project")
+
 print("Minimum time project")
 
 name = "Shyed Shahriar Housaini"
@@ -102,6 +95,15 @@ print(type(isGood))
 # replace
 # upper
 # lower
+# BUILTIN python methods and functions
+#builtin functions
+#builtin methods
+# import modules
+# Functions 
+# Parameters and Arguments
+
+
+
 
 
 print(listComprihension1)
@@ -866,8 +868,8 @@ Operator	Description	Syntax
 %	Modulus: returns the remainder when first operand is divided by the second	x % y
 **	Power : Returns first raised to power second	x ** y
 # Arithmetic Operators
-'''
 
+'''
 
 # if statement # if statement
 # if statement # if statement
@@ -1066,6 +1068,9 @@ print('adult')
 
 
 '''
+
+
+
 print('''
 age = 15
 # Conditions are evaluated from left to right
@@ -2839,7 +2844,7 @@ print(FRINDS)
 FRINDS.pop()
 print(FRINDS)
 
-print(''' find element\item of the list
+print(''' find element , item of the list
 FRINDS.index('Toddy')
 FRINDS.index("car")
 print(FRINDS.index("car"))
@@ -2878,31 +2883,32 @@ math.sort()
 print(FRINDS)
 print(math)
 
-print(""" reverse the list items
+print(''' reverse the list items
 FRINDS.reverse()
 math.reverse()
 print(FRINDS)
 print(math)
-""")
+''')
 FRINDS.reverse()
 math.reverse()
 print(FRINDS)
 print(math)
 
-print(""" copy the list items to another list
+print(''' copy the list items to another list
 FRINDS3=math
 FRINDS2=math.copy()
 FRINDS3=math
 print(FRINDS2)
 print(FRINDS3)
-""")
+''')
+
 FRINDS3 = math
 FRINDS2 = math.copy()
 FRINDS3 = math
 print(FRINDS2)
 print(FRINDS3)
 
-# -------------------------------------------------------------------------------
+#-----------------------------------------------------------------------------
 # Name:        module1
 # Purpose:
 #
@@ -2911,7 +2917,7 @@ print(FRINDS3)
 # Created:     29/03/2019
 # Copyright:   (c) User 2019
 # Licence:     <your licence>
-# -------------------------------------------------------------------------------
+#------------------------------------------------------------------------------
 
 print(''' Create FUNCTIONS -
 Create FUNCTIONS -
