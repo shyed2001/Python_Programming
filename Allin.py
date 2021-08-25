@@ -1,3 +1,4 @@
+
 print("Python Review Revisit Relearn Project")
 print("Minimum time project")
 
@@ -79,8 +80,328 @@ print('Ban' in country)
 
 print('Ban' not in country)
 
+# python string manipulation
+# python string manipulation
 
 
+'''
+Method #1: using String concatenation
+In the first method, we'll concentrate a variable with a string by using +.
+
+Let's see the following example.
+
+
+# variable
+variable = "Python"
+
+# insert a variable into string using String concatenation
+print("Hello " + variable + " I'm Pytutorial")
+
+Output:
+
+Hello Python I'm Pytutorial
+
+If your variable type is an integer, you must convert it to string before concertante.
+To converting we'll use the str() function.
+
+
+# variable
+variable = 33
+
+# insert a variable into string using concatenation
+print("Hello " + str(variable) + " I'm Pytutorial")
+
+Output:
+
+Hello 33 I'm Pytutorial
+
+Method #2: using the "%" operator
+By using the "%" operator, we can insert a variable wherever we want into a string.
+%s: for string
+%d: for integer
+
+Let's see how to use this method?
+
+
+# variable
+variable = "Python"
+
+# insert a variable into string using "%" operator
+insert_var = "Hello %s I'm Pytutorial"%variable
+
+#print
+print(insert_var)
+
+Output:
+
+Hello Python I'm Pytutorial
+
+Inserting multi variables.
+
+
+# variable
+variable_1 = "Python"
+variable_2 = "Django"
+
+# insert multi variables into string using "%" operator
+insert_var = "Hello %s and %s I'm Pytutorial"%(variable_1, variable_2)
+
+#print
+print(insert_var)
+
+Output:
+
+Hello Python and Django I'm Pytutorial
+
+Insert integer variable into string using %d:
+
+
+# variable
+age = 20
+
+# insert multi variables int into a string
+insert_var = "Hello Python and Django I'm Pytutorial I'm %d years old"%age
+
+#print
+print(insert_var)
+
+Output:
+
+Hello Python and Django I'm Pytutorial I'm 20 years old
+
+Method #3: using the format() function
+Another method to insert a variable into a string is by using the format() function.
+
+
+variable_1 = "Python"
+variable_2 = "Django"
+age = 20
+
+# insert variables into string using format()
+insert_var = "Hello {} and {} I'm Pytutorial I'm {} years old".format(variable_1, variable_2, age)
+
+#print
+print(insert_var)
+
+Output:
+
+Hello Python and Django I'm Pytutorial I'm 20 years old
+
+Method #4: using f-string
+F-string is my favorite method to insert a variable in a string.
+Let's see how to use it.
+
+Note: this method works on Python >= 3.6.
+
+
+variable_1 = "Python"
+variable_2 = "Django"
+age = 20
+
+# insert variables into string using f-string
+insert_var = f"Hello {variable_1} and {variable_2} I'm Pytutorial I'm {age} years old"
+
+#print
+print(insert_var)
+
+Output:
+
+Hello Python and Django I'm Pytutorial I'm 20 years old
+
+Conclusion
+Today, we learned about inserting a variable in a string by using many methods, and the question arises is:
+What is the best method for that?
+Method #4 is the best for me.
+
+String Manipulation in Python
+Author: PFB Staff Writer
+Last Updated: August 28, 2020
+
+Overview
+A string is a list of characters in order.
+
+A character is anything you can type on the keyboard in one keystroke,
+like a letter, a number, or a backslash.
+
+Strings can have spaces:
+
+"hello world".
+An empty string is a string that has 0 characters.
+
+Python strings are immutable
+
+Python recognize as strings everything that is delimited by quotation marks
+(” ” or ‘ ‘).
+
+String Manipulation
+To manipulate strings, we can use some of Pythons built-in methods.
+
+Creation
+word = "Hello World"
+
+>>> print word
+Hello World
+Accessing
+Use [ ] to access characters in a string
+
+word = "Hello World"
+letter=word[0]
+
+>>> print letter
+H
+Length
+word = "Hello World"
+
+>>> len(word)
+11
+Finding
+word = "Hello World">>> print word.count('l') # count how many times l is in the string
+3
+
+>>> print word.find("H") # find the word H in the string
+0
+
+>>> print word.index("World") # find the letters World in the string
+6
+Count
+s = "Count, the number of spaces"
+
+>>> print s.count(' ')
+8
+Slicing
+Use [ # : # ] to get set of letter
+
+Keep in mind that python, as many other languages, starts to count from 0!!
+
+word = "Hello World"
+
+print word[0] #get one char of the word
+print word[0:1] #get one char of the word (same as above)
+print word[0:3] #get the first three char
+print word[:3] #get the first three char
+print word[-3:] #get the last three char
+print word[3:] #get all but the three first char
+print word[:-3] #get all but the three last character
+
+word = "Hello World"
+
+word[start:end] # items start through end-1
+word[start:] # items start through the rest of the list
+word[:end] # items from the beginning through end-1
+word[:] # a copy of the whole list
+Split Strings
+word = "Hello World"
+
+>>> word.split(' ') # Split on whitespace
+['Hello', 'World']
+Startswith / Endswith
+word = "hello world"
+
+>>> word.startswith("H")
+True
+
+>>> word.endswith("d")
+True
+
+>>> word.endswith("w")
+False
+Repeat Strings
+print "."* 10 # prints ten dots
+
+>>> print "." * 10
+..........
+Replacing
+word = "Hello World"
+
+>>> word.replace("Hello", "Goodbye")
+'Goodbye World'
+Changing Upper and Lower Case Strings
+string = "Hello World"
+
+>>> print string.upper()
+HELLO WORLD
+
+>>> print string.lower()
+hello world
+
+>>> print string.title()
+Hello World
+
+>>> print string.capitalize()
+Hello world
+
+>>> print string.swapcase()
+hELLO wORLD
+Reversing
+string = "Hello World"
+
+>>> print ' '.join(reversed(string))
+d l r o W o l l e H
+Strip
+Python strings have the strip(), lstrip(), rstrip() methods for removing
+any character from both ends of a string.
+
+If the characters to be removed are not specified then white-space will be removed
+
+word = "Hello World"
+Strip off newline characters from end of the string
+
+>>> print word.strip('
+')
+Hello World
+
+strip() #removes from both ends
+lstrip() #removes leading characters (Left-strip)
+rstrip() #removes trailing characters (Right-strip)
+
+>>> word = " xyz "
+
+>>> print word
+xyz
+
+>>> print word.strip()
+xyz
+
+>>> print word.lstrip()
+xyz
+
+>>> print word.rstrip()
+xyz
+Concatenation
+To concatenate strings in Python use the “+” operator.
+
+"Hello " + "World" # = "Hello World"
+"Hello " + "World" + "!"# = "Hello World!"
+Join
+>>> print ":".join(word) # #add a : between every char
+H:e:l:l:o: :W:o:r:l:d
+
+>>> print " ".join(word) # add a whitespace between every char
+H e l l o W o r l d
+
+Testing
+A string in Python can be tested for truth value.
+
+Recommended Python Training
+For Python training, our top recommendation is DataCamp.
+
+Free Trial
+The return type will be in Boolean value (True or False)
+
+word = "Hello World"
+
+word.isalnum() #check if all char are alphanumeric 
+word.isalpha() #check if all char in the string are alphabetic
+word.isdigit() #test if string contains digits
+word.istitle() #test if string contains title words
+word.isupper() #test if string contains upper case
+word.islower() #test if string contains lower case
+word.isspace() #test if string contains spaces
+word.endswith('d') #test if string endswith a d
+word.startswith('H') #test if string startswith H
+If you liked this article, please share it with your friends.
+
+'''
 
 
 
