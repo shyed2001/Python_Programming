@@ -3385,7 +3385,43 @@ if os.path.isfile(filename):
 else :
     print("The file named ", filename, "does not exists")
 
+#Fetching Data From Internet
+#Fetching Data From Internet
 
+from urllib import request
+
+r = request.urlopen("http://www.google.com")
+print(request) #
+# print(range) #
+print(r)
+print(r.getcode())
+print(r.read())
+
+# Fetching Jokes From Internet
+# Fetching Jokes From Internet
+
+import json
+
+url = "https://official-joke-api.appspot.com/random_joke"
+
+r = request.urlopen(url)
+print(r)
+print(r.getcode())
+rint(r.read())
+data = r.read()
+jsonData = json.loads(data)
+
+print(jsonData)
+
+for j in jsonData
+
+
+
+
+# 03:21:47 - Pip & Modules
+# 03:25:17 - Request Module
+# 03:28:23 - Text To Speech
+# 03:33:40 - Lets Wrap Up
 
 
 
