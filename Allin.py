@@ -3397,31 +3397,64 @@ print(r)
 print(r.getcode())
 print(r.read())
 
-# Fetching Jokes From Internet
-# Fetching Jokes From Internet
+from urllib import request
 
 import json
 
-url = "https://official-joke-api.appspot.com/random_joke"
+# Request Module
+import requests
+# #- Pip & Modules
+import pyttsx3
+# Fetching Jokes From Internet
+# Fetching Jokes From Internet
+url = "https://official-joke-api.appspot.com/random_ten"
 
 r = request.urlopen(url)
-print(r)
+# print(r)
 print(r.getcode())
-rint(r.read())
+# print(r.read())
 data = r.read()
 jsonData = json.loads(data)
 
-print(jsonData)
-
-for j in jsonData
+#print(jsonData)
 
 
+class Joke:
+
+    def __init__(self, setup, punchline) -> None:
+        self.setup = setup
+        self.punchline = punchline
+
+    def __str__(self) -> str:
+        return f"setup {self.setup} punchline {self.punchline}"
 
 
-# 03:21:47 - Pip & Modules
-# 03:25:17 - Request Module
-# 03:28:23 - Text To Speech
-# 03:33:40 - Lets Wrap Up
+jokes = []
+
+for j in jsonData:
+    setup = j["setup"]
+    punchline = j["punchline"]
+    joke = Joke(setup, punchline)
+    jokes.append(joke)
+
+print(f"Got {len(jokes)} jokes")
+
+for joke in jokes:
+    print(joke)
+    pyttsx3.speak(joke.setup)
+    pyttsx3.speak(joke.punchline)
+
+# #- Pip & Modules
+
+
+
+
+
+
+
+
+# Text To Speech
+
 
 
 

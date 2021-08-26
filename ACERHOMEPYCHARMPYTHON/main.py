@@ -1,31 +1,43 @@
+from urllib import request
 
-'''# This is a sample Python script.
+import json
+import requests
+import pyttsx3
+# Fetching Jokes From Internet
+# Fetching Jokes From Internet
+url = "https://official-joke-api.appspot.com/random_ten"
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+r = request.urlopen(url)
+# print(r)
+print(r.getcode())
+# print(r.read())
+data = r.read()
+jsonData = json.loads(data)
+
+#print(jsonData)
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+class Joke:
+
+    def __init__(self, setup, punchline) -> None:
+        self.setup = setup
+        self.punchline = punchline
+
+    def __str__(self) -> str:
+        return f"setup {self.setup} punchline {self.punchline}"
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+jokes = []
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
-'''
+for j in jsonData:
+    setup = j["setup"]
+    punchline = j["punchline"]
+    joke = Joke(setup, punchline)
+    jokes.append(joke)
 
-print(''' import math
-print(math.pi)
-print(math.sqrt(16))
-print(math.isqrt(25)) ''')
+print(f"Got {len(jokes)} jokes")
 
-import math
-print(math.pi)
-print(math.sqrt(16))
-print(math.isqrt(25))
-
-import calculator
-print(calculator.add(3, 2))
+for joke in jokes:
+    print(joke)
+    pyttsx3.speak(joke.setup)
+    pyttsx3.speak(joke.punchline)
