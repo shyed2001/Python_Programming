@@ -29,6 +29,7 @@ listComprihension1 = [x for x in range(0, 100, 3)]
 listComprihension2 = [x for x in range(0, 100)]
 listComprihension3 = [x for x in range(100)]
 print("In python Comments starts with #")
+print("In python \\n will add a new line #")  # put a \ in front of \n to print string |n
 print("In python multi line Comments starts with ''' and ends with '''")
 '''this
 is a
@@ -3233,33 +3234,156 @@ class
 # def __str__(self) -> str:
 '''
 
+
+
+# Definhe a class
+class Phone:
+    def __init__(self, brand, price, version):  # this is a constructer
+        self.brand = brand
+        self.price = price
+        self.version = version
+        #does not print anything
+    def call (self, phone_number): # Behaviour
+        print(f"My phone is {self.brand} , the price is {self.price} and version is {self.version} calling {phone_number}")
+        #it prints
+
+
+iphone = Phone("Apple", 100000, 11)  # Objects
+android = Phone("Samsung", 50000, 25) # Objects
+
+print(iphone)
+print(android)
+
+print(iphone.brand) #properties
+print(iphone.price) #properties
+print(iphone.version) #properties
+iphone.call(999) # Behaviour
+print(android.brand) #properties
+print(android.price) #properties
+print(android.version) #properties
+android.call(123) # Behaviour
+
+
+# Print Objects  # Print Objects
+
+# Print Objects by overwriting
+class Phone:
+    def __init__(self, brand, price, version):  # this is a constructer
+        self.brand = brand
+        self.price = price
+        self.version = version
+        #does not print anything
+    def call (self, phone_number): # Behaviour
+        print(f"My phone is {self.brand} , the price is {self.price} and version is {self.version} calling {phone_number}")
+        #it prints
+
+
+    # press Ctrl+o to bring up the overwrite option bar
+    def __str__(self) -> str:   # -> str return a string
+        return f"My phone is {self.brand} , the price is {self.price} and version is {self.version}"
+
+
+iphone = Phone("Apple", 100000, 11)  # Objects
+android = Phone("Samsung", 50000, 25) # Objects
+
+print(iphone)
+print(android)
+
+print(iphone.brand) #properties
+print(iphone.price) #properties
+print(iphone.version) #properties
+iphone.call(999) # Behaviour
+print(android.brand) #properties
+print(android.price) #properties
+print(android.version) #properties
+android.call(123) # Behaviour
+
+
+
+#########################################################################
+
+
+#########################################################################
+# date
 #datetime
 
+import datetime
+print(datetime.datetime.now())
+print(datetime.datetime.now().month)
+print(datetime.datetime.now().year)
+print(datetime.date.today())
+print(datetime.datetime.now().time())
 # datetime
 # date
 
+# formatting date
+# formatting date
 from datetime import datetime
 from datetime import date
 
-# formatting date
+now = datetime.now()
+print(now)
+
+print(now.strftime("%d %m %Y %H %M %S"))  # char case matters
+print(now.strftime("%d-%B-%Y %H.%M.%S")) # letter case matters
+print(now.strftime('%d/%b/%Y %H:%M:%S'))
 
 
 
+#################################################################
+#################################################################
+#################################################################
+
+#Creating files
+#Creating files
+
+## Create a file
+## Create a file
+file = open("F:\Git_Clone_Files\python-learning-basics\data.csv", "r+")
+
+#Write to a file and close it
+#Write to a file and close it
+file = open(".\data.csv", "r+")
+file.write("name,id,email,address")
+file.write("name,id,email,address\n")
+file.write("jamal,01,jamal@email,jamaladd\n")
+file.write("martin,03,martin@email,martinaddress\n")
+file.close()
+file = open(".\data.csv", "a") #append
+file.write("jamal,01,jamal@email,jamaladd\n")
+file.write("martin,03,martin@email,martinaddress\n")
+file.close() # must close after work is done
+# for writing only file = open("F:\Git_Clone_Files\python-learning-basics\data.csv", "w")
+
+# readinr & writing
 
 
+# Read from a file
+# Read from a file
 
+file = open(".\data.csv", "r")
+#print(file.read())
+#file.readline()   # all lines
+print(file.readlines())
+for line in file:
+    print(line)
+file.close()
 
+#better way to work with files
 
+#better way to work with files
 
+import os.path
 
+filename = "data.csv"
 
+if os.path.isfile(filename):
+    print("The file named ", filename, "exists")
+    with open(".\data.csv", "r")as file:
+        print(file.read())
 
-
-
-
-
-
-
+else :
+    print("The file named ", filename, "does not exists")
 
 
 
