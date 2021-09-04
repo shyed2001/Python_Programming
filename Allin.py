@@ -3235,20 +3235,22 @@ class
 '''
 
 
+## Classes and Objects
+## Classes and Objects
+# Define a class
 
-# Definhe a class
 class Phone:
-    def __init__(self, brand, price, version):  # this is a constructer
-        self.brand = brand
+    def __init__(self, brand, price, version):  # this is a constructer # Properties
+        self.brand = brand # instant variable or attributes
         self.price = price
         self.version = version
         #does not print anything
-    def call (self, phone_number): # Behaviour
+    def call (self, phone_number): # Behaviour # functionalities # functions # methods
         print(f"My phone is {self.brand} , the price is {self.price} and version is {self.version} calling {phone_number}")
         #it prints
 
 
-iphone = Phone("Apple", 100000, 11)  # Objects
+iphone = Phone("Apple", 100000, 11)  # Objects # collections of properties and functions
 android = Phone("Samsung", 50000, 25) # Objects
 
 print(iphone)
