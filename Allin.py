@@ -3239,6 +3239,26 @@ class
 ## Classes and Objects
 # Define a class
 
+class Employ:
+    pass
+empt1 = Employ()
+empt2 = Employ()
+
+empt1.name = "TEst"
+empt1.age = 45
+empt1.pay = 70000
+
+empt2.name = "TEst"
+empt2.age = 45
+empt2.pay = 70000
+
+print(empt2.name)
+print(empt2.age)
+
+class Employee:
+
+
+
 class Phone:
     def __init__(self, brand, price, version):  # this is a constructer # Properties
         self.brand = brand # instant variable or attributes
@@ -3250,8 +3270,8 @@ class Phone:
         #it prints
 
 
-iphone = Phone("Apple", 100000, 11)  # Objects # collections of properties and functions
-android = Phone("Samsung", 50000, 25) # Objects
+iphone = Phone("Apple", 100000, 11)  # Objects # collections of properties and functions # instences
+android = Phone("Samsung", 50000, 25) # Objects # instences have unique data
 
 print(iphone)
 print(android)
