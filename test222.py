@@ -1,14 +1,11 @@
 
-
+https://www.youtube.com/watch?v=rq8cL2XMM5M
 ## Classes and Objects
 ## Classes and Objects
 # Define a class
 
 class Employ:
     pass
-
-
-
 
 empt1 = Employ()
 empt2 = Employ()
@@ -34,18 +31,97 @@ print(empt2.age)
 
 class Employee:
 
+    num_ofEmployees = 0
+    bonous_amount = 1.04   # class variable
+
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
         self.email = first+'.'+last+'@company'
-
+        Employee.num_ofEmployees+=1
+        # num_ofEmployees increases at every occurence of class object instence creation
     def fullname(self):
         print("From Method Full name is", f"{self.first} {self.last}")
         print("From Method Full name format ",'{} {}'.format(self.first,self.last))
 
+
+    def apply_raise(self):   #method
+        self.pay = int(self.pay * 1.4)
+
+    def Bonous_amount(self): #method
+        self.pay = int((self.pay * self.bonous_amount))
+
+    def incentives(self): #method
+        self.pay = int(self.pay * 2 * Employee.bonous_amount)
+
+print(Employee.num_ofEmployees)
 emp1 = Employee('Name', "lastname", 70000)
 emp2 = Employee('name', "last2name", 77000)
+print(Employee.num_ofEmployees)
+print(emp1.__dict__ ,  emp2.__dict__)
+
+print(Employee.__dict__)
+
+print(emp1.pay)
+print(emp2.pay)
+emp1.apply_raise()
+emp2.apply_raise()
+print("Extended pay" , emp1.pay)
+print("Extended pay" , emp2.pay)
+emp1.Bonous_amount()
+emp2.Bonous_amount()
+print("Extra Extended pay" , emp1.pay)
+
+print("Extra Extended pay" , emp2.pay)
+
+emp1.incentives()
+emp2.incentives()
+print("Extra Incentive Extended pay" , emp1.pay)
+print("Extra Incentive Extended pay" , emp2.pay)
+
+Employee.bonous_amount = 1.5  # class variable
+print(emp1.__dict__ ,  emp2.__dict__)
+
+print(Employee.__dict__)
+print(emp1.pay)
+print(emp2.pay)
+emp1.apply_raise()
+emp2.apply_raise()
+print("Extended pay" , emp1.pay)
+print("Extended pay" , emp2.pay)
+emp1.Bonous_amount()
+emp2.Bonous_amount()
+print("Extra Extended pay" , emp1.pay)
+
+print("Extra Extended pay" , emp2.pay)
+
+emp1.incentives()
+emp2.incentives()
+print("Extra Incentive Extended pay" , emp1.pay)
+print("Extra Incentive Extended pay" , emp2.pay)
+
+emp1.bonous_amount = 2 # Method Variable
+print(emp1.__dict__ ,  emp2.__dict__)
+
+print(Employee.__dict__)
+print(emp1.pay)
+print(emp2.pay)
+emp1.apply_raise()
+emp2.apply_raise()
+print("Extended pay" , emp1.pay)
+print("Extended pay" , emp2.pay)
+emp1.Bonous_amount()
+emp2.Bonous_amount()
+print("Extra Extended pay" , emp1.pay)
+
+print("Extra Extended pay" , emp2.pay)
+
+emp1.incentives()
+emp2.incentives()
+print("Extra Incentive Extended pay" , emp1.pay)
+print("Extra Incentive Extended pay" , emp2.pay)
+
 
 emp1.fullname()
 print("#")
@@ -71,6 +147,10 @@ print("Full name is",'{} {}'.format(emp2.first,emp2.last))
 print(emp1.email , emp1.pay)
 
 print(emp2.email ,  emp2.pay)
+
+print(emp1.__dict__ ,  emp2.__dict__)
+
+print(Employee.__dict__)
 
 class Phone:
     def __init__(self, brand, price, version):  # this is a constructer # Properties

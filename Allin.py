@@ -3255,9 +3255,6 @@ empt2.pay = 70000
 print(empt2.name)
 print(empt2.age)
 
-class Employee:
-
-
 
 class Phone:
     def __init__(self, brand, price, version):  # this is a constructer # Properties
