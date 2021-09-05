@@ -48,11 +48,21 @@ emp1 = Employee('Name', "lastname", 70000)
 emp2 = Employee('name', "last2name", 77000)
 
 emp1.fullname()
+print("#")
 emp2.fullname()
-
+print("#")
+print("#")
+Employee.fullname(emp1)
+print("#")
+Employee.fullname(emp2)
+print(Employee.fullname(emp2))
+print("#")
+print("#")
 print(emp1.fullname())
+print("#")
 print(emp2.fullname())
-
+print("#")
+print("#")
 
 print("Full name is", f"{emp1.first} {emp1.last}")
 
