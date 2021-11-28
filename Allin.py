@@ -14,10 +14,12 @@
 # Licence:     <User/Shyed/your licence>
 #------------------------------------------------------------------------------
 print("The Start The Start The Start The Start ?\n")
-#\n introduces a new line
+# \n introduces a new line
 print("The Start The Start The Start The Start ?")
 
+print("5+8")
 
+print(5+8)
 
 print("Python Review Revisit Relearn Project")
 
