@@ -195,3 +195,94 @@ dictionary1 = {
 print(dictionary1)
 print(len(dictionary1))
 
+
+print("\t Input statement \n")
+
+a = int(input("Enter any number: "))
+name = input("Enter any name: ")
+
+print(type(a))
+print(a)
+print(type(name))
+print(name)
+
+print("\t Conditional Statements \n")
+
+age2 = int(input("Enter your age: "))
+
+if (age2>=18):
+    print("You are eligible to vote")
+
+else:
+    print("You are not eligible to vote")
+    
+
+print("\t Conditional Statements \n")
+
+x = int(input("Enter any number: "))
+
+if (x>50):
+    print("Number is greater than 50")
+elif (x>25):
+    print("No. entered is b/w 25-50")
+elif (x>0):
+    print("Number entered is between 0-25")
+else:
+    print("Enter valid number")
+
+
+print("\t Loops \n")
+
+num = 5
+for a in range(1, 11 ):
+    print(num, 'x ', a, '=', num* a)
+
+
+print("\t Loops \n")
+
+x = 1
+while(x<=100):      #while loop
+    print(x)
+    x = x+1
+
+
+'''
+def function_name () :
+
+         statement 1,
+
+         statement 2,
+
+         ….
+'''
+print("\t Functions \n")
+
+def demo():     #Derining a runction
+    print("Hlo Guys")
+    print("It's my First Function")
+    print(" : )")
+
+demo()      # Calling a runction
+print("\t Functions \n")
+
+def add(a,b):        #Derining Function
+    c = a+b
+    return c
+
+x = int(input("Enter a number: "))
+y = int(input("Enter a number: "))
+
+z = add(x,y)        #Calling Function
+print("The Sum is", z)
+
+  
+class Employee:
+    def __init__(self, gname, gsalary):
+        self.name = gname
+        self.salary = gsalary
+
+harry = Employee("harry", 34)
+print(harry.name)
+print(harry.salary)
+     
+    
