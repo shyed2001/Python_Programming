@@ -29,6 +29,7 @@ if (age<18):
 '''
 This is a multi line comment
 '''
+import cv2 
 import math
 
 print(math.gcd(3,6))
@@ -104,38 +105,93 @@ Python Collections:
 3. Set
 4. Dictionary
 '''
-
+# Lists
+'''
+Lists :
+A List in Python represents a list of comma-separated values of any data type between square brackets.
+'''
 lst = [61,2,3,4,6,41]
 var = type(lst)
-
 print (var)
+
 lst[2] = 45
+print (var)
 var = lst[2]
 print (var)
+
+var = lst
 lst.append (100)
 print (var)
+
 lst.insert(1, 100)
 print (var)
+
 lst.remove (61)
-
 print (var)
+
 lst.pop()
-
 print (var)
-lst.lst[3]
 
-print (var)
-lst.lst
-
-print (var)
 lst.clear()
+print(lst)
+print (var)
+
+lst = [61,2,3,4,6,41]
 var = lst
-var = len(lst)
-
 print (var)
 
-print (var)
-var = lst[1:4]
+var1 = len(lst)
+print (var1)
+
+var2 = lst[1:4]
+print (var2)
 
 
+del lst[3]
+var = lst
 print (var)
+
+# del lst
+# The previous line deletes the list lst
+a = ("Shyed", "Shahriar", "Housaini")
+## Tuples 
+# Tuples are unchangeable
+'''
+Tuples:
+These are those lists which cannot be changed i.e., are not modifiable. Tuples are represented as list of comma-separated values of any date type within parentheses.
+'''
+
+## Set Sets :
+'''
+Sets in python are a data type equivalent to sets in mathematics. It may consist various elements and the order is undefined.
+
+Sets elements are enclosed in {} Curly Braces.
+
+In sets repeated elements does not get printed.
+'''
+print("\t\tSets\n")
+
+set1 = {1,2,3,4,5,1,2,3}
+print(set1)
+print(type(set1))
+set1.add(99)
+print(set1)
+
+'''
+Dictionary :
+Dictionary data type is another feature in Python's hat. The dictionary is an unordered set of comma-separated key: value pairs, within {},with the requirement that within a dictionary, no two keys can be the same (i.e., there are unique keys within a dictionary).
+
+print("\t\tDictionary\n")
+'''
+
+print("\t\tDictionary\n")
+
+dictionary1 = {
+    "Play" : "Doing some activity",
+    "Food" : "Something eatable",
+    "Python" : "Language",
+}
+
+print(dictionary1)
+print(len(dictionary1))
+
