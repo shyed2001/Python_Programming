@@ -177,6 +177,32 @@ print(type(set1))
 set1.add(99)
 print(set1)
 
+my_fav = {"red", "green", "blue", "black", "purple"}
+
+her_fav = {"blue","orange", "purple", "green"}
+
+all_favsUnions = my_fav | her_fav
+# union
+print(all_favsUnions)
+all_favsUnions2 =my_fav.union(her_fav) 
+print(all_favsUnions2)
+Intersection_fav = my_fav & her_fav
+print(Intersection_fav)
+Intersection_fav2 = my_fav.intersection(her_fav)
+print(Intersection_fav2)
+
+#Difference
+all_favsdiff = my_fav-her_fav
+all_favsdiff2 = her_fav-my_fav
+print(all_favsdiff)
+print(all_favsdiff2)
+
+#symmetric Difference
+all_favssymdiff = my_fav^her_fav
+all_favssymdiff2 = her_fav^my_fav
+print(all_favssymdiff)
+print(all_favssymdiff2)
+
 '''
 Dictionary :
 Dictionary data type is another feature in Python's hat. The dictionary is an unordered set of comma-separated key: value pairs, within {},with the requirement that within a dictionary, no two keys can be the same (i.e., there are unique keys within a dictionary).
@@ -237,6 +263,10 @@ num = 5
 for a in range(1, 11 ):
     print(num, 'x ', a, '=', num* a)
 
+x = [7, 8, 3]
+
+for index, item in enumerate (x):
+    print (index,item)
 
 print("\t Loops \n")
 
@@ -286,3 +316,146 @@ print(harry.name)
 print(harry.salary)
      
     
+'''
+
+# DIFFERENCE BETWEEN
+# LIST - square braces
+# TUPLE - rounded braces
+# SET - The set keyword
+# DICTIONARY - curly braces: made up of key-value pairs
+
+list1 = ["Computer", "Printer", "TV", "Camera", 89, 30.8]
+
+tuple1 = ("Computer", "Printer", "TV", "Camera", 89, 30.8)
+
+set1 = set(["Computer", "Printer", "TV", "Camera", 89, 30.8])
+dict1 = {
+     1: "Monday",
+     2: "Tuesday",
+     3: "Wednesday"
+}
+
+1. Python List
+
+A list in python is a collection of various items  which may be either of the same or of different data types.  The items in a list are separated by commas and enclosed in square braces. Listing 1.0 shows how to create a list in python
+
+assets = ["Computer", "Printer", "TV", "Camera"]
+
+scores = [56, 45.9, 89.5, 70, 32.9, 67.4]
+
+letters = ['k', 'i', 'n', 'd', 's', 'o', 'n']
+
+things = ["chair", 45, 'A', "house"]
+Listing 1.0: Examples of Lists in Python
+
+ 
+
+2. Python Tuple
+
+A tuple in python is also a collection of items just like list. Take note of the two key difference:
+
+A tuple is immutable (you can’t change the elements once created)
+A tuple is created with rounded braces
+Listing 1.1 show example of Tuple
+
+assets = ("Computer", "Printer", "TV", "Camera")
+
+scores = (56, 45.9, 89.5, 70, 32.9, 67.4)
+
+letters = ('k', 'i', 'n', 'd', 's', 'o', 'n')
+
+things = ("chair", 45, 'A', "house")
+Listing 1.1: Example of Tuple in Python
+
+ 
+
+3. Python Dictionary
+
+A dictionary in python is a collections of key-value pairs of item. For each entry, there are two items: a key and a value. Note the following about Python dictionaries
+
+keys in a dictionary must be unique (no two same keys)
+keys are immutable
+keys and values can be of any data types
+the keys() function returns list of keys in a dictionary
+the values() function returns list of values in dictionary
+Example of dictionaries are given in Listing 1.3.
+
+months = {
+    "Jan": "January",
+    "Feb": "Febraury",
+    "Mar": "March",
+    "Apr": "April",
+    "May": "May",
+    "Jun": "June",
+    "Jul": "July",
+    "Aug": "August",
+    "Sep": "September"
+}
+
+weekdays = {
+    1: "Monday",
+    2: "Tuesday",
+    3: "Wednesday",
+    4: "Thursday",
+    5: "Friday",
+    6: "Saturday",
+    7: "Sunday"
+}
+Listing 1.2: Examples of Dictionaries in Python
+
+ 
+
+4. Python Set
+
+A set in python is a collection of items just like Lists and Tuples.  Note the following about sets:
+
+A set is created using the set keyword
+A set cannot be an element of a set (but a list can be an element of a list)
+Also note: As pointed out by Luka Jeličić Lux, Sets cannot have same element multiple times. Example: When you have set([1,2,2,2,3,3,4,4,5,5]) and print it you get [1,2,3,4,5] as output.
+
+Examples of sets is given in Listing 1.3
+
+assets = set(["Computer", "Printer", "TV", "Camera"])
+
+scores = set([56, 45.9, 89.5, 70, 32.9, 67.4])
+
+letters = set(['k', 'i', 'n', 'd', 's', 'o', 'n'])
+
+things = set(["chair", 45, 'A', "house"])
+Listing 1.3: Example of Set in Python
+
+
+
+'''
+
+'''
+DIFFERENCE BETWEEN
+LIST - square braces
+TUPLE - rounded braces
+SET - The set keyword
+DICTIONARY - curly braces: made up of key-value pairs
+
+
+'''
+
+list1 = ["Computer", "Printer", "TV", "Camera", 89, 30.8]
+list1 [0] = "PC"
+print(list1)
+tuple1 = ("Computer", "Printer", "TV",
+"Camera", 89, 30.8)
+print (tuple1)
+
+set1 = set( ["Computer", "Printer", "TV",
+"Camera", 89, 30.8])
+print (set1)
+
+set1 = {"Computer", "Printer", "TV",
+"Camera", 89, 30.8}
+print (set1)
+
+dict1 = {
+1: "Monday",
+2 :"Tuesday",
+3: "Wednesday"
+}
+print (dict1)
