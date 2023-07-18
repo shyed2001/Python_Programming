@@ -1,0 +1,73 @@
+[
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter",
+        "IPv4 Address": "172.27.64.1(Preferred) ",
+        "IPv6 Address": "fe80::e3db:8adc:b5ba:f86a%43(Preferred) "
+    },
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter #2",
+        "IPv4 Address": "172.20.80.1(Preferred) ",
+        "IPv6 Address": "fe80::be91:8b1f:bd17:d231%48(Preferred) "
+    },
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter #3",
+        "IPv4 Address": "172.30.32.1(Preferred) ",
+        "IPv6 Address": "fe80::2dc7:744:315c:8f9b%53(Preferred) "
+    },
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter #7",
+        "IPv4 Address": "172.29.64.1(Preferred) ",
+        "IPv6 Address": "fe80::3719:be38:3907:fdc0%75(Preferred) "
+    },
+    {
+        "Description": "VirtualBox Host-Only Ethernet Adapter",
+        "IPv4 Address": "192.168.56.1(Preferred) ",
+        "IPv6 Address": "fe80::fd76:63cf:a03a:8329%16(Preferred) "
+    },
+    {
+        "Description": "Microsoft Wi-Fi Direct Virtual Adapter"
+    },
+    {
+        "Description": "Microsoft Wi-Fi Direct Virtual Adapter #2"
+    },
+    {
+        "Description": "Realtek PCIe GbE Family Controller",
+        "IPv4 Address": "192.168.1.114(Preferred) ",
+        "IPv6 Address": "fe80::deaa:d774:ac1a:7ca7%4(Preferred) ",
+        "Default Gateway": "192.168.1.1"
+    },
+    {
+        "Description": "VMware Virtual Ethernet Adapter for VMnet1",
+        "IPv4 Address": "192.168.64.1(Preferred) ",
+        "IPv6 Address": "fe80::1122:75c1:6faa:ad02%7(Preferred) "
+    },
+    {
+        "Description": "VMware Virtual Ethernet Adapter for VMnet8",
+        "IPv4 Address": "192.168.209.1(Preferred) ",
+        "IPv6 Address": "fe80::dea8:74d3:f731:e772%14(Preferred) "
+    },
+    {
+        "Description": "Intel(R) Wireless-AC 9560",
+        "IPv4 Address": "192.168.1.112(Preferred) ",
+        "IPv6 Address": "fe80::2f3:558:166c:79a1%2(Preferred) ",
+        "Default Gateway": "192.168.1.1"
+    },
+    {
+        "Description": "Bluetooth Device (Personal Area Network)"
+    },
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter #4",
+        "IPv4 Address": "172.19.32.1(Preferred) ",
+        "IPv6 Address": "fe80::6e36:f01a:c1d6:2b40%59(Preferred) "
+    },
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter #5",
+        "IPv4 Address": "172.21.224.1(Preferred) ",
+        "IPv6 Address": "fe80::7ef9:4233:eac6:d11d%74(Preferred) "
+    },
+    {
+        "Description": "Hyper-V Virtual Ethernet Adapter #6",
+        "IPv4 Address": "172.25.128.1(Preferred) ",
+        "IPv6 Address": "fe80::d281:7bd9:a5e7:7d23%68(Preferred) "
+    }
+]
