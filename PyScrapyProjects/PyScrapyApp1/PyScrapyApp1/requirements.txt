@@ -31,7 +31,7 @@ pycparser==2.21
 PyDispatcher==2.0.7
 pyOpenSSL==23.1.1
 queuelib==1.6.2
-requests==2.30.0
+requests==2.31.0
 requests-file==1.5.1
 Scrapy==2.8.0
 service-identity==21.1.0
