@@ -1,0 +1,38 @@
+2025-04-02 13:42:24,890 - INFO - Starting PDF comparison at 2025-04-02 13:42:24.890764
+2025-04-02 13:42:24,891 - INFO - Scanning directory 1: E:\ZoteroStorage Test\ZoteroRenamedPDF\ALLRenamedPDF
+2025-04-02 13:42:25,389 - INFO - Found 1629 PDF files in directory 1
+2025-04-02 13:42:25,390 - INFO - Scanning directory 2: E:\ZoteroStorage Test\ZoteroRenamedPDF\OrganiedAllOutput_OrganizedPDFsV4
+2025-04-02 13:42:25,814 - INFO - Found 1067 PDF files in directory 2
+2025-04-02 14:05:54,625 - INFO - Starting PDF comparison at 2025-04-02 14:05:54.625974
+2025-04-02 14:05:54,626 - INFO - Scanning directory 1: E:'ZoteroStorage Test'\ZoteroRenamedPDF\ALLRenamedPDF
+2025-04-02 14:05:54,626 - INFO - Found 0 PDF files in directory 1
+2025-04-02 14:05:54,631 - INFO - Scanning directory 2: E:'ZoteroStorage Test'\ZoteroRenamedPDF\OrganiedAllOutput_OrganizedPDFsV4
+2025-04-02 14:05:54,632 - INFO - Found 0 PDF files in directory 2
+2025-04-02 14:05:54,638 - INFO - Found 0 uncommon files in total
+2025-04-02 14:05:54,638 - INFO - - 0 files unique to directory 1
+2025-04-02 14:05:54,638 - INFO - - 0 files unique to directory 2
+2025-04-02 14:05:54,640 - INFO - Comparison completed in 0.02 seconds
+2025-04-02 14:05:54,640 - INFO - Report saved to E:'ZoteroStorage Test'\ZoteroRenamedPDF\DirVsDirDiff_OrganizedPDFsV4\comparison_report.txt
+2025-04-02 14:07:20,785 - INFO - Starting PDF comparison at 2025-04-02 14:07:20.784386
+2025-04-02 14:07:20,786 - INFO - Scanning directory 1: E:'ZoteroStorage Test'\ZoteroRenamedPDF\ALLRenamedPDF
+2025-04-02 14:07:20,787 - INFO - Found 0 PDF files in directory 1
+2025-04-02 14:07:20,787 - INFO - Scanning directory 2: E:'ZoteroStorage Test'\ZoteroRenamedPDF\OrganiedAllOutput_OrganizedPDFsV4
+2025-04-02 14:07:20,788 - INFO - Found 0 PDF files in directory 2
+2025-04-02 14:07:20,795 - INFO - Found 0 uncommon files in total
+2025-04-02 14:07:20,795 - INFO - - 0 files unique to directory 1
+2025-04-02 14:07:20,795 - INFO - - 0 files unique to directory 2
+2025-04-02 14:07:20,797 - INFO - Comparison completed in 0.01 seconds
+2025-04-02 14:07:20,797 - INFO - Report saved to E:'ZoteroStorage Test'\ZoteroRenamedPDF\DirVsDirDiff_OrganizedPDFsV4\comparison_report.txt
+2025-04-02 14:13:24,268 - INFO - Starting PDF comparison at 2025-04-02 14:13:24.267408
+2025-04-02 14:13:24,268 - INFO - Scanning directory 1: E:\ZoteroStorage Test\ZoteroRenamedPDF\ALLRenamedPDF
+2025-04-02 14:13:24,588 - INFO - Found 1629 PDF files in directory 1
+2025-04-02 14:13:24,588 - INFO - Scanning directory 2: E:\ZoteroStorage Test\ZoteroRenamedPDF\OrganiedAllOutput_OrganizedPDFsV4
+2025-04-02 14:13:24,789 - INFO - Found 1067 PDF files in directory 2
+2025-04-02 14:17:19,827 - INFO - Starting PDF comparison at 2025-04-02 14:17:19.826157
+2025-04-02 14:17:19,828 - INFO - Scanning directory 1: E:\ZoteroStorage Test\ZoteroRenamedPDF\ALLRenamedPDF
+2025-04-02 14:17:20,197 - INFO - Found 1629 PDF files in directory 1
+2025-04-02 14:17:20,197 - INFO - Scanning directory 2: E:\ZoteroStorage Test\ZoteroRenamedPDF\OrganiedAllOutput_OrganizedPDFsV4
+2025-04-02 14:17:20,386 - INFO - Found 1067 PDF files in directory 2
+2025-04-02 14:41:34,152 - INFO - Found 1187 uncommon files in total
+2025-04-02 14:41:34,152 - INFO - - 861 files unique to directory 1
+2025-04-02 14:41:34,153 - INFO - - 326 files unique to directory 2

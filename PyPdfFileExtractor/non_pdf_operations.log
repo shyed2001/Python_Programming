@@ -1,0 +1,9 @@
+2025-04-02 12:43:22,948 - INFO - Starting non-PDF file extraction and duplicate management process
+2025-04-02 12:43:22,950 - INFO - PHASE 1: Starting non-PDF file extraction from E:\ZoteroStorage Test\ZoteroRenamedPDF\OrganizedPDFsV4
+2025-04-02 12:43:22,954 - INFO - Found 27 folders to process
+2025-04-02 12:43:22,955 - INFO - Using 4 worker threads.
+2025-04-02 12:43:24,029 - INFO - File type summary report saved to: E:\ZoteroStorage Test\ZoteroRenamedPDF\NonPDF_ReportFolder\file_type_summary_20250402_124322.csv
+2025-04-02 12:43:24,034 - INFO - PHASE 2: Analyzing files in E:\ZoteroStorage Test\ZoteroRenamedPDF\NonPDF_DestinationFolder
+2025-04-02 12:43:24,038 - INFO - Found 10 total files
+2025-04-02 12:43:24,039 - INFO - No duplicate files found.
+2025-04-02 12:43:24,041 - INFO - Non-PDF file extraction and duplicate management complete in 0.02 minutes
